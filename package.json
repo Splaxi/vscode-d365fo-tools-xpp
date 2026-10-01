@@ -1,0 +1,650 @@
+{
+  "name": "vscode-d365fo-tools-xpp",
+  "displayName": "D365FO AOT Browser",
+  "description": "Application Explorer / AOT browser for Dynamics 365 Finance and Operations (local metadata).",
+  "version": "0.35.0",
+  "publisher": "d365fo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anomalyco/vscode.d365fo.tools.xpp.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "dynamics365",
+    "d365fo",
+    "x++",
+    "aot",
+    "application-explorer"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "d365fo-aot",
+          "title": "Application Explorer (Xpp)",
+          "icon": "resources/activity.svg"
+        }
+      ]
+    },
+    "views": {
+      "d365fo-aot": [
+        {
+          "id": "d365fo-aot-browser",
+          "name": "Application Explorer (Xpp)",
+          "icon": "resources/activity.svg",
+          "contextualTitle": "AOT"
+        },
+        {
+          "id": "d365fo-aot-search-v2",
+          "name": "AOT Search",
+          "type": "webview",
+          "icon": "resources/activity.svg",
+          "contextualTitle": "AOT Search"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "d365fo-aot.refresh",
+        "title": "Refresh AOT",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "d365fo-aot.toggleView",
+        "title": "Toggle Models/Classic View",
+        "icon": "$(list-tree)"
+      },
+      {
+        "command": "d365fo-aot.revealModelInExplorer",
+        "title": "Reveal Model Folder in Explorer"
+      },
+      {
+        "command": "d365fo-aot.openDescriptor",
+        "title": "Open Model Descriptor XML"
+      },
+      {
+        "command": "d365fo-aot.openElement",
+        "title": "Open X++ Source"
+      },
+      {
+        "command": "d365fo-aot.openFieldsGrid",
+        "title": "Show Table Fields Grid"
+      },
+      {
+        "command": "d365fo-aot.openViewFieldsGrid",
+        "title": "Show View Fields Grid"
+      },
+      {
+        "command": "d365fo-aot.openRelationsGrid",
+        "title": "Show Table Relations Grid"
+      },
+      {
+        "command": "d365fo-aot.openIndexesGrid",
+        "title": "Show Table Indexes Grid"
+      },
+      {
+        "command": "d365fo-aot.openMetadataGrid",
+        "title": "Show Metadata"
+      },
+      {
+        "command": "d365fo-aot.resolveFieldTypes",
+        "title": "Resolve Field Types"
+      },
+      {
+        "command": "d365fo-aot.openProperties",
+        "title": "Show Properties"
+      },
+      {
+        "command": "d365fo-aot.openElementXml",
+        "title": "Open Raw Element XML"
+      },
+      {
+        "command": "d365fo-aot.openSearch",
+        "title": "Open AOT Search",
+        "icon": "$(search)"
+      }
+    ],
+    "icons": {
+      "d365fo-table": {
+        "description": "Table (Material Design nf-md-table_large U+F04EB, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F04F1"
+        }
+      },
+      "d365fo-view": {
+        "description": "View (Octicons nf-oct-table U+F525, MIT)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F525"
+        }
+      },
+      "d365fo-sysdoc": {
+        "description": "System Documentation (Material Design nf-md-bookshelf U+F125F, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F125F"
+        }
+      },
+      "d365fo-service": {
+        "description": "Service (Material Design nf-md-web U+F059F, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F059F"
+        }
+      },
+      "d365fo-service-group": {
+        "description": "Service Group (Material Design nf-md-web_plus U+F0033, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0033"
+        }
+      },
+      "d365fo-references": {
+        "description": "References (Codicons nf-cod-collection U+EC57, CC-BY-4.0 Microsoft)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\EC57"
+        }
+      },
+      "d365fo-security": {
+        "description": "Security (Material Design nf-md-shield_key_outline U+F0BC5, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0BC5"
+        }
+      },
+      "d365fo-sec-role": {
+        "description": "Security Role (Octicons nf-oct-passkey_fill U+F4FC, MIT)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F4FC"
+        }
+      },
+      "d365fo-sec-duty": {
+        "description": "Security Duty (Material Design nf-md-key_change U+F0307, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0307"
+        }
+      },
+      "d365fo-sec-priv": {
+        "description": "Security Privilege (Material Design nf-md-key_arrow_right U+F1312, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F1312"
+        }
+      },
+      "d365fo-sec-policy": {
+        "description": "Security Policy (Material Design nf-md-script_text_key U+F1725, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F1725"
+        }
+      },
+      "d365fo-resources": {
+        "description": "Resources (Font Awesome nf-fa-image U+F03E, CC-BY-4.0 Fonticons)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F03E"
+        }
+      },
+      "d365fo-reports": {
+        "description": "Reports (Octicons nf-oct-project_template U+F505, MIT)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F505"
+        }
+      },
+      "d365fo-report-templates": {
+        "description": "Report Style Templates (Octicons nf-oct-repo_template U+F509, MIT)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F509"
+        }
+      },
+      "d365fo-tiles": {
+        "description": "Tiles (Codicons nf-cod-layout U+EBEB, CC-BY-4.0 Microsoft)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\EBEB"
+        }
+      },
+      "d365fo-menus": {
+        "description": "Menus (Material Design nf-md-folder_arrow_right_outline U+F19EF, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F19EF"
+        }
+      },
+      "d365fo-menu-items": {
+        "description": "Menu Items (Material Design nf-md-folder_text_outline U+F0C83, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C83"
+        }
+      },
+      "d365fo-macros": {
+        "description": "Macros (Material Design nf-md-script_outline U+F0477, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0477"
+        }
+      },
+      "d365fo-data-entity": {
+        "description": "Data Entities (Material Design nf-md-database_plus_outline U+F1633, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F1633"
+        }
+      },
+      "d365fo-table-collection": {
+        "description": "Table Collections (Material Design nf-md-table_multiple U+F13C8, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F13C8"
+        }
+      },
+      "d365fo-maps": {
+        "description": "Maps (Material Design nf-md-table_merge_cells U+F09A6, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F09A6"
+        }
+      },
+      "d365fo-license": {
+        "description": "License Codes (Material Design nf-md-certificate_outline U+F1188, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F1188"
+        }
+      },
+      "d365fo-methods": {
+        "description": "Methods foldout (Font Awesome nf-fa-boxes_stacked U+ED76, CC-BY-4.0 Fonticons)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\ED76"
+        }
+      },
+      "d365fo-method": {
+        "description": "Method (Material Design nf-md-code_json U+F0626, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0626"
+        }
+      },
+      "d365fo-design": {
+        "description": "Form Design (Font Awesome Extension nf-fae-triangle_ruler U+E21B, MIT)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\E21B"
+        }
+      },
+      "d365fo-grid": {
+        "description": "Grid control (Material Design nf-md-grid U+F02C1, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F02C1"
+        }
+      },
+      "d365fo-group": {
+        "description": "Group control (Font Awesome nf-fa-object_group U+F247, CC-BY-4.0 Fonticons)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F247"
+        }
+      },
+      "d365fo-action-pane": {
+        "description": "ActionPane control (Codicons nf-cod-split_vertical U+EB57, CC-BY-4.0 Microsoft)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\EB57"
+        }
+      },
+      "d365fo-delete-actions": {
+        "description": "DeleteActions (Material Design nf-md-table_large_remove U+F0F88, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0F88"
+        }
+      },
+      "d365fo-fields": {
+        "description": "Fields (Material Design nf-md-table_column U+F0835, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0835"
+        }
+      },
+      "d365fo-fulltext-indexes": {
+        "description": "Full-text indexes (Material Design nf-md-notebook_edit_outline U+F14E9, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F14E9"
+        }
+      },
+      "d365fo-indexes": {
+        "description": "Indexes (Material Design nf-md-family_tree U+F160E, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F160E"
+        }
+      },
+      "d365fo-data-types": {
+        "description": "Data Types (Material Design nf-md-database_cog_outline U+F164C, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F164C"
+        }
+      },
+      "d365fo-base-enums": {
+        "description": "Base Enums (Material Design nf-md-folder_text_outline U+F0C83, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C83"
+        }
+      },
+      "d365fo-extended-data-types": {
+        "description": "Extended Data Types (Codicons nf-cod-extensions_large U+EC48, CC-BY-4.0 Microsoft)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\EC48"
+        }
+      },
+      "d365fo-label-files": {
+        "description": "Label Files (Material Design nf-md-alphabet_latin U+F132F, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F132F"
+        }
+      },
+      "d365fo-state-machines": {
+        "description": "StateMachines (Material Design nf-md-state_machine U+F11EF, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F11EF"
+        }
+      },
+      "d365fo-field-groups": {
+        "description": "Field Groups (Material Design nf-md-table_multiple U+F13C8, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F13C8"
+        }
+      },
+      "d365fo-type-string": {
+        "description": "String field type (Material Design nf-md-alpha_s_box_outline U+F0C21, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C21"
+        }
+      },
+      "d365fo-type-int": {
+        "description": "Integer field type (Material Design nf-md-alpha_i_box_outline U+F0C03, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C03"
+        }
+      },
+      "d365fo-type-real": {
+        "description": "Real field type (Material Design nf-md-alpha_r_box_outline U+F0C1E, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C1E"
+        }
+      },
+      "d365fo-type-date": {
+        "description": "Date field type (Material Design nf-md-alpha_d_box_outline U+F0BF4, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0BF4"
+        }
+      },
+      "d365fo-type-utcdatetime": {
+        "description": "UtcDateTime field type (Material Design nf-md-alpha_u_box_outline U+F0C27, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C27"
+        }
+      },
+      "d365fo-type-time": {
+        "description": "Time field type (Material Design nf-md-alpha_t_box_outline U+F0C24, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0C24"
+        }
+      },
+      "d365fo-type-enum": {
+        "description": "Enum field type (Material Design nf-md-alpha_e_box_outline U+F0BF7, Apache-2.0)",
+        "default": {
+          "fontPath": "./resources/d365fo-icons.woff",
+          "fontCharacter": "\\F0BF7"
+        }
+      }
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "d365fo-aot.refresh",
+          "when": "view == d365fo-aot-browser",
+          "group": "navigation@1"
+        },
+        {
+          "command": "d365fo-aot.openSearch",
+          "when": "view == d365fo-aot-browser",
+          "group": "navigation@2"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "d365fo-aot.toggleView",
+          "when": "view == d365fo-aot-browser && viewItem == d365fo-version",
+          "group": "1_actions@3"
+        },
+        {
+          "command": "d365fo-aot.refresh",
+          "when": "view == d365fo-aot-browser",
+          "group": "1_actions@1"
+        },
+        {
+          "command": "d365fo-aot.openDescriptor",
+          "when": "view == d365fo-aot-browser && viewItem == d365fo-model",
+          "group": "inline@1"
+        },
+        {
+          "command": "d365fo-aot.revealModelInExplorer",
+          "when": "view == d365fo-aot-browser && (viewItem == d365fo-model || viewItem == d365fo-element || viewItem == d365fo-enumvalue || viewItem == d365fo-tablesection || viewItem == d365fo-member)",
+          "group": "2_model@1"
+        },
+        {
+          "command": "d365fo-aot.openElementXml",
+          "when": "view == d365fo-aot-browser && viewItem == d365fo-element",
+          "group": "2_element@2"
+        },
+        {
+          "command": "d365fo-aot.resolveFieldTypes",
+          "when": "view == d365fo-aot-browser && (viewItem == d365fo-element || viewItem == d365fo-tablesection || viewItem == d365fo-member || viewItem == d365fo-xmlnode)",
+          "group": "2_element@4"
+        },
+        {
+          "command": "d365fo-aot.openProperties",
+          "when": "view == d365fo-aot-browser && viewItem == d365fo-element",
+          "group": "2_element@3"
+        },
+        {
+          "command": "d365fo-aot.openElement",
+          "when": "view == d365fo-aot-browser && viewItem == d365fo-element",
+          "group": "2_element@1"
+        }
+      ]
+    },
+    "grammars": [
+      {
+        "language": "xpp",
+        "scopeName": "source.xpp",
+        "path": "./syntaxes/xpp.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "xpp",
+        "aliases": [
+          "X++",
+          "xpp"
+        ],
+        "extensions": [
+          ".xpp"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "configuration": {
+      "title": "D365FO AOT Browser",
+      "properties": {
+        "d365fo.aot.ude.rootPath": {
+          "type": "string",
+          "default": "%LocalAppData%\\Microsoft\\Dynamics365",
+          "description": "Versions root shown as MS-UDE. Each direct sub-folder is treated as a version; models are folders containing a Descriptor/*.xml file (searched under AOSService/PackagesLocalDirectory when present). Supports %ENV% and ~ expansion.",
+          "order": 1
+        },
+        "d365fo.aot.rootPath": {
+          "type": "string",
+          "default": "K:\\AosService\\PackagesLocalDirectory",
+          "description": "Single packages root shown as MS-Packages (a folder with model folders directly inside). Missing folders simply expand to nothing. Supports %ENV% and ~ expansion.",
+          "order": 2
+        },
+        "d365fo.aot.custom.rootPath": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Additional metadata roots shown under Custom. Each entry is treated as one version (either a version folder or a packages folder). Missing folders simply expand to nothing. Supports %ENV% and ~ expansion.",
+          "order": 3
+        },
+        "d365fo.aot.modelSearchDepth": {
+          "type": "number",
+          "default": 3,
+          "minimum": 1,
+          "maximum": 5,
+          "description": "How many directory levels below each version (or its PackagesLocalDirectory) are scanned for model Descriptor folders. Keep low for speed.",
+          "order": 4
+        },
+        "d365fo.aot.showDescriptorPath": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show the full descriptor path as the tree item description.",
+          "order": 5
+        },
+        "d365fo.aot.eagerLoad": {
+          "type": "boolean",
+          "default": true,
+          "description": "Eagerly prefetch the next level (+1) in the background while navigating the Classic view: expanding a category preloads the first elements of every type in parallel.",
+          "order": 6
+        },
+        "d365fo.aot.prefetchCount": {
+          "type": "number",
+          "default": 500,
+          "minimum": 0,
+          "maximum": 10000,
+          "description": "How many elements per type the eager prefetch loads. Types at or below this size complete outright; larger types render the prefetched head instantly while the rest loads in the background.",
+          "order": 7
+        },
+        "d365fo.aot.defaultViewMode": {
+          "type": "string",
+          "enum": [
+            "models",
+            "classic"
+          ],
+          "default": "models",
+          "description": "Which view each version opens in. Can still be flipped per version with the toggle left of Refresh.",
+          "order": 8
+        },
+        "d365fo.aot.resolve.language": {
+          "type": "string",
+          "default": "en-US",
+          "description": "Language used by Resolve to translate label ids (@SYS…, @QMS:…) into text. Falls back to the base language (en-US → en) when a model has no folder for it, and leaves the id untouched when neither exists.",
+          "order": 9
+        },
+        "d365fo.aot.autoResolve": {
+          "type": "boolean",
+          "default": false,
+          "description": "Resolve the Fields grid as soon as you pick a field, instead of pressing Resolve. When on, the Resolve button is disabled because the work already happens on selection.",
+          "order": 10
+        },
+        "d365fo.aot.ude.cache.memory": {
+          "type": "boolean",
+          "default": true,
+          "description": "Keep MS-UDE element lists in memory. Off caps RAM (reads go to the disk index); the disk index still refreshes in the background.",
+          "order": 9
+        },
+        "d365fo.aot.ude.cache.ttlMinutes": {
+          "type": "number",
+          "default": 60,
+          "minimum": 0,
+          "description": "MS-UDE cache freshness in minutes. 0 disables background refresh (manual Refresh only). A background rebuild starts 5 minutes before expiry and swaps atomically when ready.",
+          "order": 10
+        },
+        "d365fo.aot.packages.cache.memory": {
+          "type": "boolean",
+          "default": true,
+          "description": "Keep MS-Packages element lists in memory. Off caps RAM (reads go to the disk index); the disk index still refreshes in the background.",
+          "order": 11
+        },
+        "d365fo.aot.packages.cache.ttlMinutes": {
+          "type": "number",
+          "default": 60,
+          "minimum": 0,
+          "description": "MS-Packages cache freshness in minutes. 0 disables background refresh (manual Refresh only). A background rebuild starts 5 minutes before expiry and swaps atomically when ready.",
+          "order": 12
+        },
+        "d365fo.aot.custom.cache.memory": {
+          "type": "boolean",
+          "default": true,
+          "description": "Keep Custom element lists in memory. Off caps RAM (reads go to the disk index); the disk index still refreshes in the background.",
+          "order": 13
+        },
+        "d365fo.aot.custom.cache.ttlMinutes": {
+          "type": "number",
+          "default": 60,
+          "minimum": 0,
+          "description": "Custom cache freshness in minutes. 0 disables background refresh (manual Refresh only). A background rebuild starts 5 minutes before expiry and swaps atomically when ready.",
+          "order": 14
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "icons": "node ./scripts/build-icons.mjs",
+    "watch": "tsc -watch -p ./",
+    "lint": "echo \"no linter configured\"",
+    "package": "vsce package",
+    "package:clean": "rimraf *.vsix out",
+    "release": "node ./scripts/release.mjs --bump patch",
+    "release:minor": "node ./scripts/release.mjs --bump minor",
+    "release:major": "node ./scripts/release.mjs --bump major",
+    "release:if-changed": "node ./scripts/release.mjs --bump patch --if-changed"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/codicons": "^0.0.46-24",
+    "@vscode/vsce": "^3.2.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.12"
+  }
+}

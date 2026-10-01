@@ -1,0 +1,10038 @@
+{
+ "note": "Values for the enums the platform builds in. These are the AOT enums with no AxEnum file in PackagesLocalDirectory - on 10.0.2645.32, 47 of them, carrying 55% of all enum references, NoYes among them. The AOS ships each one as an AxEnum_<Name>.xml document embedded in Microsoft.Dynamics.AX.Metadata.dll, so this file is generated from that assembly by scripts/extract-kernel-enums.mjs and checked in, keeping the extension self-contained. A label that starts with @ is a label id (@sys####); it is shown only once it resolves. A missing enum means the value list is unknown rather than empty.",
+ "enums": {
+  "AccessLevel": {
+   "id": "61703",
+   "values": [
+    {
+     "name": "NA",
+     "value": "0",
+     "label": "NA"
+    },
+    {
+     "name": "Read",
+     "value": "1",
+     "label": "Read"
+    },
+    {
+     "name": "Write",
+     "value": "2",
+     "label": "Write"
+    }
+   ]
+  },
+  "AccessRecordType": {
+   "id": "61472",
+   "values": [
+    {
+     "name": "Table",
+     "value": "0",
+     "label": "Table"
+    },
+    {
+     "name": "Field",
+     "value": "1",
+     "label": "Field"
+    },
+    {
+     "name": "UserType",
+     "value": "2",
+     "label": "UserType"
+    },
+    {
+     "name": "DefaultTable",
+     "value": "4",
+     "label": "DefaultTable"
+    },
+    {
+     "name": "DefaultField",
+     "value": "5",
+     "label": "DefaultField"
+    },
+    {
+     "name": "SecurityKey",
+     "value": "6",
+     "label": "SecurityKey"
+    },
+    {
+     "name": "MenuItemDisplay",
+     "value": "7",
+     "label": "MenuItemDisplay"
+    },
+    {
+     "name": "MenuItemOutput",
+     "value": "8",
+     "label": "MenuItemOutput"
+    },
+    {
+     "name": "MenuItemAction",
+     "value": "9",
+     "label": "MenuItemAction"
+    },
+    {
+     "name": "MenuItemWeb",
+     "value": "10",
+     "label": "MenuItemWeb"
+    },
+    {
+     "name": "WebUrlItem",
+     "value": "11",
+     "label": "WebUrlItem"
+    },
+    {
+     "name": "WebActionItem",
+     "value": "12",
+     "label": "WebActionItem"
+    },
+    {
+     "name": "WebDisplayContentItem",
+     "value": "13",
+     "label": "WebDisplayContentItem"
+    },
+    {
+     "name": "WebOutputContentItem",
+     "value": "14",
+     "label": "WebOutputContentItem"
+    },
+    {
+     "name": "WebletItem",
+     "value": "15",
+     "label": "WebletItem"
+    },
+    {
+     "name": "WebManagedContentItem",
+     "value": "16",
+     "label": "WebManagedContentItem"
+    }
+   ]
+  },
+  "AccessRight": {
+   "id": "61652",
+   "values": [
+    {
+     "name": "NoAccess",
+     "value": "0",
+     "label": "@SYS326877"
+    },
+    {
+     "name": "View",
+     "value": "1",
+     "label": "@SYS326878"
+    },
+    {
+     "name": "Edit",
+     "value": "2",
+     "label": "@SYS326879"
+    },
+    {
+     "name": "Add",
+     "value": "3",
+     "label": "@SYS326880"
+    },
+    {
+     "name": "Correction",
+     "value": "4",
+     "label": "@SYS326881"
+    },
+    {
+     "name": "Delete",
+     "value": "5",
+     "label": "@SYS326882"
+    }
+   ]
+  },
+  "AccessSpecifier": {
+   "id": "61523",
+   "values": [
+    {
+     "name": "protected",
+     "value": "0",
+     "label": "protected"
+    },
+    {
+     "name": "private",
+     "value": "1",
+     "label": "private"
+    },
+    {
+     "name": "public",
+     "value": "2",
+     "label": "public"
+    }
+   ]
+  },
+  "AccessType": {
+   "id": "61473",
+   "values": [
+    {
+     "name": "NoAccess",
+     "value": "0",
+     "label": "NoAccess"
+    },
+    {
+     "name": "View",
+     "value": "1",
+     "label": "View"
+    },
+    {
+     "name": "Edit",
+     "value": "2",
+     "label": "Edit"
+    },
+    {
+     "name": "Add",
+     "value": "3",
+     "label": "Add"
+    },
+    {
+     "name": "Delete",
+     "value": "4",
+     "label": "Delete"
+    }
+   ]
+  },
+  "ActionPanePosition": {
+   "id": "61710",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Left",
+     "value": "1",
+     "label": "Left"
+    },
+    {
+     "name": "Right",
+     "value": "2",
+     "label": "Right"
+    }
+   ]
+  },
+  "ActionPaneStyle": {
+   "id": "61649",
+   "values": [
+    {
+     "name": "Standard",
+     "value": "0",
+     "label": "Standard"
+    },
+    {
+     "name": "Strip",
+     "value": "1",
+     "label": "Strip"
+    }
+   ]
+  },
+  "AggregateFunction": {
+   "id": "61695",
+   "values": [
+    {
+     "name": "Avg",
+     "value": "0",
+     "label": "@SYS318708"
+    },
+    {
+     "name": "Sum",
+     "value": "1",
+     "label": "@SYS318705"
+    },
+    {
+     "name": "Min",
+     "value": "2",
+     "label": "@SYS318707"
+    },
+    {
+     "name": "Max",
+     "value": "3",
+     "label": "@SYS318706"
+    },
+    {
+     "name": "Count",
+     "value": "4",
+     "label": "@SYS318704"
+    }
+   ]
+  },
+  "Alignment": {
+   "id": "61516",
+   "values": [
+    {
+     "name": "Left",
+     "value": "0",
+     "label": "Left"
+    },
+    {
+     "name": "Right",
+     "value": "1",
+     "label": "Right"
+    },
+    {
+     "name": "Center",
+     "value": "2",
+     "label": "Center"
+    }
+   ]
+  },
+  "AnalysisDefaultTotal": {
+   "id": "61574",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "No",
+     "value": "1",
+     "label": "No"
+    },
+    {
+     "name": "Sum",
+     "value": "2",
+     "label": "Sum"
+    },
+    {
+     "name": "Count",
+     "value": "3",
+     "label": "Count"
+    },
+    {
+     "name": "DistinctCount",
+     "value": "4",
+     "label": "DistinctCount"
+    },
+    {
+     "name": "Min",
+     "value": "5",
+     "label": "Min"
+    },
+    {
+     "name": "Max",
+     "value": "6",
+     "label": "Max"
+    },
+    {
+     "name": "AverageOfChildren",
+     "value": "7",
+     "label": "AverageOfChildren"
+    },
+    {
+     "name": "ByAccount",
+     "value": "8",
+     "label": "ByAccount"
+    },
+    {
+     "name": "FirstChild",
+     "value": "9",
+     "label": "FirstChild"
+    },
+    {
+     "name": "LastChild",
+     "value": "10",
+     "label": "LastChild"
+    },
+    {
+     "name": "FirstNonEmpty",
+     "value": "11",
+     "label": "FirstNonEmpty"
+    },
+    {
+     "name": "LastNonEmpty",
+     "value": "12",
+     "label": "LastNonEmpty"
+    }
+   ]
+  },
+  "AnalysisDimensionType": {
+   "id": "61587",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "MasterInner",
+     "value": "1",
+     "label": "MasterInner"
+    },
+    {
+     "name": "MasterLeftOuter",
+     "value": "2",
+     "label": "MasterLeftOuter"
+    },
+    {
+     "name": "Transaction",
+     "value": "3",
+     "label": "Transaction"
+    }
+   ]
+  },
+  "AnalysisUsage": {
+   "id": "61573",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "1",
+     "label": "None"
+    },
+    {
+     "name": "Attribute",
+     "value": "2",
+     "label": "Attribute"
+    },
+    {
+     "name": "Measure",
+     "value": "3",
+     "label": "Measure"
+    },
+    {
+     "name": "Both",
+     "value": "4",
+     "label": "Both"
+    }
+   ]
+  },
+  "AOSAuthorization": {
+   "id": "61570",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "CreateDelete",
+     "value": "1",
+     "label": "CreateDelete"
+    },
+    {
+     "name": "UpdateDelete",
+     "value": "2",
+     "label": "UpdateDelete"
+    },
+    {
+     "name": "CreateUpdateDelete",
+     "value": "3",
+     "label": "CreateUpdateDelete"
+    },
+    {
+     "name": "CreateReadUpdateDelete",
+     "value": "4",
+     "label": "CreateReadUpdateDelete"
+    },
+    {
+     "name": "Read",
+     "value": "5",
+     "label": "Read"
+    }
+   ]
+  },
+  "AOSClientMode": {
+   "id": "61512",
+   "values": [
+    {
+     "name": "NotAOS",
+     "value": "0",
+     "label": "NotAOS"
+    },
+    {
+     "name": "Thin",
+     "value": "1",
+     "label": "Thin"
+    },
+    {
+     "name": "Fat",
+     "value": "2",
+     "label": "Fat"
+    }
+   ]
+  },
+  "ApplCodeDocType": {
+   "id": "61520",
+   "values": [
+    {
+     "name": "Optional",
+     "value": "0",
+     "label": "Optional"
+    },
+    {
+     "name": "Tables",
+     "value": "1",
+     "label": "Tables"
+    },
+    {
+     "name": "Classes",
+     "value": "2",
+     "label": "Classes"
+    },
+    {
+     "name": "TableMethods",
+     "value": "3",
+     "label": "TableMethods"
+    },
+    {
+     "name": "ClassMethods",
+     "value": "4",
+     "label": "ClassMethods"
+    }
+   ]
+  },
+  "ApplHelpType": {
+   "id": "61477",
+   "values": [
+    {
+     "name": "Optional",
+     "value": "0",
+     "label": "Optional"
+    },
+    {
+     "name": "ExtendedDataTypes",
+     "value": "1",
+     "label": "ExtendedDataTypes"
+    },
+    {
+     "name": "Tables",
+     "value": "2",
+     "label": "Tables"
+    },
+    {
+     "name": "Fields",
+     "value": "3",
+     "label": "Fields"
+    },
+    {
+     "name": "BaseEnums",
+     "value": "4",
+     "label": "BaseEnums"
+    },
+    {
+     "name": "Forms",
+     "value": "5",
+     "label": "Forms"
+    },
+    {
+     "name": "Reports",
+     "value": "6",
+     "label": "Reports"
+    },
+    {
+     "name": "Queries",
+     "value": "7",
+     "label": "Queries"
+    },
+    {
+     "name": "Classes",
+     "value": "8",
+     "label": "Classes"
+    },
+    {
+     "name": "Global",
+     "value": "9",
+     "label": "Global"
+    },
+    {
+     "name": "MenuItemsDisplay",
+     "value": "10",
+     "label": "MenuItemsDisplay"
+    },
+    {
+     "name": "MenuItemsOutput",
+     "value": "11",
+     "label": "MenuItemsOutput"
+    },
+    {
+     "name": "MenuItemsAction",
+     "value": "12",
+     "label": "MenuItemsAction"
+    },
+    {
+     "name": "FormControls",
+     "value": "13",
+     "label": "FormControls"
+    },
+    {
+     "name": "Hints",
+     "value": "14",
+     "label": "Hints"
+    },
+    {
+     "name": "WebForms",
+     "value": "16",
+     "label": "WebForms"
+    },
+    {
+     "name": "LicenseCodes",
+     "value": "17",
+     "label": "LicenseCodes"
+    },
+    {
+     "name": "ConfigurationKeys",
+     "value": "19",
+     "label": "ConfigurationKeys"
+    },
+    {
+     "name": "SecurityKeys",
+     "value": "20",
+     "label": "SecurityKeys"
+    },
+    {
+     "name": "WebUrlMenuItems",
+     "value": "21",
+     "label": "WebUrlMenuItems"
+    },
+    {
+     "name": "WebActionMenuItems",
+     "value": "22",
+     "label": "WebActionMenuItems"
+    },
+    {
+     "name": "WebDisplayContentItems",
+     "value": "23",
+     "label": "WebDisplayContentItems"
+    },
+    {
+     "name": "WebOutputContentItems",
+     "value": "24",
+     "label": "WebOutputContentItems"
+    },
+    {
+     "name": "WebletItems",
+     "value": "26",
+     "label": "WebletItems"
+    },
+    {
+     "name": "WebManagedContentItems",
+     "value": "27",
+     "label": "WebManagedContentItems"
+    }
+   ]
+  },
+  "AssociationType": {
+   "id": "61617",
+   "values": [
+    {
+     "name": "Strong",
+     "value": "0",
+     "label": "Strong"
+    },
+    {
+     "name": "Weak",
+     "value": "1",
+     "label": "Weak"
+    }
+   ]
+  },
+  "AutoAuthzMode": {
+   "id": "61700",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Lookup",
+     "value": "1",
+     "label": "Lookup"
+    },
+    {
+     "name": "Surrogate",
+     "value": "2",
+     "label": "Surrogate"
+    }
+   ]
+  },
+  "AutoCompleteDataMode": {
+   "id": "61616",
+   "values": [
+    {
+     "name": "Disabled",
+     "value": "255",
+     "label": "Disabled"
+    },
+    {
+     "name": "MRUValues",
+     "value": "0",
+     "label": "MRUValues"
+    },
+    {
+     "name": "ValidValues",
+     "value": "1",
+     "label": "ValidValues"
+    },
+    {
+     "name": "AllValues",
+     "value": "2",
+     "label": "AllValues"
+    }
+   ]
+  },
+  "AutoMode": {
+   "id": "61459",
+   "values": [
+    {
+     "name": "Fixed",
+     "value": "0",
+     "label": "Fixed"
+    },
+    {
+     "name": "Auto",
+     "value": "1",
+     "label": "Auto"
+    }
+   ]
+  },
+  "AutoNo": {
+   "id": "61717",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "No",
+     "value": "0",
+     "label": "No"
+    }
+   ]
+  },
+  "AutoNoYes": {
+   "id": "61575",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "No",
+     "value": "0",
+     "label": "No"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "Yes"
+    }
+   ]
+  },
+  "boolean": {
+   "id": "61440",
+   "values": [
+    {
+     "name": "false",
+     "value": "0",
+     "label": "false"
+    },
+    {
+     "name": "true",
+     "value": "1",
+     "label": "true"
+    }
+   ]
+  },
+  "BreakpointNotify": {
+   "id": "61527",
+   "values": [
+    {
+     "name": "BreakpointForm",
+     "value": "0",
+     "label": "BreakpointForm"
+    },
+    {
+     "name": "BreakpointChange",
+     "value": "1",
+     "label": "BreakpointChange"
+    }
+   ]
+  },
+  "ButtonGroupStyle": {
+   "id": "61693",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "DialogCommitContainer",
+     "value": "1",
+     "label": "DialogCommitContainer"
+    }
+   ]
+  },
+  "ButtonImage": {
+   "id": "61504",
+   "values": [
+    {
+     "name": "Arrow",
+     "value": "0",
+     "label": "Arrow"
+    },
+    {
+     "name": "Mail",
+     "value": "1",
+     "label": "Mail"
+    },
+    {
+     "name": "URL",
+     "value": "2",
+     "label": "URL"
+    },
+    {
+     "name": "ThreeDots",
+     "value": "3",
+     "label": "ThreeDots"
+    },
+    {
+     "name": "OpenFile",
+     "value": "4",
+     "label": "OpenFile"
+    },
+    {
+     "name": "Calendar",
+     "value": "5",
+     "label": "Calendar"
+    },
+    {
+     "name": "Phone",
+     "value": "6",
+     "label": "Phone"
+    },
+    {
+     "name": "RightArrow",
+     "value": "7",
+     "label": "RightArrow"
+    }
+   ]
+  },
+  "ButtonStyle": {
+   "id": "61639",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Standard",
+     "value": "1",
+     "label": "Standard"
+    },
+    {
+     "name": "Link",
+     "value": "2",
+     "label": "Link"
+    },
+    {
+     "name": "CommandLink",
+     "value": "3",
+     "label": "CommandLink"
+    },
+    {
+     "name": "Tile",
+     "value": "4",
+     "label": "Tile"
+    }
+   ]
+  },
+  "CachedHow": {
+   "id": "61524",
+   "values": [
+    {
+     "name": "NotCached",
+     "value": "0",
+     "label": "NotCached"
+    },
+    {
+     "name": "RecordCached",
+     "value": "1",
+     "label": "RecordCached"
+    },
+    {
+     "name": "TableCached",
+     "value": "2",
+     "label": "TableCached"
+    },
+    {
+     "name": "ViewCached",
+     "value": "3",
+     "label": "ViewCached"
+    },
+    {
+     "name": "ServerCached",
+     "value": "4",
+     "label": "ServerCached"
+    },
+    {
+     "name": "SrvRecordCached",
+     "value": "5",
+     "label": "SrvRecordCached"
+    },
+    {
+     "name": "SrvTableCached",
+     "value": "6",
+     "label": "SrvTableCached"
+    },
+    {
+     "name": "SrvViewCached",
+     "value": "7",
+     "label": "SrvViewCached"
+    }
+   ]
+  },
+  "Cardinality": {
+   "id": "61613",
+   "values": [
+    {
+     "name": "NotSpecified",
+     "value": "0",
+     "label": "NotSpecified"
+    },
+    {
+     "name": "ZeroOne",
+     "value": "1",
+     "label": "ZeroOne"
+    },
+    {
+     "name": "ExactlyOne",
+     "value": "2",
+     "label": "ExactlyOne"
+    },
+    {
+     "name": "ZeroMore",
+     "value": "3",
+     "label": "ZeroMore"
+    },
+    {
+     "name": "OneMore",
+     "value": "4",
+     "label": "OneMore"
+    }
+   ]
+  },
+  "ChangeGroupMode": {
+   "id": "61621",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "ImplicitInnerOuter",
+     "value": "1",
+     "label": "ImplicitInnerOuter"
+    }
+   ]
+  },
+  "CheckBoxStyle": {
+   "id": "61711",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Checkbox",
+     "value": "1",
+     "label": "Checkbox"
+    },
+    {
+     "name": "Toggle",
+     "value": "2",
+     "label": "Toggle"
+    }
+   ]
+  },
+  "ChildrenAccessType": {
+   "id": "61540",
+   "values": [
+    {
+     "name": "No",
+     "value": "0",
+     "label": "No"
+    },
+    {
+     "name": "Some",
+     "value": "1",
+     "label": "Some"
+    },
+    {
+     "name": "All",
+     "value": "2",
+     "label": "All"
+    },
+    {
+     "name": "NoChildren",
+     "value": "3",
+     "label": "NoChildren"
+    }
+   ]
+  },
+  "ClassRunMode": {
+   "id": "61456",
+   "values": [
+    {
+     "name": "Called",
+     "value": "0",
+     "label": "Called"
+    },
+    {
+     "name": "Client",
+     "value": "1",
+     "label": "Client"
+    },
+    {
+     "name": "Server",
+     "value": "2",
+     "label": "Server"
+    },
+    {
+     "name": "ClientOrServer",
+     "value": "3",
+     "label": "ClientOrServer"
+    }
+   ]
+  },
+  "ClientType": {
+   "id": "61506",
+   "values": [
+    {
+     "name": "COMObject",
+     "value": "0",
+     "label": "COMObject"
+    },
+    {
+     "name": "Client",
+     "value": "1",
+     "label": "Client"
+    },
+    {
+     "name": "Server",
+     "value": "2",
+     "label": "Server"
+    },
+    {
+     "name": "WorkerThread",
+     "value": "3",
+     "label": "WorkerThread"
+    }
+   ]
+  },
+  "ColumnsMode": {
+   "id": "61728",
+   "values": [
+    {
+     "name": "Fixed",
+     "value": "0",
+     "label": "Fixed"
+    },
+    {
+     "name": "Fill",
+     "value": "1",
+     "label": "Fill"
+    }
+   ]
+  },
+  "COMArgument": {
+   "id": "61508",
+   "values": [
+    {
+     "name": "NoValue",
+     "value": "0",
+     "label": "NoValue"
+    }
+   ]
+  },
+  "COMDispContext": {
+   "id": "61500",
+   "values": [
+    {
+     "name": "Method",
+     "value": "0",
+     "label": "Method"
+    },
+    {
+     "name": "PropertyGet",
+     "value": "1",
+     "label": "PropertyGet"
+    },
+    {
+     "name": "PropertyPut",
+     "value": "2",
+     "label": "PropertyPut"
+    },
+    {
+     "name": "PropertyPutRef",
+     "value": "3",
+     "label": "PropertyPutRef"
+    }
+   ]
+  },
+  "CompilerWarningLevel": {
+   "id": "61533",
+   "values": [
+    {
+     "name": "Level0",
+     "value": "0",
+     "label": "Level0"
+    },
+    {
+     "name": "Level1",
+     "value": "1",
+     "label": "Level1"
+    },
+    {
+     "name": "Level2",
+     "value": "2",
+     "label": "Level2"
+    },
+    {
+     "name": "Level3",
+     "value": "3",
+     "label": "Level3"
+    },
+    {
+     "name": "Level4",
+     "value": "4",
+     "label": "Level4"
+    }
+   ]
+  },
+  "COMVariantInOut": {
+   "id": "61501",
+   "values": [
+    {
+     "name": "In",
+     "value": "0",
+     "label": "In"
+    },
+    {
+     "name": "In_out",
+     "value": "1",
+     "label": "In_out"
+    },
+    {
+     "name": "Out",
+     "value": "2",
+     "label": "Out"
+    },
+    {
+     "name": "Out_retVal",
+     "value": "3",
+     "label": "Out_retVal"
+    }
+   ]
+  },
+  "COMVariantType": {
+   "id": "61502",
+   "values": [
+    {
+     "name": "VT_EMPTY",
+     "value": "0",
+     "label": "VT_EMPTY"
+    },
+    {
+     "name": "VT_NULL",
+     "value": "1",
+     "label": "VT_NULL"
+    },
+    {
+     "name": "VT_I2",
+     "value": "2",
+     "label": "VT_I2"
+    },
+    {
+     "name": "VT_I4",
+     "value": "3",
+     "label": "VT_I4"
+    },
+    {
+     "name": "VT_R4",
+     "value": "4",
+     "label": "VT_R4"
+    },
+    {
+     "name": "VT_R8",
+     "value": "5",
+     "label": "VT_R8"
+    },
+    {
+     "name": "VT_CY",
+     "value": "6",
+     "label": "VT_CY"
+    },
+    {
+     "name": "VT_DATE",
+     "value": "7",
+     "label": "VT_DATE"
+    },
+    {
+     "name": "VT_BSTR",
+     "value": "8",
+     "label": "VT_BSTR"
+    },
+    {
+     "name": "VT_DISPATCH",
+     "value": "9",
+     "label": "VT_DISPATCH"
+    },
+    {
+     "name": "VT_ERROR",
+     "value": "10",
+     "label": "VT_ERROR"
+    },
+    {
+     "name": "VT_BOOL",
+     "value": "11",
+     "label": "VT_BOOL"
+    },
+    {
+     "name": "VT_VARIANT",
+     "value": "12",
+     "label": "VT_VARIANT"
+    },
+    {
+     "name": "VT_UNKNOWN",
+     "value": "13",
+     "label": "VT_UNKNOWN"
+    },
+    {
+     "name": "VT_DECIMAL",
+     "value": "14",
+     "label": "VT_DECIMAL"
+    },
+    {
+     "name": "RESERVED15",
+     "value": "15",
+     "label": "RESERVED15"
+    },
+    {
+     "name": "VT_I1",
+     "value": "16",
+     "label": "VT_I1"
+    },
+    {
+     "name": "VT_UI1",
+     "value": "17",
+     "label": "VT_UI1"
+    },
+    {
+     "name": "VT_UI2",
+     "value": "18",
+     "label": "VT_UI2"
+    },
+    {
+     "name": "VT_UI4",
+     "value": "19",
+     "label": "VT_UI4"
+    },
+    {
+     "name": "VT_I8",
+     "value": "20",
+     "label": "VT_I8"
+    },
+    {
+     "name": "VT_UI8",
+     "value": "21",
+     "label": "VT_UI8"
+    },
+    {
+     "name": "VT_INT",
+     "value": "22",
+     "label": "VT_INT"
+    },
+    {
+     "name": "VT_UINT",
+     "value": "23",
+     "label": "VT_UINT"
+    },
+    {
+     "name": "RESERVED24",
+     "value": "24",
+     "label": "RESERVED24"
+    },
+    {
+     "name": "RESERVED25",
+     "value": "25",
+     "label": "RESERVED25"
+    },
+    {
+     "name": "RESERVED26",
+     "value": "26",
+     "label": "RESERVED26"
+    },
+    {
+     "name": "VT_SAFEARRAY",
+     "value": "27",
+     "label": "VT_SAFEARRAY"
+    }
+   ]
+  },
+  "ConcurrencyModel": {
+   "id": "61567",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Optimistic",
+     "value": "1",
+     "label": "Optimistic"
+    },
+    {
+     "name": "Pessimistic",
+     "value": "2",
+     "label": "Pessimistic"
+    }
+   ]
+  },
+  "ConfigType": {
+   "id": "61489",
+   "values": [
+    {
+     "name": "LicenseName",
+     "value": "0",
+     "label": "LicenseName"
+    },
+    {
+     "name": "SerialNo",
+     "value": "1",
+     "label": "SerialNo"
+    },
+    {
+     "name": "AccessCodes",
+     "value": "2",
+     "label": "AccessCodes"
+    },
+    {
+     "name": "Tools",
+     "value": "4",
+     "label": "Tools"
+    },
+    {
+     "name": "Application",
+     "value": "5",
+     "label": "Application"
+    },
+    {
+     "name": "ConfigurationKey",
+     "value": "6",
+     "label": "ConfigurationKey"
+    }
+   ]
+  },
+  "ContentLocation": {
+   "id": "61696",
+   "values": [
+    {
+     "name": "HelpServer",
+     "value": "0",
+     "label": "HelpServer"
+    },
+    {
+     "name": "OnLine",
+     "value": "1",
+     "label": "OnLine"
+    }
+   ]
+  },
+  "ControlAccess": {
+   "id": "61625",
+   "values": [
+    {
+     "name": "View",
+     "value": "1",
+     "label": "View"
+    },
+    {
+     "name": "Edit",
+     "value": "2",
+     "label": "Edit"
+    }
+   ]
+  },
+  "ControlStyle": {
+   "id": "61658",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "TitleField",
+     "value": "1",
+     "label": "TitleField"
+    },
+    {
+     "name": "SimpleReadOnly",
+     "value": "2",
+     "label": "SimpleReadOnly"
+    }
+   ]
+  },
+  "CopyCallerQuery": {
+   "id": "61680",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "No",
+     "value": "0",
+     "label": "No"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "Yes"
+    }
+   ]
+  },
+  "CueAlertCondition": {
+   "id": "61651",
+   "values": [
+    {
+     "name": "GreaterThan",
+     "value": "1",
+     "label": "@SYS316795"
+    },
+    {
+     "name": "LessThan",
+     "value": "2",
+     "label": "@SYS316798"
+    },
+    {
+     "name": "EqualTo",
+     "value": "3",
+     "label": "@SYS316794"
+    },
+    {
+     "name": "NotEqualTo",
+     "value": "4",
+     "label": "@SYS92974"
+    },
+    {
+     "name": "GreaterThanOrEqualTo",
+     "value": "5",
+     "label": "@SYS316796"
+    },
+    {
+     "name": "LessThanOrEqualTo",
+     "value": "6",
+     "label": "@SYS316799"
+    }
+   ]
+  },
+  "DatabaseCLI": {
+   "id": "61537",
+   "values": [
+    {
+     "name": "Odbc",
+     "value": "0",
+     "label": "Odbc"
+    },
+    {
+     "name": "Oci",
+     "value": "1",
+     "label": "Oci"
+    }
+   ]
+  },
+  "DatabaseId": {
+   "id": "61490",
+   "values": [
+    {
+     "name": "Unknown",
+     "value": "0",
+     "label": "Unknown"
+    },
+    {
+     "name": "ISAM",
+     "value": "1",
+     "label": "ISAM"
+    },
+    {
+     "name": "MS_Sql_Server",
+     "value": "2",
+     "label": "MS_Sql_Server"
+    },
+    {
+     "name": "Oracle",
+     "value": "3",
+     "label": "Oracle"
+    },
+    {
+     "name": "DB2_Universal",
+     "value": "4",
+     "label": "DB2_Universal"
+    }
+   ]
+  },
+  "DatabaseLogType": {
+   "id": "61518",
+   "values": [
+    {
+     "name": "Insert",
+     "value": "0",
+     "label": "@SYS344626"
+    },
+    {
+     "name": "Delete",
+     "value": "1",
+     "label": "@SYS344627"
+    },
+    {
+     "name": "Update",
+     "value": "2",
+     "label": "@SYS344628"
+    },
+    {
+     "name": "RenameKey",
+     "value": "3",
+     "label": "@SYS344632"
+    },
+    {
+     "name": "EventInsert",
+     "value": "4",
+     "label": "@SYS344629"
+    },
+    {
+     "name": "EventDelete",
+     "value": "5",
+     "label": "@SYS344630"
+    },
+    {
+     "name": "EventUpdate",
+     "value": "6",
+     "label": "@SYS344631"
+    },
+    {
+     "name": "EventRenameKey",
+     "value": "7",
+     "label": "@SYS344633"
+    }
+   ]
+  },
+  "DataEntityDatabaseOperation": {
+   "id": "61727",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Insert",
+     "value": "1",
+     "label": "Insert"
+    },
+    {
+     "name": "Update",
+     "value": "2",
+     "label": "Update"
+    },
+    {
+     "name": "Delete",
+     "value": "3",
+     "label": "Delete"
+    }
+   ]
+  },
+  "DataEntityIntegrationMode": {
+   "id": "61628",
+   "values": [
+    {
+     "name": "All",
+     "value": "0",
+     "label": "All"
+    },
+    {
+     "name": "DataServices",
+     "value": "1",
+     "label": "DataServices"
+    },
+    {
+     "name": "DataManagement",
+     "value": "2",
+     "label": "DataManagement"
+    }
+   ]
+  },
+  "DataSetError": {
+   "id": "61590",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "SetPosition",
+     "value": "1",
+     "label": "SetPosition"
+    },
+    {
+     "name": "ValidateWrite",
+     "value": "2",
+     "label": "ValidateWrite"
+    },
+    {
+     "name": "LinkLeave",
+     "value": "3",
+     "label": "LinkLeave"
+    },
+    {
+     "name": "Create",
+     "value": "4",
+     "label": "Create"
+    },
+    {
+     "name": "Delete",
+     "value": "5",
+     "label": "Delete"
+    },
+    {
+     "name": "ValidateDelete",
+     "value": "6",
+     "label": "ValidateDelete"
+    },
+    {
+     "name": "ValidateField",
+     "value": "7",
+     "label": "ValidateField"
+    },
+    {
+     "name": "Unpack",
+     "value": "8",
+     "label": "Unpack"
+    },
+    {
+     "name": "LeaveRecord",
+     "value": "9",
+     "label": "LeaveRecord"
+    }
+   ]
+  },
+  "DataSourceLinkTypePropertyValues": {
+   "id": "61641",
+   "values": [
+    {
+     "name": "Passive",
+     "value": "0",
+     "label": "Passive"
+    },
+    {
+     "name": "Delayed",
+     "value": "1",
+     "label": "Delayed"
+    },
+    {
+     "name": "Active",
+     "value": "2",
+     "label": "Active"
+    },
+    {
+     "name": "Inner",
+     "value": "3",
+     "label": "Inner"
+    },
+    {
+     "name": "Outer",
+     "value": "4",
+     "label": "Outer"
+    },
+    {
+     "name": "Exist",
+     "value": "5",
+     "label": "Exist"
+    },
+    {
+     "name": "NotExist",
+     "value": "6",
+     "label": "NotExist"
+    }
+   ]
+  },
+  "DataSourceMetadataChangeType": {
+   "id": "61640",
+   "values": [
+    {
+     "name": "None",
+     "value": "1",
+     "label": "None"
+    },
+    {
+     "name": "FieldProperty",
+     "value": "2",
+     "label": "FieldProperty"
+    },
+    {
+     "name": "FieldAdded",
+     "value": "3",
+     "label": "FieldAdded"
+    },
+    {
+     "name": "FieldRemoved",
+     "value": "4",
+     "label": "FieldRemoved"
+    },
+    {
+     "name": "DataSourceProperty",
+     "value": "5",
+     "label": "DataSourceProperty"
+    },
+    {
+     "name": "DataSourceAdded",
+     "value": "6",
+     "label": "DataSourceAdded"
+    }
+   ]
+  },
+  "DateDay": {
+   "id": "61604",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "0",
+     "label": "Day not shown"
+    },
+    {
+     "name": "Digits1or2",
+     "value": "1",
+     "label": "One or two digits"
+    },
+    {
+     "name": "Digits2",
+     "value": "2",
+     "label": "Always two digits"
+    }
+   ]
+  },
+  "DateFlags": {
+   "id": "61636",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "FormatAll",
+     "value": "1",
+     "label": "FormatAll"
+    }
+   ]
+  },
+  "DateFormat": {
+   "id": "61600",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "YMD",
+     "value": "65",
+     "label": "YMD"
+    },
+    {
+     "name": "YDM",
+     "value": "56",
+     "label": "YDM"
+    },
+    {
+     "name": "MYD",
+     "value": "231",
+     "label": "MYD"
+    },
+    {
+     "name": "MDY",
+     "value": "213",
+     "label": "MDY"
+    },
+    {
+     "name": "DYM",
+     "value": "132",
+     "label": "DYM"
+    },
+    {
+     "name": "DMY",
+     "value": "123",
+     "label": "DMY"
+    }
+   ]
+  },
+  "DateMonth": {
+   "id": "61603",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "0",
+     "label": "Month not shown"
+    },
+    {
+     "name": "Digits1or2",
+     "value": "1",
+     "label": "One or two digits"
+    },
+    {
+     "name": "Digits2",
+     "value": "2",
+     "label": "Always two digits"
+    },
+    {
+     "name": "Short",
+     "value": "3",
+     "label": "Short name (first three letters)"
+    },
+    {
+     "name": "Long",
+     "value": "4",
+     "label": "Long name"
+    }
+   ]
+  },
+  "DateSeparator": {
+   "id": "61601",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Space",
+     "value": "1"
+    },
+    {
+     "name": "Dot",
+     "value": "2",
+     "label": "."
+    },
+    {
+     "name": "Hyphen",
+     "value": "3",
+     "label": "-"
+    },
+    {
+     "name": "Slash",
+     "value": "4",
+     "label": "/"
+    }
+   ]
+  },
+  "DateYear": {
+   "id": "61602",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "0",
+     "label": "Year not shown"
+    },
+    {
+     "name": "Digits2",
+     "value": "2",
+     "label": "Two digits"
+    },
+    {
+     "name": "Digits4",
+     "value": "4",
+     "label": "Four digits"
+    }
+   ]
+  },
+  "DbBackend": {
+   "id": "61461",
+   "values": [
+    {
+     "name": "Native",
+     "value": "0",
+     "label": "Native"
+    },
+    {
+     "name": "Sql",
+     "value": "1",
+     "label": "Sql"
+    }
+   ]
+  },
+  "DebugPrintTab": {
+   "id": "61536",
+   "values": [
+    {
+     "name": "Debug",
+     "value": "0",
+     "label": "Debug"
+    },
+    {
+     "name": "InfoLog",
+     "value": "1",
+     "label": "InfoLog"
+    },
+    {
+     "name": "Database",
+     "value": "2",
+     "label": "Database"
+    },
+    {
+     "name": "Method",
+     "value": "3",
+     "label": "Method"
+    },
+    {
+     "name": "ClientServer",
+     "value": "4",
+     "label": "ClientServer"
+    },
+    {
+     "name": "ActiveX",
+     "value": "5",
+     "label": "ActiveX"
+    }
+   ]
+  },
+  "DecimalSeparator": {
+   "id": "61596",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "Dot",
+     "value": "1",
+     "label": "Dot (.)"
+    },
+    {
+     "name": "Comma",
+     "value": "2",
+     "label": "Comma (,)"
+    }
+   ]
+  },
+  "DeploymentRole": {
+   "id": "61722",
+   "values": [
+    {
+     "name": "Central",
+     "label": "@Kernel:DeploymentRoleCentral"
+    },
+    {
+     "name": "Workplace",
+     "value": "1",
+     "label": "@Kernel:DeploymentRoleWorkplace"
+    }
+   ]
+  },
+  "DeployTo": {
+   "id": "61691",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Server",
+     "value": "1",
+     "label": "Server"
+    },
+    {
+     "name": "Client",
+     "value": "2",
+     "label": "Client"
+    },
+    {
+     "name": "EP_Proxies",
+     "value": "4",
+     "label": "EP_Proxies"
+    },
+    {
+     "name": "EP",
+     "value": "16",
+     "label": "EP"
+    }
+   ]
+  },
+  "DialogBoxType": {
+   "id": "61485",
+   "values": [
+    {
+     "name": "InfoBox",
+     "value": "0",
+     "label": "InfoBox"
+    },
+    {
+     "name": "WarnBox",
+     "value": "1",
+     "label": "WarnBox"
+    },
+    {
+     "name": "YesNoBox",
+     "value": "2",
+     "label": "YesNoBox"
+    },
+    {
+     "name": "StopBox",
+     "value": "3",
+     "label": "StopBox"
+    },
+    {
+     "name": "YesNoCancelBox",
+     "value": "4",
+     "label": "YesNoCancelBox"
+    },
+    {
+     "name": "OkCancelBox",
+     "value": "5",
+     "label": "OkCancelBox"
+    },
+    {
+     "name": "YesToAllBox",
+     "value": "6",
+     "label": "YesToAllBox"
+    },
+    {
+     "name": "NoToAllBox",
+     "value": "7",
+     "label": "NoToAllBox"
+    },
+    {
+     "name": "YesToAllNoToAllBox",
+     "value": "8",
+     "label": "YesToAllNoToAllBox"
+    },
+    {
+     "name": "InfoBoxOkCancelBox",
+     "value": "9",
+     "label": "InfoBoxOkCancelBox"
+    }
+   ]
+  },
+  "DialogButton": {
+   "id": "61499",
+   "values": [
+    {
+     "name": "No",
+     "value": "0",
+     "label": "No"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "Yes"
+    },
+    {
+     "name": "Cancel",
+     "value": "2",
+     "label": "Cancel"
+    },
+    {
+     "name": "Ok",
+     "value": "3",
+     "label": "Ok"
+    },
+    {
+     "name": "YesToAll",
+     "value": "4",
+     "label": "YesToAll"
+    },
+    {
+     "name": "NoToAll",
+     "value": "5",
+     "label": "NoToAll"
+    }
+   ]
+  },
+  "DialogSize": {
+   "id": "61713",
+   "values": [
+    {
+     "name": "Small",
+     "value": "0",
+     "label": "Small"
+    },
+    {
+     "name": "Medium",
+     "value": "1",
+     "label": "Medium"
+    },
+    {
+     "name": "Large",
+     "value": "2",
+     "label": "Large"
+    }
+   ]
+  },
+  "Direction": {
+   "id": "61706",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "LTR",
+     "value": "1",
+     "label": "LTR"
+    },
+    {
+     "name": "RTL",
+     "value": "2",
+     "label": "RTL"
+    }
+   ]
+  },
+  "DirectoryType": {
+   "id": "61486",
+   "values": [
+    {
+     "name": "Bin",
+     "value": "0",
+     "label": "Bin"
+    },
+    {
+     "name": "Share",
+     "value": "1",
+     "label": "Share"
+    },
+    {
+     "name": "Config",
+     "value": "2",
+     "label": "Config"
+    },
+    {
+     "name": "Appl",
+     "value": "3",
+     "label": "Appl"
+    },
+    {
+     "name": "DB",
+     "value": "4",
+     "label": "DB"
+    },
+    {
+     "name": "Temp",
+     "value": "5",
+     "label": "Temp"
+    },
+    {
+     "name": "Include",
+     "value": "6",
+     "label": "Include"
+    },
+    {
+     "name": "Log",
+     "value": "7",
+     "label": "Log"
+    },
+    {
+     "name": "Help",
+     "value": "8",
+     "label": "Help"
+    }
+   ]
+  },
+  "DisplayFunctionType": {
+   "id": "61479",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Get",
+     "value": "1",
+     "label": "Get"
+    },
+    {
+     "name": "Set",
+     "value": "2",
+     "label": "Set"
+    },
+    {
+     "name": "RecordGet",
+     "value": "3",
+     "label": "RecordGet"
+    },
+    {
+     "name": "RecordSet",
+     "value": "4",
+     "label": "RecordSet"
+    }
+   ]
+  },
+  "EntityCategory": {
+   "id": "61712",
+   "values": [
+    {
+     "name": "Master",
+     "value": "0",
+     "label": "Master"
+    },
+    {
+     "name": "Configuration",
+     "value": "1",
+     "label": "Configuration"
+    },
+    {
+     "name": "Transaction",
+     "value": "2",
+     "label": "Transaction"
+    },
+    {
+     "name": "Reference",
+     "value": "3",
+     "label": "Reference"
+    },
+    {
+     "name": "Document",
+     "value": "4",
+     "label": "Document"
+    },
+    {
+     "name": "Parameters",
+     "value": "5",
+     "label": "Parameters"
+    }
+   ]
+  },
+  "EntityRelationshipType": {
+   "id": "61588",
+   "values": [
+    {
+     "name": "Entity",
+     "value": "0",
+     "label": "Entity"
+    },
+    {
+     "name": "Relationship",
+     "value": "1",
+     "label": "Relationship"
+    }
+   ]
+  },
+  "EntryPointType": {
+   "id": "61657",
+   "values": [
+    {
+     "name": "MenuItemDisplay",
+     "value": "1",
+     "label": "MenuItemDisplay"
+    },
+    {
+     "name": "MenuItemOutput",
+     "value": "2",
+     "label": "MenuItemOutput"
+    },
+    {
+     "name": "MenuItemAction",
+     "value": "3",
+     "label": "MenuItemAction"
+    },
+    {
+     "name": "ServiceOperation",
+     "value": "76",
+     "label": "ServiceOperation"
+    },
+    {
+     "name": "WebActionItem",
+     "value": "56",
+     "label": "WebActionItem"
+    },
+    {
+     "name": "WebUrlItem",
+     "value": "55",
+     "label": "WebUrlItem"
+    },
+    {
+     "name": "WebManagedContent",
+     "value": "75",
+     "label": "WebManagedContent"
+    }
+   ]
+  },
+  "ExcelExportMode": {
+   "id": "61694",
+   "values": [
+    {
+     "name": "Static",
+     "value": "0",
+     "label": "Static"
+    },
+    {
+     "name": "Refreshable",
+     "value": "1",
+     "label": "Refreshable"
+    }
+   ]
+  },
+  "Exception": {
+   "id": "61441",
+   "values": [
+    {
+     "name": "Info",
+     "value": "0",
+     "label": "Info"
+    },
+    {
+     "name": "Warning",
+     "value": "1",
+     "label": "Warning"
+    },
+    {
+     "name": "Deadlock",
+     "value": "2",
+     "label": "Deadlock"
+    },
+    {
+     "name": "Error",
+     "value": "3",
+     "label": "Error"
+    },
+    {
+     "name": "Internal",
+     "value": "4",
+     "label": "Internal"
+    },
+    {
+     "name": "Break",
+     "value": "5",
+     "label": "Break"
+    },
+    {
+     "name": "DDEerror",
+     "value": "6",
+     "label": "DDEerror"
+    },
+    {
+     "name": "Sequence",
+     "value": "7",
+     "label": "Sequence"
+    },
+    {
+     "name": "Numeric",
+     "value": "8",
+     "label": "Numeric"
+    },
+    {
+     "name": "CLRError",
+     "value": "9",
+     "label": "CLRError"
+    },
+    {
+     "name": "CodeAccessSecurity",
+     "value": "10",
+     "label": "CodeAccessSecurity"
+    },
+    {
+     "name": "UpdateConflict",
+     "value": "11",
+     "label": "UpdateConflict"
+    },
+    {
+     "name": "UpdateConflictNotRecovered",
+     "value": "12",
+     "label": "UpdateConflictNotRecovered"
+    },
+    {
+     "name": "DuplicateKeyException",
+     "value": "13",
+     "label": "DuplicateKeyException"
+    },
+    {
+     "name": "DuplicateKeyExceptionNotRecovered",
+     "value": "14",
+     "label": "DuplicateKeyExceptionNotRecovered"
+    },
+    {
+     "name": "Timeout",
+     "value": "15",
+     "label": "Timeout"
+    },
+    {
+     "name": "PassClrObjectAcrossTiers",
+     "value": "16",
+     "label": "PassClrObjectAcrossTiers"
+    },
+    {
+     "name": "NoValidRunnableCode",
+     "value": "17",
+     "label": "NoValidRunnableCode"
+    },
+    {
+     "name": "ViewDataSourceValidation",
+     "value": "18",
+     "label": "ViewDataSourceValidation"
+    },
+    {
+     "name": "SystemMaintenance",
+     "value": "21",
+     "label": "SystemMaintenance"
+    },
+    {
+     "name": "CompanyAccessViolation",
+     "value": "22",
+     "label": "CompanyAccessViolation"
+    },
+    {
+     "name": "TransientSqlConnectionError",
+     "value": "23",
+     "label": "TransientSqlConnectionError"
+    },
+    {
+     "name": "PersistentSqlConnectionError",
+     "value": "24",
+     "label": "PersistentSqlConnectionError"
+    },
+    {
+     "name": "MaximumRetryCountExceeded",
+     "value": "25",
+     "label": "MaximumRetryCountExceeded"
+    },
+    {
+     "name": "MethodNotFound",
+     "value": "61",
+     "label": "MethodNotFound"
+    },
+    {
+     "name": "TypeCast",
+     "value": "79",
+     "label": "TypeCast"
+    },
+    {
+     "name": "FunctionArgument",
+     "value": "83",
+     "label": "FunctionArgument"
+    }
+   ]
+  },
+  "ExternalIdType": {
+   "id": "61715",
+   "values": [
+    {
+     "name": "None",
+     "value": "0"
+    },
+    {
+     "name": "Microsoft",
+     "value": "1"
+    }
+   ]
+  },
+  "ExtTypes": {
+   "id": "61444",
+   "values": [
+    {
+     "name": "Byte",
+     "value": "0",
+     "label": "Byte"
+    },
+    {
+     "name": "Word",
+     "value": "1",
+     "label": "Word"
+    },
+    {
+     "name": "DWord",
+     "value": "2",
+     "label": "DWord"
+    },
+    {
+     "name": "Double",
+     "value": "3",
+     "label": "Double"
+    },
+    {
+     "name": "String",
+     "value": "4",
+     "label": "String"
+    },
+    {
+     "name": "Binary",
+     "value": "5",
+     "label": "Binary"
+    },
+    {
+     "name": "Pointer",
+     "value": "6",
+     "label": "Pointer"
+    },
+    {
+     "name": "void",
+     "value": "7",
+     "label": "void"
+    },
+    {
+     "name": "WString",
+     "value": "8",
+     "label": "WString"
+    }
+   ]
+  },
+  "FastTabExpanded": {
+   "id": "61645",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "Yes"
+    },
+    {
+     "name": "No",
+     "value": "2",
+     "label": "No"
+    },
+    {
+     "name": "Always",
+     "value": "3",
+     "label": "Always"
+    }
+   ]
+  },
+  "FastTabSummary": {
+   "id": "61646",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "Yes"
+    },
+    {
+     "name": "No",
+     "value": "2",
+     "label": "No"
+    }
+   ]
+  },
+  "FieldAccess": {
+   "id": "61624",
+   "values": [
+    {
+     "name": "NoAccess",
+     "value": "0",
+     "label": "NoAccess"
+    },
+    {
+     "name": "View",
+     "value": "1",
+     "label": "View"
+    }
+   ]
+  },
+  "FieldAccessModifier": {
+   "id": "61726",
+   "values": [
+    {
+     "name": "Private",
+     "value": "0",
+     "label": "Private"
+    },
+    {
+     "name": "Public",
+     "value": "1",
+     "label": "Public"
+    },
+    {
+     "name": "Internal",
+     "value": "2",
+     "label": "Internal"
+    }
+   ]
+  },
+  "FieldNameGenerationMode": {
+   "id": "61542",
+   "values": [
+    {
+     "name": "FieldList",
+     "value": "0",
+     "label": "FieldList"
+    },
+    {
+     "name": "FieldListGroupBy",
+     "value": "1",
+     "label": "FieldListGroupBy"
+    },
+    {
+     "name": "WhereClause",
+     "value": "2",
+     "label": "WhereClause"
+    },
+    {
+     "name": "OrderByFieldList",
+     "value": "3",
+     "label": "OrderByFieldList"
+    },
+    {
+     "name": "GroupByFieldList",
+     "value": "4",
+     "label": "GroupByFieldList"
+    }
+   ]
+  },
+  "FieldState": {
+   "id": "61648",
+   "values": [
+    {
+     "name": "NotSet",
+     "value": "0",
+     "label": "NotSet"
+    },
+    {
+     "name": "Set",
+     "value": "1",
+     "label": "Set"
+    },
+    {
+     "name": "Defaulted",
+     "value": "2",
+     "label": "Defaulted"
+    }
+   ]
+  },
+  "FileEncoding": {
+   "id": "61545",
+   "values": [
+    {
+     "name": "ACP",
+     "value": "0",
+     "label": "ACP"
+    },
+    {
+     "name": "UTF8",
+     "value": "1",
+     "label": "UTF8"
+    },
+    {
+     "name": "UTF16BE",
+     "value": "2",
+     "label": "UTF16BE"
+    },
+    {
+     "name": "UTF16LE",
+     "value": "3",
+     "label": "UTF16LE"
+    },
+    {
+     "name": "AUTO",
+     "value": "4",
+     "label": "AUTO"
+    },
+    {
+     "name": "GB18030",
+     "value": "5",
+     "label": "GB18030"
+    }
+   ]
+  },
+  "FlipType": {
+   "id": "61550",
+   "values": [
+    {
+     "name": "RotateNoneFlipNone",
+     "value": "0",
+     "label": "RotateNoneFlipNone"
+    },
+    {
+     "name": "RotateNoneFlipX",
+     "value": "4",
+     "label": "RotateNoneFlipX"
+    },
+    {
+     "name": "RotateNoneFlipY",
+     "value": "6",
+     "label": "RotateNoneFlipY"
+    }
+   ]
+  },
+  "FormControlType": {
+   "id": "61447",
+   "values": [
+    {
+     "name": "StaticText",
+     "value": "0",
+     "label": "StaticText"
+    },
+    {
+     "name": "String",
+     "value": "1",
+     "label": "String"
+    },
+    {
+     "name": "Tab",
+     "value": "2",
+     "label": "Tab"
+    },
+    {
+     "name": "CheckBox",
+     "value": "3",
+     "label": "CheckBox"
+    },
+    {
+     "name": "Group",
+     "value": "4",
+     "label": "Group"
+    },
+    {
+     "name": "Button",
+     "value": "5",
+     "label": "Button"
+    },
+    {
+     "name": "Real",
+     "value": "6",
+     "label": "Real"
+    },
+    {
+     "name": "Integer",
+     "value": "7",
+     "label": "Integer"
+    },
+    {
+     "name": "ComboBox",
+     "value": "8",
+     "label": "ComboBox"
+    },
+    {
+     "name": "Image",
+     "value": "9",
+     "label": "Image"
+    },
+    {
+     "name": "Date",
+     "value": "10",
+     "label": "Date"
+    },
+    {
+     "name": "RadioButton",
+     "value": "11",
+     "label": "RadioButton"
+    },
+    {
+     "name": "Grid",
+     "value": "12",
+     "label": "Grid"
+    },
+    {
+     "name": "ButtonGroup",
+     "value": "13",
+     "label": "ButtonGroup"
+    },
+    {
+     "name": "TabPage",
+     "value": "14",
+     "label": "TabPage"
+    },
+    {
+     "name": "CommandButton",
+     "value": "15",
+     "label": "CommandButton"
+    },
+    {
+     "name": "MenuButton",
+     "value": "16",
+     "label": "MenuButton"
+    },
+    {
+     "name": "MenuFunctionButton",
+     "value": "17",
+     "label": "MenuFunctionButton"
+    },
+    {
+     "name": "ListBox",
+     "value": "18",
+     "label": "ListBox"
+    },
+    {
+     "name": "Time",
+     "value": "19",
+     "label": "Time"
+    },
+    {
+     "name": "Table",
+     "value": "20",
+     "label": "Table"
+    },
+    {
+     "name": "ButtonSeparator",
+     "value": "21",
+     "label": "ButtonSeparator"
+    },
+    {
+     "name": "Tree",
+     "value": "22",
+     "label": "Tree"
+    },
+    {
+     "name": "ActiveX",
+     "value": "23",
+     "label": "ActiveX"
+    },
+    {
+     "name": "ListView",
+     "value": "24",
+     "label": "ListView"
+    },
+    {
+     "name": "Progress",
+     "value": "25",
+     "label": "Progress"
+    },
+    {
+     "name": "Animate",
+     "value": "26",
+     "label": "Animate"
+    },
+    {
+     "name": "HTML",
+     "value": "27",
+     "label": "HTML"
+    },
+    {
+     "name": "FileName",
+     "value": "28",
+     "label": "FileName"
+    },
+    {
+     "name": "SubForm",
+     "value": "29",
+     "label": "SubForm"
+    },
+    {
+     "name": "Guid",
+     "value": "30",
+     "label": "Guid"
+    },
+    {
+     "name": "Int64",
+     "value": "31",
+     "label": "Int64"
+    },
+    {
+     "name": "DateTime",
+     "value": "32",
+     "label": "DateTime"
+    },
+    {
+     "name": "ActionPane",
+     "value": "33",
+     "label": "ActionPane"
+    },
+    {
+     "name": "ActionPaneTab",
+     "value": "34",
+     "label": "ActionPaneTab"
+    },
+    {
+     "name": "FilterPane",
+     "value": "35",
+     "label": "FilterPane"
+    },
+    {
+     "name": "ManagedHost",
+     "value": "36",
+     "label": "ManagedHost"
+    },
+    {
+     "name": "SegmentedEntry",
+     "value": "37",
+     "label": "SegmentedEntry"
+    },
+    {
+     "name": "DropDialogButton",
+     "value": "38",
+     "label": "DropDialogButton"
+    },
+    {
+     "name": "ReferenceGroup",
+     "value": "39",
+     "label": "ReferenceGroup"
+    },
+    {
+     "name": "FastTabHeader",
+     "value": "40",
+     "label": "FastTabHeader"
+    },
+    {
+     "name": "RichText",
+     "value": "41",
+     "label": "RichText"
+    },
+    {
+     "name": "Container",
+     "value": "42",
+     "label": "Container"
+    },
+    {
+     "name": "Custom",
+     "value": "43",
+     "label": "Custom"
+    },
+    {
+     "name": "None",
+     "value": "44",
+     "label": "None"
+    }
+   ]
+  },
+  "FormDrag": {
+   "id": "61492",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Move",
+     "value": "1",
+     "label": "Move"
+    },
+    {
+     "name": "Copy",
+     "value": "2",
+     "label": "Copy"
+    }
+   ]
+  },
+  "FormListArrange": {
+   "id": "61467",
+   "values": [
+    {
+     "name": "Default",
+     "value": "0",
+     "label": "Default"
+    },
+    {
+     "name": "AlignLeft",
+     "value": "1",
+     "label": "AlignLeft"
+    },
+    {
+     "name": "AlignTop",
+     "value": "2",
+     "label": "AlignTop"
+    },
+    {
+     "name": "SnapToGrid",
+     "value": "3",
+     "label": "SnapToGrid"
+    }
+   ]
+  },
+  "FormListFormat": {
+   "id": "61466",
+   "values": [
+    {
+     "name": "Left",
+     "value": "0",
+     "label": "Left"
+    },
+    {
+     "name": "Right",
+     "value": "1",
+     "label": "Right"
+    },
+    {
+     "name": "Center",
+     "value": "2",
+     "label": "Center"
+    },
+    {
+     "name": "JustifyMask",
+     "value": "3",
+     "label": "JustifyMask"
+    },
+    {
+     "name": "Image",
+     "value": "4",
+     "label": "Image"
+    },
+    {
+     "name": "BMPRight",
+     "value": "5",
+     "label": "BMPRight"
+    },
+    {
+     "name": "HasImage",
+     "value": "6",
+     "label": "HasImage"
+    }
+   ]
+  },
+  "FormListNext": {
+   "id": "61468",
+   "values": [
+    {
+     "name": "All",
+     "value": "0",
+     "label": "All"
+    },
+    {
+     "name": "Focused",
+     "value": "1",
+     "label": "Focused"
+    },
+    {
+     "name": "Selected",
+     "value": "2",
+     "label": "Selected"
+    },
+    {
+     "name": "Cut",
+     "value": "3",
+     "label": "Cut"
+    },
+    {
+     "name": "DropHilited",
+     "value": "4",
+     "label": "DropHilited"
+    },
+    {
+     "name": "Above",
+     "value": "5",
+     "label": "Above"
+    },
+    {
+     "name": "Below",
+     "value": "6",
+     "label": "Below"
+    },
+    {
+     "name": "ToLeft",
+     "value": "7",
+     "label": "ToLeft"
+    },
+    {
+     "name": "ToRight",
+     "value": "8",
+     "label": "ToRight"
+    }
+   ]
+  },
+  "FormNotify": {
+   "id": "61471",
+   "values": [
+    {
+     "name": "Activate",
+     "value": "0",
+     "label": "Activate"
+    },
+    {
+     "name": "DeActivate",
+     "value": "1",
+     "label": "DeActivate"
+    },
+    {
+     "name": "Open",
+     "value": "2",
+     "label": "Open"
+    },
+    {
+     "name": "Close",
+     "value": "3",
+     "label": "Close"
+    },
+    {
+     "name": "RecordChange",
+     "value": "4",
+     "label": "RecordChange"
+    },
+    {
+     "name": "NoteClicked",
+     "value": "5",
+     "label": "NoteClicked"
+    },
+    {
+     "name": "RecordsWritten",
+     "value": "6",
+     "label": "RecordsWritten"
+    }
+   ]
+  },
+  "FormObjectSetEventType": {
+   "id": "61586",
+   "values": [
+    {
+     "name": "Active",
+     "value": "1",
+     "label": "Active"
+    },
+    {
+     "name": "Refresh",
+     "value": "2",
+     "label": "Refresh"
+    },
+    {
+     "name": "Leave",
+     "value": "3",
+     "label": "Leave"
+    },
+    {
+     "name": "CurrentChanged",
+     "value": "4",
+     "label": "CurrentChanged"
+    },
+    {
+     "name": "CacheChanged",
+     "value": "5",
+     "label": "CacheChanged"
+    },
+    {
+     "name": "RequestCacheSize",
+     "value": "6",
+     "label": "RequestCacheSize"
+    },
+    {
+     "name": "PagingParametersChanged",
+     "value": "7",
+     "label": "PagingParametersChanged"
+    },
+    {
+     "name": "RuntimeMetadataChanged",
+     "value": "8",
+     "label": "RuntimeMetadataChanged"
+    },
+    {
+     "name": "MarkingChanged",
+     "value": "9",
+     "label": "MarkingChanged"
+    }
+   ]
+  },
+  "FormStyle": {
+   "id": "61626",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "DetailsFormMaster",
+     "value": "1",
+     "label": "DetailsFormMaster"
+    },
+    {
+     "name": "DetailsFormTransaction",
+     "value": "9",
+     "label": "DetailsFormTransaction"
+    },
+    {
+     "name": "Dialog",
+     "value": "2",
+     "label": "Dialog"
+    },
+    {
+     "name": "DropDialog",
+     "value": "3",
+     "label": "DropDialog"
+    },
+    {
+     "name": "FormPart",
+     "value": "8",
+     "label": "FormPart"
+    },
+    {
+     "name": "ListPage",
+     "value": "4",
+     "label": "ListPage"
+    },
+    {
+     "name": "Lookup",
+     "value": "5",
+     "label": "Lookup"
+    },
+    {
+     "name": "SimpleList",
+     "value": "6",
+     "label": "SimpleList"
+    },
+    {
+     "name": "SimpleListDetails",
+     "value": "7",
+     "label": "SimpleListDetails"
+    },
+    {
+     "name": "TableOfContents",
+     "value": "10",
+     "label": "TableOfContents"
+    },
+    {
+     "name": "Dashboard",
+     "value": "11",
+     "label": "Dashboard"
+    },
+    {
+     "name": "Sitemap",
+     "value": "13",
+     "label": "Sitemap"
+    },
+    {
+     "name": "Workspace",
+     "value": "14",
+     "label": "Workspace"
+    },
+    {
+     "name": "EntityPage",
+     "value": "12",
+     "label": "EntityPage"
+    },
+    {
+     "name": "SimpleDetails",
+     "value": "15",
+     "label": "SimpleDetails"
+    },
+    {
+     "name": "TaskSingle",
+     "value": "16",
+     "label": "TaskSingle"
+    },
+    {
+     "name": "TaskDouble",
+     "value": "17",
+     "label": "TaskDouble"
+    },
+    {
+     "name": "Wizard",
+     "value": "18",
+     "label": "Wizard"
+    },
+    {
+     "name": "Report",
+     "value": "19",
+     "label": "Report"
+    }
+   ]
+  },
+  "FormTreeAdd": {
+   "id": "61462",
+   "values": [
+    {
+     "name": "Root",
+     "value": "0",
+     "label": "Root"
+    },
+    {
+     "name": "First",
+     "value": "1",
+     "label": "First"
+    },
+    {
+     "name": "Last",
+     "value": "2",
+     "label": "Last"
+    },
+    {
+     "name": "Sort",
+     "value": "3",
+     "label": "Sort"
+    }
+   ]
+  },
+  "FormTreeCheckedState": {
+   "id": "61709",
+   "values": [
+    {
+     "name": "Unchecked",
+     "value": "0",
+     "label": "Unchecked"
+    },
+    {
+     "name": "Checked",
+     "value": "1",
+     "label": "Checked"
+    },
+    {
+     "name": "Partial",
+     "value": "2",
+     "label": "Partial"
+    }
+   ]
+  },
+  "FormTreeExpand": {
+   "id": "61463",
+   "values": [
+    {
+     "name": "Collapse",
+     "value": "0",
+     "label": "Collapse"
+    },
+    {
+     "name": "Expand",
+     "value": "1",
+     "label": "Expand"
+    },
+    {
+     "name": "Toggle",
+     "value": "2",
+     "label": "Toggle"
+    },
+    {
+     "name": "CollapseReset",
+     "value": "3",
+     "label": "CollapseReset"
+    }
+   ]
+  },
+  "FormTreeSelect": {
+   "id": "61464",
+   "values": [
+    {
+     "name": "Unknown",
+     "value": "0",
+     "label": "Unknown"
+    },
+    {
+     "name": "ByMouse",
+     "value": "1",
+     "label": "ByMouse"
+    },
+    {
+     "name": "ByKeyboard",
+     "value": "2",
+     "label": "ByKeyboard"
+    }
+   ]
+  },
+  "FormViewOption": {
+   "id": "61662",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Grid",
+     "value": "1",
+     "label": "Grid"
+    },
+    {
+     "name": "Details",
+     "value": "2",
+     "label": "Details"
+    },
+    {
+     "name": "Header",
+     "value": "3",
+     "label": "Header"
+    },
+    {
+     "name": "Hub",
+     "value": "5",
+     "label": "Hub"
+    }
+   ]
+  },
+  "FullTextIndexChangeTracking": {
+   "id": "61654",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Manual",
+     "value": "1",
+     "label": "Manual"
+    }
+   ]
+  },
+  "GeneralDataProtectionRegulation": {
+   "id": "61720",
+   "values": [
+    {
+     "name": "AccessControlData",
+     "value": "0",
+     "label": "@Kernel:GDPR_AccessControlData"
+    },
+    {
+     "name": "CustomerContent",
+     "value": "1",
+     "label": "@Kernel:GDPR_CustomerContent"
+    },
+    {
+     "name": "EndUserIdentifiableInformation_EUII",
+     "value": "2",
+     "label": "@Kernel:GDPR_EndUserIdentifiableInformation_EUII"
+    },
+    {
+     "name": "EndUserPseudonymousInformation_EUPI",
+     "value": "3",
+     "label": "@Kernel:GDPR_EndUserPseudonymousInformation_EUPI"
+    },
+    {
+     "name": "SupportData",
+     "value": "4",
+     "label": "@Kernel:GDPR_SupportData"
+    },
+    {
+     "name": "AccountData",
+     "value": "5",
+     "label": "@Kernel:GDPR_AccountData"
+    },
+    {
+     "name": "PublicPersonalData",
+     "value": "6",
+     "label": "@Kernel:GDPR_PublicPersonalData"
+    },
+    {
+     "name": "OrganizationIdentifiableInformation_OII",
+     "value": "7",
+     "label": "@Kernel:GDPR_OrganizationIdentifiableInformation_OII"
+    },
+    {
+     "name": "SystemMetadata",
+     "value": "8",
+     "label": "@Kernel:GDPR_SystemMetadata"
+    },
+    {
+     "name": "PublicNonPersonalData",
+     "value": "9",
+     "label": "@Kernel:GDPR_PublicNonPersonalData"
+    }
+   ]
+  },
+  "GlobalOccMode": {
+   "id": "61569",
+   "values": [
+    {
+     "name": "PerTable",
+     "value": "1",
+     "label": "PerTable"
+    },
+    {
+     "name": "Enabled",
+     "value": "2",
+     "label": "Enabled"
+    },
+    {
+     "name": "Disabled",
+     "value": "3",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "GridBorderStyle": {
+   "id": "61702",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "1",
+     "label": "None"
+    },
+    {
+     "name": "SingleLine",
+     "value": "2",
+     "label": "SingleLine"
+    }
+   ]
+  },
+  "GridLinesStyle": {
+   "id": "61689",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "1",
+     "label": "None"
+    },
+    {
+     "name": "Vertical",
+     "value": "2",
+     "label": "Vertical"
+    },
+    {
+     "name": "All",
+     "value": "3",
+     "label": "All"
+    }
+   ]
+  },
+  "GridStyle": {
+   "id": "61688",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "SimpleReadOnly",
+     "value": "1",
+     "label": "SimpleReadOnly"
+    },
+    {
+     "name": "Tabular",
+     "value": "2",
+     "label": "Tabular"
+    },
+    {
+     "name": "List",
+     "value": "3",
+     "label": "List"
+    }
+   ]
+  },
+  "GroupNodeType": {
+   "id": "61528",
+   "values": [
+    {
+     "name": "All",
+     "value": "0",
+     "label": "All"
+    },
+    {
+     "name": "DataDictionary",
+     "value": "1",
+     "label": "DataDictionary"
+    },
+    {
+     "name": "Tables",
+     "value": "2",
+     "label": "Tables"
+    },
+    {
+     "name": "ExtendedDataTypes",
+     "value": "3",
+     "label": "ExtendedDataTypes"
+    },
+    {
+     "name": "BaseEnums",
+     "value": "4",
+     "label": "BaseEnums"
+    },
+    {
+     "name": "LicenseCodes",
+     "value": "6",
+     "label": "LicenseCodes"
+    },
+    {
+     "name": "TableCollections",
+     "value": "7",
+     "label": "TableCollections"
+    },
+    {
+     "name": "Macros",
+     "value": "8",
+     "label": "Macros"
+    },
+    {
+     "name": "Classes",
+     "value": "9",
+     "label": "Classes"
+    },
+    {
+     "name": "Forms",
+     "value": "10",
+     "label": "Forms"
+    },
+    {
+     "name": "WebForms",
+     "value": "11",
+     "label": "WebForms"
+    },
+    {
+     "name": "Reports",
+     "value": "12",
+     "label": "Reports"
+    },
+    {
+     "name": "Queries",
+     "value": "13",
+     "label": "Queries"
+    },
+    {
+     "name": "Jobs",
+     "value": "14",
+     "label": "Jobs"
+    },
+    {
+     "name": "Menus",
+     "value": "15",
+     "label": "Menus"
+    },
+    {
+     "name": "MenuItems",
+     "value": "16",
+     "label": "MenuItems"
+    },
+    {
+     "name": "Display",
+     "value": "17",
+     "label": "Display"
+    },
+    {
+     "name": "Output",
+     "value": "18",
+     "label": "Output"
+    },
+    {
+     "name": "Action",
+     "value": "19",
+     "label": "Action"
+    },
+    {
+     "name": "WebMenus",
+     "value": "21",
+     "label": "WebMenus"
+    },
+    {
+     "name": "WebFiles",
+     "value": "22",
+     "label": "WebFiles"
+    },
+    {
+     "name": "Resources",
+     "value": "25",
+     "label": "Resources"
+    },
+    {
+     "name": "ReportTemplates",
+     "value": "26",
+     "label": "ReportTemplates"
+    },
+    {
+     "name": "ReportSectionTemplates",
+     "value": "27",
+     "label": "ReportSectionTemplates"
+    },
+    {
+     "name": "ConfigurationKeys",
+     "value": "31",
+     "label": "ConfigurationKeys"
+    },
+    {
+     "name": "SecurityKeys",
+     "value": "32",
+     "label": "SecurityKeys"
+    },
+    {
+     "name": "Web",
+     "value": "34",
+     "label": "Web"
+    },
+    {
+     "name": "Maps",
+     "value": "36",
+     "label": "Maps"
+    },
+    {
+     "name": "Views",
+     "value": "37",
+     "label": "Views"
+    },
+    {
+     "name": "References",
+     "value": "38",
+     "label": "References"
+    },
+    {
+     "name": "WebMenuItems",
+     "value": "39",
+     "label": "WebMenuItems"
+    },
+    {
+     "name": "WebUrlMenuItems",
+     "value": "40",
+     "label": "WebUrlMenuItems"
+    },
+    {
+     "name": "WebActionMenuItems",
+     "value": "41",
+     "label": "WebActionMenuItems"
+    },
+    {
+     "name": "WebContentItems",
+     "value": "42",
+     "label": "WebContentItems"
+    },
+    {
+     "name": "WebDisplayContentItems",
+     "value": "43",
+     "label": "WebDisplayContentItems"
+    },
+    {
+     "name": "WebOutputContentItems",
+     "value": "44",
+     "label": "WebOutputContentItems"
+    },
+    {
+     "name": "WebletItems",
+     "value": "45",
+     "label": "WebletItems"
+    },
+    {
+     "name": "WebWebParts",
+     "value": "46",
+     "label": "WebWebParts"
+    },
+    {
+     "name": "WebSiteDefs",
+     "value": "47",
+     "label": "WebSiteDefs"
+    },
+    {
+     "name": "WebSiteTemps",
+     "value": "48",
+     "label": "WebSiteTemps"
+    },
+    {
+     "name": "WebPageDefs",
+     "value": "49",
+     "label": "WebPageDefs"
+    },
+    {
+     "name": "WebStaticFiles",
+     "value": "50",
+     "label": "WebStaticFiles"
+    },
+    {
+     "name": "Perspectives",
+     "value": "52",
+     "label": "Perspectives"
+    },
+    {
+     "name": "WebModules",
+     "value": "53",
+     "label": "WebModules"
+    },
+    {
+     "name": "WorkflowCategories",
+     "value": "54",
+     "label": "WorkflowCategories"
+    },
+    {
+     "name": "WorkflowApprovals",
+     "value": "55",
+     "label": "WorkflowApprovals"
+    },
+    {
+     "name": "WorkflowTasks",
+     "value": "56",
+     "label": "WorkflowTasks"
+    },
+    {
+     "name": "WorkflowTypes",
+     "value": "57",
+     "label": "WorkflowTypes"
+    },
+    {
+     "name": "DataSets",
+     "value": "58",
+     "label": "DataSets"
+    },
+    {
+     "name": "WebControls",
+     "value": "59",
+     "label": "WebControls"
+    },
+    {
+     "name": "WebManagedContentItems",
+     "value": "60",
+     "label": "WebManagedContentItems"
+    },
+    {
+     "name": "Workflow",
+     "value": "61",
+     "label": "Workflow"
+    },
+    {
+     "name": "Services",
+     "value": "62",
+     "label": "Services"
+    },
+    {
+     "name": "WebListDefs",
+     "value": "63",
+     "label": "WebListDefs"
+    },
+    {
+     "name": "ReportLibraries",
+     "value": "64",
+     "label": "ReportLibraries"
+    },
+    {
+     "name": "SSRSReports",
+     "value": "66",
+     "label": "SSRSReports"
+    },
+    {
+     "name": "ReportStyleTemplates",
+     "value": "68",
+     "label": "ReportStyleTemplates"
+    },
+    {
+     "name": "ReportLayoutTemplates",
+     "value": "69",
+     "label": "ReportLayoutTemplates"
+    },
+    {
+     "name": "ReportListStyleTemplates",
+     "value": "70",
+     "label": "ReportListStyleTemplates"
+    },
+    {
+     "name": "ReportMatrixStyleTemplates",
+     "value": "71",
+     "label": "ReportMatrixStyleTemplates"
+    },
+    {
+     "name": "ReportPieChartStyleTemplates",
+     "value": "72",
+     "label": "ReportPieChartStyleTemplates"
+    },
+    {
+     "name": "ReportTableStyleTemplates",
+     "value": "73",
+     "label": "ReportTableStyleTemplates"
+    },
+    {
+     "name": "ReportXYChartStyleTemplates",
+     "value": "74",
+     "label": "ReportXYChartStyleTemplates"
+    },
+    {
+     "name": "ReportDataSources",
+     "value": "75",
+     "label": "ReportDataSources"
+    },
+    {
+     "name": "ReportImages",
+     "value": "76",
+     "label": "ReportImages"
+    },
+    {
+     "name": "Parts",
+     "value": "82",
+     "label": "Parts"
+    },
+    {
+     "name": "InfoParts",
+     "value": "83",
+     "label": "InfoParts"
+    },
+    {
+     "name": "FormParts",
+     "value": "84",
+     "label": "FormParts"
+    },
+    {
+     "name": "WorkflowAutomatedTasks",
+     "value": "85",
+     "label": "WorkflowAutomatedTasks"
+    },
+    {
+     "name": "Cues",
+     "value": "86",
+     "label": "Cues"
+    },
+    {
+     "name": "CueGroups",
+     "value": "87",
+     "label": "CueGroups"
+    },
+    {
+     "name": "HelpDocumentSets",
+     "value": "90",
+     "label": "HelpDocumentSets"
+    },
+    {
+     "name": "SecurityCodePermissions",
+     "value": "96",
+     "label": "SecurityCodePermissions"
+    },
+    {
+     "name": "SecurityPolicies",
+     "value": "97",
+     "label": "SecurityPolicies"
+    },
+    {
+     "name": "LabelFiles",
+     "value": "98",
+     "label": "LabelFiles"
+    },
+    {
+     "name": "SecurityDuties",
+     "value": "99",
+     "label": "SecurityDuties"
+    },
+    {
+     "name": "SecurityPrivileges",
+     "value": "100",
+     "label": "SecurityPrivileges"
+    },
+    {
+     "name": "SecurityProcessCycles",
+     "value": "101",
+     "label": "SecurityProcessCycles"
+    },
+    {
+     "name": "SecurityRoles",
+     "value": "102",
+     "label": "SecurityRoles"
+    },
+    {
+     "name": "ServiceGroups",
+     "value": "103",
+     "label": "ServiceGroups"
+    },
+    {
+     "name": "WorkflowHierarchyProvider",
+     "value": "104",
+     "label": "WorkflowHierarchyProvider"
+    },
+    {
+     "name": "WorkflowParticipantProvider",
+     "value": "105",
+     "label": "WorkflowParticipantProvider"
+    },
+    {
+     "name": "WorkflowQueueProvider",
+     "value": "106",
+     "label": "WorkflowQueueProvider"
+    },
+    {
+     "name": "WorkflowDueDateProvider",
+     "value": "107",
+     "label": "WorkflowDueDateProvider"
+    },
+    {
+     "name": "VisualStudioProjects",
+     "value": "108",
+     "label": "VisualStudioProjects"
+    },
+    {
+     "name": "VisualStudioAXModelProjects",
+     "value": "109",
+     "label": "VisualStudioAXModelProjects"
+    },
+    {
+     "name": "VisualStudioCSharpProjects",
+     "value": "110",
+     "label": "VisualStudioCSharpProjects"
+    },
+    {
+     "name": "VisualStudioVBProjects",
+     "value": "111",
+     "label": "VisualStudioVBProjects"
+    },
+    {
+     "name": "VisualStudioWebProjects",
+     "value": "112",
+     "label": "VisualStudioWebProjects"
+    },
+    {
+     "name": "VisualStudioAnalysisProjects",
+     "value": "113",
+     "label": "VisualStudioAnalysisProjects"
+    },
+    {
+     "name": "WorkflowProviders",
+     "value": "115",
+     "label": "WorkflowProviders"
+    },
+    {
+     "name": "Security",
+     "value": "116",
+     "label": "Security"
+    }
+   ]
+  },
+  "GroupStyle": {
+   "id": "61638",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "BorderedGroup",
+     "value": "1",
+     "label": "BorderedGroup"
+    },
+    {
+     "name": "BorderlessGridContainer",
+     "value": "2",
+     "label": "BorderlessGridContainer"
+    },
+    {
+     "name": "CustomFilter",
+     "value": "3",
+     "label": "CustomFilter"
+    },
+    {
+     "name": "DetailTitleContainer",
+     "value": "4",
+     "label": "DetailTitleContainer"
+    },
+    {
+     "name": "DialogCommit",
+     "value": "5",
+     "label": "DialogCommit"
+    },
+    {
+     "name": "DialogContent",
+     "value": "6",
+     "label": "DialogContent"
+    },
+    {
+     "name": "MarginlessContainer",
+     "value": "7",
+     "label": "MarginlessContainer"
+    },
+    {
+     "name": "SplitterHorizontalContainer",
+     "value": "8",
+     "label": "SplitterHorizontalContainer"
+    },
+    {
+     "name": "SplitterVerticalContainer",
+     "value": "9",
+     "label": "SplitterVerticalContainer"
+    },
+    {
+     "name": "TOCTitleContainer",
+     "value": "10",
+     "label": "TOCTitleContainer"
+    },
+    {
+     "name": "TOCTopicSimple",
+     "value": "11",
+     "label": "TOCTopicSimple"
+    },
+    {
+     "name": "TOCTopicFastTabs",
+     "value": "12",
+     "label": "TOCTopicFastTabs"
+    },
+    {
+     "name": "TOCTopicList",
+     "value": "13",
+     "label": "TOCTopicList"
+    },
+    {
+     "name": "Card",
+     "value": "14",
+     "label": "Card"
+    },
+    {
+     "name": "SidePanel",
+     "value": "15",
+     "label": "SidePanel"
+    }
+   ]
+  },
+  "HeadingsStrategy": {
+   "id": "61544",
+   "values": [
+    {
+     "name": "WordWrap",
+     "value": "0",
+     "label": "WordWrap"
+    },
+    {
+     "name": "DisplacedLines",
+     "value": "1",
+     "label": "DisplacedLines"
+    }
+   ]
+  },
+  "IdAllocationSchema": {
+   "id": "61593",
+   "values": [
+    {
+     "name": "Classic",
+     "value": "0",
+     "label": "Classic"
+    }
+   ]
+  },
+  "IISObject": {
+   "id": "61509",
+   "values": [
+    {
+     "name": "ApplicationObject",
+     "value": "0",
+     "label": "ApplicationObject"
+    },
+    {
+     "name": "Request",
+     "value": "1",
+     "label": "Request"
+    },
+    {
+     "name": "Response",
+     "value": "2",
+     "label": "Response"
+    },
+    {
+     "name": "Server",
+     "value": "3",
+     "label": "Server"
+    },
+    {
+     "name": "SessionObject",
+     "value": "4",
+     "label": "SessionObject"
+    }
+   ]
+  },
+  "ImageResolutionMode": {
+   "id": "61541",
+   "values": [
+    {
+     "name": "NoAbs",
+     "value": "0",
+     "label": "NoAbs"
+    },
+    {
+     "name": "PixelsPerMeter",
+     "value": "1",
+     "label": "PixelsPerMeter"
+    },
+    {
+     "name": "PixelsPerInch",
+     "value": "2",
+     "label": "PixelsPerInch"
+    },
+    {
+     "name": "PixelsPerCentimeter",
+     "value": "3",
+     "label": "PixelsPerCentimeter"
+    },
+    {
+     "name": "PixelsPer10Inches",
+     "value": "4",
+     "label": "PixelsPer10Inches"
+    },
+    {
+     "name": "PixelsPer10Centimeters",
+     "value": "5",
+     "label": "PixelsPer10Centimeters"
+    }
+   ]
+  },
+  "ImageSaveType": {
+   "id": "61482",
+   "values": [
+    {
+     "name": "Use_Extension",
+     "value": "0",
+     "label": "Use_Extension"
+    },
+    {
+     "name": "BMP",
+     "value": "1",
+     "label": "BMP"
+    },
+    {
+     "name": "GIF",
+     "value": "2",
+     "label": "GIF"
+    },
+    {
+     "name": "JPG",
+     "value": "3",
+     "label": "JPG"
+    },
+    {
+     "name": "PNG",
+     "value": "4",
+     "label": "PNG"
+    },
+    {
+     "name": "TIFF",
+     "value": "5",
+     "label": "TIFF"
+    },
+    {
+     "name": "BMP_UNCOMP",
+     "value": "6",
+     "label": "BMP_UNCOMP"
+    },
+    {
+     "name": "TIF_UNCOMP",
+     "value": "7",
+     "label": "TIF_UNCOMP"
+    }
+   ]
+  },
+  "ImageType": {
+   "id": "61481",
+   "values": [
+    {
+     "name": "Unknown",
+     "value": "0",
+     "label": "Unknown"
+    },
+    {
+     "name": "BMP",
+     "value": "1",
+     "label": "BMP"
+    },
+    {
+     "name": "GIF",
+     "value": "2",
+     "label": "GIF"
+    },
+    {
+     "name": "JPG",
+     "value": "3",
+     "label": "JPG"
+    },
+    {
+     "name": "PNG",
+     "value": "4",
+     "label": "PNG"
+    },
+    {
+     "name": "TIFF",
+     "value": "5",
+     "label": "TIFF"
+    },
+    {
+     "name": "EMF",
+     "value": "6",
+     "label": "EMF"
+    },
+    {
+     "name": "EXIF",
+     "value": "7",
+     "label": "EXIF"
+    },
+    {
+     "name": "WMF",
+     "value": "8",
+     "label": "WMF"
+    }
+   ]
+  },
+  "ImageWipe": {
+   "id": "61480",
+   "values": [
+    {
+     "name": "LeftToRight",
+     "value": "0",
+     "label": "LeftToRight"
+    },
+    {
+     "name": "RightToLeft",
+     "value": "1",
+     "label": "RightToLeft"
+    },
+    {
+     "name": "Sparkle",
+     "value": "2",
+     "label": "Sparkle"
+    },
+    {
+     "name": "ULToLRDiag",
+     "value": "3",
+     "label": "ULToLRDiag"
+    },
+    {
+     "name": "Clock",
+     "value": "4",
+     "label": "Clock"
+    },
+    {
+     "name": "Sparkle_Clock",
+     "value": "5",
+     "label": "Sparkle_Clock"
+    },
+    {
+     "name": "Double_Clock",
+     "value": "6",
+     "label": "Double_Clock"
+    },
+    {
+     "name": "Slide_Right",
+     "value": "7",
+     "label": "Slide_Right"
+    },
+    {
+     "name": "Slide_Left",
+     "value": "8",
+     "label": "Slide_Left"
+    },
+    {
+     "name": "Randow_Bars_Down",
+     "value": "9",
+     "label": "Randow_Bars_Down"
+    },
+    {
+     "name": "Rain",
+     "value": "10",
+     "label": "Rain"
+    },
+    {
+     "name": "Book",
+     "value": "11",
+     "label": "Book"
+    },
+    {
+     "name": "Roll",
+     "value": "12",
+     "label": "Roll"
+    },
+    {
+     "name": "Unroll",
+     "value": "13",
+     "label": "Unroll"
+    },
+    {
+     "name": "Expand_Proportional",
+     "value": "14",
+     "label": "Expand_Proportional"
+    },
+    {
+     "name": "Expand_Horizontal",
+     "value": "15",
+     "label": "Expand_Horizontal"
+    },
+    {
+     "name": "Expand_Vertical",
+     "value": "16",
+     "label": "Expand_Vertical"
+    },
+    {
+     "name": "Strips_Horizontal",
+     "value": "17",
+     "label": "Strips_Horizontal"
+    },
+    {
+     "name": "Strips_Vertical",
+     "value": "18",
+     "label": "Strips_Vertical"
+    },
+    {
+     "name": "Cells",
+     "value": "19",
+     "label": "Cells"
+    },
+    {
+     "name": "Ball",
+     "value": "20",
+     "label": "Ball"
+    },
+    {
+     "name": "Gears",
+     "value": "21",
+     "label": "Gears"
+    },
+    {
+     "name": "Up_To_Down",
+     "value": "22",
+     "label": "Up_To_Down"
+    },
+    {
+     "name": "Down_To_Up",
+     "value": "23",
+     "label": "Down_To_Up"
+    },
+    {
+     "name": "LRToULDiag",
+     "value": "24",
+     "label": "LRToULDiag"
+    },
+    {
+     "name": "URToLLDiag",
+     "value": "25",
+     "label": "URToLLDiag"
+    },
+    {
+     "name": "LLToURDiag",
+     "value": "26",
+     "label": "LLToURDiag"
+    },
+    {
+     "name": "Slide_Up",
+     "value": "27",
+     "label": "Slide_Up"
+    },
+    {
+     "name": "Slide_Down",
+     "value": "28",
+     "label": "Slide_Down"
+    }
+   ]
+  },
+  "IMEMode": {
+   "id": "61546",
+   "values": [
+    {
+     "name": "Enabled",
+     "value": "0",
+     "label": "Enabled"
+    },
+    {
+     "name": "Disabled",
+     "value": "1",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "IndexType": {
+   "id": "61714",
+   "values": [
+    {
+     "name": "Index",
+     "value": "0",
+     "label": "Index"
+    },
+    {
+     "name": "ColumnStore",
+     "value": "1",
+     "label": "ColumnStore"
+    }
+   ]
+  },
+  "InteropKind": {
+   "id": "61568",
+   "values": [
+    {
+     "name": "ClrInterop",
+     "value": "0",
+     "label": "ClrInterop"
+    },
+    {
+     "name": "DllInterop",
+     "value": "1",
+     "label": "DllInterop"
+    },
+    {
+     "name": "ComInterop",
+     "value": "2",
+     "label": "ComInterop"
+    }
+   ]
+  },
+  "InterpolationMode": {
+   "id": "61548",
+   "values": [
+    {
+     "name": "InterpolationModeDefault",
+     "value": "0",
+     "label": "InterpolationModeDefault"
+    },
+    {
+     "name": "InterpolationModeLowQuality",
+     "value": "1",
+     "label": "InterpolationModeLowQuality"
+    },
+    {
+     "name": "InterpolationModeHighQuality",
+     "value": "2",
+     "label": "InterpolationModeHighQuality"
+    },
+    {
+     "name": "InterpolationModeBilinear",
+     "value": "3",
+     "label": "InterpolationModeBilinear"
+    },
+    {
+     "name": "InterpolationModeBicubic",
+     "value": "4",
+     "label": "InterpolationModeBicubic"
+    },
+    {
+     "name": "InterpolationModeNearestNeighbor",
+     "value": "5",
+     "label": "InterpolationModeNearestNeighbor"
+    },
+    {
+     "name": "InterpolationModeHighQualityBilinear",
+     "value": "6",
+     "label": "InterpolationModeHighQualityBilinear"
+    },
+    {
+     "name": "InterpolationModeHighQualityBicubic",
+     "value": "7",
+     "label": "InterpolationModeHighQualityBicubic"
+    }
+   ]
+  },
+  "IntvScale": {
+   "id": "61465",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "YearMonthDay",
+     "value": "1",
+     "label": "YearMonthDay"
+    },
+    {
+     "name": "YearMonth",
+     "value": "2",
+     "label": "YearMonth"
+    },
+    {
+     "name": "Year",
+     "value": "3",
+     "label": "Year"
+    },
+    {
+     "name": "MonthDay",
+     "value": "4",
+     "label": "MonthDay"
+    },
+    {
+     "name": "Month",
+     "value": "5",
+     "label": "Month"
+    },
+    {
+     "name": "Day",
+     "value": "6",
+     "label": "Day"
+    },
+    {
+     "name": "YearQuarter",
+     "value": "7",
+     "label": "YearQuarter"
+    },
+    {
+     "name": "Quarter",
+     "value": "8",
+     "label": "Quarter"
+    },
+    {
+     "name": "YearWeek",
+     "value": "9",
+     "label": "YearWeek"
+    },
+    {
+     "name": "Week",
+     "value": "10",
+     "label": "Week"
+    },
+    {
+     "name": "WeekDay",
+     "value": "11",
+     "label": "WeekDay"
+    }
+   ]
+  },
+  "IO_Status": {
+   "id": "61448",
+   "values": [
+    {
+     "name": "Ok",
+     "value": "0",
+     "label": "Ok"
+    },
+    {
+     "name": "IllegalFileFormat",
+     "value": "1",
+     "label": "IllegalFileFormat"
+    },
+    {
+     "name": "FileTooShort",
+     "value": "2",
+     "label": "FileTooShort"
+    },
+    {
+     "name": "NoMemory",
+     "value": "3",
+     "label": "NoMemory"
+    },
+    {
+     "name": "FileProtected",
+     "value": "4",
+     "label": "FileProtected"
+    },
+    {
+     "name": "InternalError",
+     "value": "5",
+     "label": "InternalError"
+    },
+    {
+     "name": "WriteError",
+     "value": "6",
+     "label": "WriteError"
+    },
+    {
+     "name": "SqlSyntax",
+     "value": "7",
+     "label": "SqlSyntax"
+    },
+    {
+     "name": "ErrorOpen",
+     "value": "8",
+     "label": "ErrorOpen"
+    }
+   ]
+  },
+  "JoinMode": {
+   "id": "61453",
+   "values": [
+    {
+     "name": "InnerJoin",
+     "value": "0",
+     "label": "InnerJoin"
+    },
+    {
+     "name": "OuterJoin",
+     "value": "1",
+     "label": "OuterJoin"
+    },
+    {
+     "name": "ExistsJoin",
+     "value": "2",
+     "label": "ExistsJoin"
+    },
+    {
+     "name": "NoExistsJoin",
+     "value": "3",
+     "label": "NoExistsJoin"
+    }
+   ]
+  },
+  "KernelHelpType": {
+   "id": "61476",
+   "values": [
+    {
+     "name": "Optional",
+     "value": "0",
+     "label": "Optional"
+    },
+    {
+     "name": "Token",
+     "value": "1",
+     "label": "Token"
+    },
+    {
+     "name": "Classes",
+     "value": "2",
+     "label": "Classes"
+    },
+    {
+     "name": "ClassMethod",
+     "value": "3",
+     "label": "ClassMethod"
+    },
+    {
+     "name": "Enum",
+     "value": "4",
+     "label": "Enum"
+    },
+    {
+     "name": "EnumEntry",
+     "value": "5",
+     "label": "EnumEntry"
+    },
+    {
+     "name": "Types",
+     "value": "6",
+     "label": "Types"
+    },
+    {
+     "name": "Property",
+     "value": "7",
+     "label": "Property"
+    },
+    {
+     "name": "Global",
+     "value": "8",
+     "label": "Global"
+    },
+    {
+     "name": "Functions",
+     "value": "9",
+     "label": "Functions"
+    },
+    {
+     "name": "Tables",
+     "value": "10",
+     "label": "Tables"
+    },
+    {
+     "name": "Fields",
+     "value": "11",
+     "label": "Fields"
+    }
+   ]
+  },
+  "LabelPosition": {
+   "id": "61635",
+   "values": [
+    {
+     "name": "Left",
+     "value": "0",
+     "label": "Left"
+    },
+    {
+     "name": "Above",
+     "value": "1",
+     "label": "Above"
+    }
+   ]
+  },
+  "LateEvalMode": {
+   "id": "61543",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Pages",
+     "value": "1",
+     "label": "Pages"
+    },
+    {
+     "name": "Copy",
+     "value": "2",
+     "label": "Copy"
+    },
+    {
+     "name": "Copies",
+     "value": "3",
+     "label": "Copies"
+    },
+    {
+     "name": "Description",
+     "value": "4",
+     "label": "Description"
+    },
+    {
+     "name": "Passthrough",
+     "value": "5",
+     "label": "Passthrough"
+    },
+    {
+     "name": "PrinterFontInfo",
+     "value": "6",
+     "label": "PrinterFontInfo"
+    },
+    {
+     "name": "ScreenFontInfo",
+     "value": "7",
+     "label": "ScreenFontInfo"
+    }
+   ]
+  },
+  "LicenseCodeGroup": {
+   "id": "61538",
+   "values": [
+    {
+     "name": "System",
+     "value": "0",
+     "label": "System"
+    },
+    {
+     "name": "Module",
+     "value": "1",
+     "label": "Module"
+    },
+    {
+     "name": "Partner",
+     "value": "2",
+     "label": "Partner"
+    },
+    {
+     "name": "Language",
+     "value": "3",
+     "label": "Language"
+    },
+    {
+     "name": "Web",
+     "value": "4",
+     "label": "Web"
+    },
+    {
+     "name": "Access",
+     "value": "5",
+     "label": "Access"
+    }
+   ]
+  },
+  "LicenseCodeType": {
+   "id": "61539",
+   "values": [
+    {
+     "name": "Boolean",
+     "value": "0",
+     "label": "Boolean"
+    },
+    {
+     "name": "Number",
+     "value": "1",
+     "label": "Number"
+    }
+   ]
+  },
+  "LineThickness": {
+   "id": "61495",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Hairline",
+     "value": "1",
+     "label": "Hairline"
+    },
+    {
+     "name": "pt1",
+     "value": "2",
+     "label": "pt1"
+    },
+    {
+     "name": "pt2",
+     "value": "3",
+     "label": "pt2"
+    },
+    {
+     "name": "pt3",
+     "value": "4",
+     "label": "pt3"
+    },
+    {
+     "name": "pt4",
+     "value": "5",
+     "label": "pt4"
+    },
+    {
+     "name": "pt5",
+     "value": "6",
+     "label": "pt5"
+    },
+    {
+     "name": "pt6",
+     "value": "7",
+     "label": "pt6"
+    }
+   ]
+  },
+  "LineType": {
+   "id": "61494",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Solid",
+     "value": "1",
+     "label": "Solid"
+    },
+    {
+     "name": "Dashes",
+     "value": "2",
+     "label": "Dashes"
+    },
+    {
+     "name": "ShortDashes",
+     "value": "3",
+     "label": "ShortDashes"
+    },
+    {
+     "name": "DashDot",
+     "value": "4",
+     "label": "DashDot"
+    },
+    {
+     "name": "DashDotDot",
+     "value": "5",
+     "label": "DashDotDot"
+    },
+    {
+     "name": "Invisible",
+     "value": "6",
+     "label": "Invisible"
+    },
+    {
+     "name": "Double",
+     "value": "7",
+     "label": "Double"
+    }
+   ]
+  },
+  "ListPageLinkMode": {
+   "id": "61687",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Static",
+     "value": "1",
+     "label": "Static"
+    },
+    {
+     "name": "Dynamic",
+     "value": "2",
+     "label": "Dynamic"
+    }
+   ]
+  },
+  "MarkMode": {
+   "id": "61522",
+   "values": [
+    {
+     "name": "NoMark",
+     "value": "0",
+     "label": "NoMark"
+    },
+    {
+     "name": "AreaMark",
+     "value": "1",
+     "label": "AreaMark"
+    },
+    {
+     "name": "LineMark",
+     "value": "2",
+     "label": "LineMark"
+    },
+    {
+     "name": "ColMark",
+     "value": "3",
+     "label": "ColMark"
+    }
+   ]
+  },
+  "MenuItemObjectType": {
+   "id": "61583",
+   "values": [
+    {
+     "name": "Form",
+     "value": "11",
+     "label": "Form"
+    },
+    {
+     "name": "Report",
+     "value": "18",
+     "label": "Report"
+    },
+    {
+     "name": "Job",
+     "value": "5",
+     "label": "Job"
+    },
+    {
+     "name": "Class",
+     "value": "45",
+     "label": "Class"
+    },
+    {
+     "name": "Query",
+     "value": "20",
+     "label": "Query"
+    },
+    {
+     "name": "WebForm",
+     "value": "34",
+     "label": "WebForm"
+    },
+    {
+     "name": "WebControl",
+     "value": "73",
+     "label": "WebControl"
+    },
+    {
+     "name": "SQLReportLibraryReport",
+     "value": "240",
+     "label": "SQLReportLibraryReport"
+    },
+    {
+     "name": "InfoPart",
+     "value": "81",
+     "label": "InfoPart"
+    },
+    {
+     "name": "FormPart",
+     "value": "82",
+     "label": "FormPart"
+    },
+    {
+     "name": "CueGroup",
+     "value": "99",
+     "label": "CueGroup"
+    },
+    {
+     "name": "SSRSReport",
+     "value": "85",
+     "label": "SSRSReport"
+    }
+   ]
+  },
+  "MenuItemType": {
+   "id": "61483",
+   "values": [
+    {
+     "name": "Display",
+     "value": "0",
+     "label": "Display"
+    },
+    {
+     "name": "Output",
+     "value": "1",
+     "label": "Output"
+    },
+    {
+     "name": "Action",
+     "value": "2",
+     "label": "Action"
+    }
+   ]
+  },
+  "MessageSeverity": {
+   "id": "61716",
+   "values": [
+    {
+     "name": "Informational",
+     "value": "0",
+     "label": "Informational"
+    },
+    {
+     "name": "Warning",
+     "value": "1",
+     "label": "Warning"
+    },
+    {
+     "name": "Error",
+     "value": "3",
+     "label": "Error"
+    }
+   ]
+  },
+  "MessagingRole": {
+   "id": "61729",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Consumer",
+     "value": "1",
+     "label": "Consumer"
+    },
+    {
+     "name": "Subscriber",
+     "value": "2",
+     "label": "Subscriber"
+    },
+    {
+     "name": "Producer",
+     "value": "3",
+     "label": "Producer"
+    },
+    {
+     "name": "Publisher",
+     "value": "4",
+     "label": "Publisher"
+    }
+   ]
+  },
+  "NeededPermission": {
+   "id": "61699",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Read",
+     "value": "1",
+     "label": "Read"
+    },
+    {
+     "name": "Update",
+     "value": "2",
+     "label": "Update"
+    },
+    {
+     "name": "Create",
+     "value": "3",
+     "label": "Create"
+    },
+    {
+     "name": "Correct",
+     "value": "4",
+     "label": "Correct"
+    },
+    {
+     "name": "Delete",
+     "value": "5",
+     "label": "Delete"
+    },
+    {
+     "name": "Manual",
+     "value": "6",
+     "label": "Manual"
+    }
+   ]
+  },
+  "NodeType": {
+   "id": "61491",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "All",
+     "value": "1",
+     "label": "All"
+    },
+    {
+     "name": "Tables",
+     "value": "2",
+     "label": "Tables"
+    },
+    {
+     "name": "Classes",
+     "value": "3",
+     "label": "Classes"
+    },
+    {
+     "name": "Forms",
+     "value": "4",
+     "label": "Forms"
+    },
+    {
+     "name": "Reports",
+     "value": "5",
+     "label": "Reports"
+    },
+    {
+     "name": "Queries",
+     "value": "6",
+     "label": "Queries"
+    },
+    {
+     "name": "Menus",
+     "value": "7",
+     "label": "Menus"
+    },
+    {
+     "name": "MenuFunctions",
+     "value": "8",
+     "label": "MenuFunctions"
+    },
+    {
+     "name": "Methods",
+     "value": "9",
+     "label": "Methods"
+    },
+    {
+     "name": "TableFields",
+     "value": "10",
+     "label": "TableFields"
+    },
+    {
+     "name": "Controls",
+     "value": "11",
+     "label": "Controls"
+    },
+    {
+     "name": "DataSources",
+     "value": "12",
+     "label": "DataSources"
+    },
+    {
+     "name": "WebForms",
+     "value": "13",
+     "label": "WebForms"
+    },
+    {
+     "name": "Jobs",
+     "value": "14",
+     "label": "Jobs"
+    },
+    {
+     "name": "Macros",
+     "value": "15",
+     "label": "Macros"
+    }
+   ]
+  },
+  "NotifyCacheChangeType": {
+   "id": "61585",
+   "values": [
+    {
+     "name": "Reset",
+     "value": "0",
+     "label": "Reset"
+    },
+    {
+     "name": "Change",
+     "value": "1",
+     "label": "Change"
+    },
+    {
+     "name": "InsertFront",
+     "value": "2",
+     "label": "InsertFront"
+    }
+   ]
+  },
+  "NoYes": {
+   "id": "61469",
+   "values": [
+    {
+     "name": "No",
+     "value": "0",
+     "label": "@sys2048"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "@sys5461"
+    }
+   ]
+  },
+  "Ok": {
+   "id": "61449",
+   "values": [
+    {
+     "name": "FromExists",
+     "value": "0",
+     "label": "FromExists"
+    },
+    {
+     "name": "ToExists",
+     "value": "1",
+     "label": "ToExists"
+    }
+   ]
+  },
+  "OnOff": {
+   "id": "61697",
+   "values": [
+    {
+     "name": "Off",
+     "value": "0",
+     "label": "Off"
+    },
+    {
+     "name": "On",
+     "value": "1",
+     "label": "On"
+    }
+   ]
+  },
+  "OpenMode": {
+   "id": "61633",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "View",
+     "value": "1",
+     "label": "View"
+    },
+    {
+     "name": "Edit",
+     "value": "2",
+     "label": "Edit"
+    },
+    {
+     "name": "New",
+     "value": "3",
+     "label": "New"
+    }
+   ]
+  },
+  "OperationalDomain": {
+   "id": "61721",
+   "values": [
+    {
+     "name": "NotSpecified",
+     "label": "@Kernel:OperationalDomainNotSpecified"
+    },
+    {
+     "name": "Shared",
+     "value": "1",
+     "label": "@Kernel:OperationalDomainShared"
+    },
+    {
+     "name": "Company",
+     "value": "2",
+     "label": "@Kernel:OperationalDomainCompany"
+    },
+    {
+     "name": "Local",
+     "value": "3",
+     "label": "@Kernel:OperationalDomainLocal"
+    }
+   ]
+  },
+  "OptionalRecordMode": {
+   "id": "61656",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "ImplicitCreate",
+     "value": "1",
+     "label": "ImplicitCreate"
+    },
+    {
+     "name": "ExplicitCreate",
+     "value": "2",
+     "label": "ExplicitCreate"
+    }
+   ]
+  },
+  "OrderMode": {
+   "id": "61454",
+   "values": [
+    {
+     "name": "OrderBy",
+     "value": "0",
+     "label": "OrderBy"
+    },
+    {
+     "name": "GroupBy",
+     "value": "1",
+     "label": "GroupBy"
+    }
+   ]
+  },
+  "PanelStyle": {
+   "id": "61660",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Grid",
+     "value": "1",
+     "label": "Grid"
+    },
+    {
+     "name": "Details",
+     "value": "2",
+     "label": "Details"
+    },
+    {
+     "name": "DetailsHeader",
+     "value": "3",
+     "label": "DetailsHeader"
+    },
+    {
+     "name": "DetailsLine",
+     "value": "4",
+     "label": "DetailsLine"
+    }
+   ]
+  },
+  "PartLocation": {
+   "id": "61632",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "PreviewPane",
+     "value": "1",
+     "label": "PreviewPane"
+    }
+   ]
+  },
+  "PartSize": {
+   "id": "61634",
+   "values": [
+    {
+     "name": "Always",
+     "value": "0",
+     "label": "Always"
+    },
+    {
+     "name": "Small",
+     "value": "1",
+     "label": "Small"
+    },
+    {
+     "name": "Medium",
+     "value": "2",
+     "label": "Medium"
+    },
+    {
+     "name": "Large",
+     "value": "3",
+     "label": "Large"
+    }
+   ]
+  },
+  "PerspectiveUsage": {
+   "id": "61572",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "OLAP",
+     "value": "1",
+     "label": "OLAP"
+    }
+   ]
+  },
+  "PreferredCalendar": {
+   "id": "61578",
+   "values": [
+    {
+     "name": "Gregorian",
+     "value": "0",
+     "label": "Gregorian"
+    },
+    {
+     "name": "Hijri",
+     "value": "1",
+     "label": "Hijri"
+    },
+    {
+     "name": "UmAlQura",
+     "value": "2",
+     "label": "Um al-Qura"
+    }
+   ]
+  },
+  "PresenceIndicator": {
+   "id": "61605",
+   "values": [
+    {
+     "name": "Yes",
+     "value": "0",
+     "label": "Yes"
+    },
+    {
+     "name": "No",
+     "value": "1",
+     "label": "No"
+    }
+   ]
+  },
+  "PrinterOrientation": {
+   "id": "61487",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "@SYS98234"
+    },
+    {
+     "name": "Portrait",
+     "value": "1",
+     "label": "@SYS98235"
+    },
+    {
+     "name": "Landscape",
+     "value": "2",
+     "label": "@SYS98236"
+    }
+   ]
+  },
+  "PrinterTray": {
+   "id": "61488",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Upper",
+     "value": "1",
+     "label": "Upper"
+    },
+    {
+     "name": "Lower",
+     "value": "2",
+     "label": "Lower"
+    },
+    {
+     "name": "Middle",
+     "value": "3",
+     "label": "Middle"
+    },
+    {
+     "name": "Manual",
+     "value": "4",
+     "label": "Manual"
+    },
+    {
+     "name": "Envelope",
+     "value": "5",
+     "label": "Envelope"
+    },
+    {
+     "name": "EnvManual",
+     "value": "6",
+     "label": "EnvManual"
+    },
+    {
+     "name": "Auto",
+     "value": "7",
+     "label": "Auto"
+    },
+    {
+     "name": "Tractor",
+     "value": "8",
+     "label": "Tractor"
+    },
+    {
+     "name": "SmallFmt",
+     "value": "9",
+     "label": "SmallFmt"
+    },
+    {
+     "name": "LargeFmt",
+     "value": "10",
+     "label": "LargeFmt"
+    },
+    {
+     "name": "LargeCapacity",
+     "value": "11",
+     "label": "LargeCapacity"
+    },
+    {
+     "name": "unused1",
+     "value": "12",
+     "label": "unused1"
+    },
+    {
+     "name": "unused2",
+     "value": "13",
+     "label": "unused2"
+    },
+    {
+     "name": "Cassette",
+     "value": "14",
+     "label": "Cassette"
+    },
+    {
+     "name": "FormSource",
+     "value": "15",
+     "label": "FormSource"
+    }
+   ]
+  },
+  "PrintFormat": {
+   "id": "61505",
+   "values": [
+    {
+     "name": "ASCII",
+     "value": "0",
+     "label": "ASCII"
+    },
+    {
+     "name": "RTF",
+     "value": "1",
+     "label": "RTF"
+    },
+    {
+     "name": "HTML",
+     "value": "2",
+     "label": "HTML"
+    },
+    {
+     "name": "PDF",
+     "value": "3",
+     "label": "PDF"
+    },
+    {
+     "name": "PDF_EMBED_FONTS",
+     "value": "4",
+     "label": "PDF_EMBED_FONTS"
+    },
+    {
+     "name": "TEXTUTF8",
+     "value": "5",
+     "label": "TEXTUTF8"
+    }
+   ]
+  },
+  "PrintJobStatus": {
+   "id": "61470",
+   "values": [
+    {
+     "name": "InProgress",
+     "value": "0",
+     "label": "@sys70801"
+    },
+    {
+     "name": "Completed",
+     "value": "1",
+     "label": "@sys27577"
+    },
+    {
+     "name": "Aborted",
+     "value": "2",
+     "label": "@sys70800"
+    },
+    {
+     "name": "Empty",
+     "value": "3",
+     "label": "@sys19186"
+    }
+   ]
+  },
+  "PrintMedium": {
+   "id": "61455",
+   "values": [
+    {
+     "name": "Screen",
+     "value": "0",
+     "label": "@sys20533"
+    },
+    {
+     "name": "Printer",
+     "value": "1",
+     "label": "@sys3723"
+    },
+    {
+     "name": "PrintArchive",
+     "value": "2",
+     "label": "@sys24494"
+    },
+    {
+     "name": "File",
+     "value": "3",
+     "label": "@sys4047"
+    },
+    {
+     "name": "Mail",
+     "value": "4",
+     "label": "@sys53122"
+    },
+    {
+     "name": "ViewerClass",
+     "value": "5",
+     "label": "ViewerClass"
+    }
+   ]
+  },
+  "ProgressStyle": {
+   "id": "61707",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Determinate",
+     "value": "1",
+     "label": "Determinate"
+    },
+    {
+     "name": "Indeterminate",
+     "value": "2",
+     "label": "Indeterminate"
+    }
+   ]
+  },
+  "ProjectGroupGeneration": {
+   "id": "61530",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Normal",
+     "value": "1",
+     "label": "Normal"
+    },
+    {
+     "name": "Hierarchical",
+     "value": "2",
+     "label": "Hierarchical"
+    },
+    {
+     "name": "MainOnly",
+     "value": "3",
+     "label": "MainOnly"
+    }
+   ]
+  },
+  "ProjectType": {
+   "id": "61529",
+   "values": [
+    {
+     "name": "Normal",
+     "value": "0",
+     "label": "Normal"
+    },
+    {
+     "name": "Filter",
+     "value": "1",
+     "label": "Filter"
+    },
+    {
+     "name": "X_ref",
+     "value": "2",
+     "label": "X_ref"
+    }
+   ]
+  },
+  "PropWindowDisplayState": {
+   "id": "61610",
+   "values": [
+    {
+     "name": "Hide",
+     "value": "0",
+     "label": "Hide"
+    },
+    {
+     "name": "Show",
+     "value": "1",
+     "label": "Show"
+    }
+   ]
+  },
+  "PropWindowDockState": {
+   "id": "61609",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Top",
+     "value": "1",
+     "label": "Top"
+    },
+    {
+     "name": "Left",
+     "value": "2",
+     "label": "Left"
+    },
+    {
+     "name": "Right",
+     "value": "3",
+     "label": "Right"
+    },
+    {
+     "name": "Bottom",
+     "value": "4",
+     "label": "Bottom"
+    }
+   ]
+  },
+  "PropWindowSelectTab": {
+   "id": "61611",
+   "values": [
+    {
+     "name": "Data",
+     "value": "0",
+     "label": "Data"
+    },
+    {
+     "name": "Category",
+     "value": "1",
+     "label": "Category"
+    }
+   ]
+  },
+  "QueryDataLinkType": {
+   "id": "61581",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Delayed",
+     "value": "1",
+     "label": "Delayed"
+    },
+    {
+     "name": "Active",
+     "value": "2",
+     "label": "Active"
+    },
+    {
+     "name": "Passive",
+     "value": "3",
+     "label": "Passive"
+    }
+   ]
+  },
+  "QueryDependentObjectType": {
+   "id": "61584",
+   "values": [
+    {
+     "name": "View",
+     "value": "0",
+     "label": "View"
+    },
+    {
+     "name": "Report",
+     "value": "1",
+     "label": "Report"
+    },
+    {
+     "name": "Form",
+     "value": "2",
+     "label": "Form"
+    },
+    {
+     "name": "Dataset",
+     "value": "3",
+     "label": "Dataset"
+    }
+   ]
+  },
+  "QueryFieldListDynamic": {
+   "id": "61686",
+   "values": [
+    {
+     "name": "No",
+     "value": "0",
+     "label": "@SYS2048"
+    },
+    {
+     "name": "Yes",
+     "value": "1",
+     "label": "@SYS5461"
+    },
+    {
+     "name": "Unselected",
+     "value": "99",
+     "label": "@SYS21247"
+    }
+   ]
+  },
+  "QueryRangeType": {
+   "id": "61655",
+   "values": [
+    {
+     "name": "Regular",
+     "value": "0",
+     "label": "Regular"
+    },
+    {
+     "name": "FullText",
+     "value": "1",
+     "label": "FullText"
+    }
+   ]
+  },
+  "QueryType": {
+   "id": "61576",
+   "values": [
+    {
+     "name": "Join",
+     "value": "0",
+     "label": "Join"
+    },
+    {
+     "name": "Union",
+     "value": "1",
+     "label": "Union"
+    }
+   ]
+  },
+  "RangeStatus": {
+   "id": "61452",
+   "values": [
+    {
+     "name": "Open",
+     "value": "0",
+     "label": "Open"
+    },
+    {
+     "name": "Locked",
+     "value": "1",
+     "label": "Locked"
+    },
+    {
+     "name": "Hidden",
+     "value": "2",
+     "label": "Hidden"
+    },
+    {
+     "name": "System",
+     "value": "3",
+     "label": "System"
+    }
+   ]
+  },
+  "RecordCacheLevel": {
+   "id": "61484",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "NotInTTS",
+     "value": "1",
+     "label": "NotInTTS"
+    },
+    {
+     "name": "Found",
+     "value": "2",
+     "label": "Found"
+    },
+    {
+     "name": "FoundAndEmpty",
+     "value": "3",
+     "label": "FoundAndEmpty"
+    },
+    {
+     "name": "EntireTable",
+     "value": "4",
+     "label": "EntireTable"
+    }
+   ]
+  },
+  "RefreshFrequency": {
+   "id": "61701",
+   "values": [
+    {
+     "name": "PerSession",
+     "value": "0",
+     "label": "PerSession"
+    },
+    {
+     "name": "PerInvocation",
+     "value": "1",
+     "label": "PerInvocation"
+    }
+   ]
+  },
+  "RelatedTableCardinality": {
+   "id": "61612",
+   "values": [
+    {
+     "name": "NotSpecified",
+     "value": "0",
+     "label": "NotSpecified"
+    },
+    {
+     "name": "ZeroOne",
+     "value": "1",
+     "label": "ZeroOne"
+    },
+    {
+     "name": "ExactlyOne",
+     "value": "2",
+     "label": "ExactlyOne"
+    }
+   ]
+  },
+  "RelationshipSubType": {
+   "id": "61643",
+   "values": [
+    {
+     "name": "Default",
+     "value": "0",
+     "label": "Default"
+    },
+    {
+     "name": "ForeignKey",
+     "value": "1",
+     "label": "ForeignKey"
+    },
+    {
+     "name": "Inheritance",
+     "value": "2",
+     "label": "Inheritance"
+    }
+   ]
+  },
+  "RelationshipType": {
+   "id": "61614",
+   "values": [
+    {
+     "name": "NotSpecified",
+     "value": "0",
+     "label": "NotSpecified"
+    },
+    {
+     "name": "Association",
+     "value": "1",
+     "label": "Association"
+    },
+    {
+     "name": "Composition",
+     "value": "2",
+     "label": "Composition"
+    },
+    {
+     "name": "Link",
+     "value": "3",
+     "label": "Link"
+    },
+    {
+     "name": "Specialization",
+     "value": "4",
+     "label": "Specialization"
+    },
+    {
+     "name": "Aggregation",
+     "value": "5",
+     "label": "Aggregation"
+    }
+   ]
+  },
+  "ReportBlockType": {
+   "id": "61445",
+   "values": [
+    {
+     "name": "Prolog",
+     "value": "0",
+     "label": "Prolog"
+    },
+    {
+     "name": "PageHeader",
+     "value": "1",
+     "label": "PageHeader"
+    },
+    {
+     "name": "Header",
+     "value": "2",
+     "label": "Header"
+    },
+    {
+     "name": "Body",
+     "value": "3",
+     "label": "Body"
+    },
+    {
+     "name": "PageFooter",
+     "value": "4",
+     "label": "PageFooter"
+    },
+    {
+     "name": "Footer",
+     "value": "5",
+     "label": "Footer"
+    },
+    {
+     "name": "Epilog",
+     "value": "6",
+     "label": "Epilog"
+    },
+    {
+     "name": "Control",
+     "value": "7",
+     "label": "Control"
+    },
+    {
+     "name": "ColumnHeadings",
+     "value": "8",
+     "label": "ColumnHeadings"
+    }
+   ]
+  },
+  "ReportFieldType": {
+   "id": "61446",
+   "values": [
+    {
+     "name": "Text",
+     "value": "0",
+     "label": "Text"
+    },
+    {
+     "name": "Prompt",
+     "value": "1",
+     "label": "Prompt"
+    },
+    {
+     "name": "Box",
+     "value": "2",
+     "label": "Box"
+    },
+    {
+     "name": "Bitmap",
+     "value": "3",
+     "label": "Bitmap"
+    },
+    {
+     "name": "Sum",
+     "value": "4",
+     "label": "Sum"
+    },
+    {
+     "name": "String",
+     "value": "5",
+     "label": "String"
+    },
+    {
+     "name": "Enum",
+     "value": "6",
+     "label": "Enum"
+    },
+    {
+     "name": "Integer",
+     "value": "7",
+     "label": "Integer"
+    },
+    {
+     "name": "Real",
+     "value": "8",
+     "label": "Real"
+    },
+    {
+     "name": "Date",
+     "value": "9",
+     "label": "Date"
+    },
+    {
+     "name": "Time",
+     "value": "10",
+     "label": "Time"
+    },
+    {
+     "name": "Guid",
+     "value": "11",
+     "label": "Guid"
+    },
+    {
+     "name": "Int64",
+     "value": "12",
+     "label": "Int64"
+    },
+    {
+     "name": "DateTime",
+     "value": "13",
+     "label": "DateTime"
+    }
+   ]
+  },
+  "ReportOutputUserType": {
+   "id": "61519",
+   "values": [
+    {
+     "name": "Default",
+     "value": "0",
+     "label": "Default"
+    },
+    {
+     "name": "HTML",
+     "value": "1",
+     "label": "HTML"
+    },
+    {
+     "name": "TextFile",
+     "value": "2",
+     "label": "TextFile"
+    },
+    {
+     "name": "PDF",
+     "value": "3",
+     "label": "PDF"
+    },
+    {
+     "name": "Viewer4",
+     "value": "4",
+     "label": "Viewer4"
+    },
+    {
+     "name": "Viewer5",
+     "value": "5",
+     "label": "Viewer5"
+    },
+    {
+     "name": "PDFEmbedFonts",
+     "value": "6",
+     "label": "PDFEmbedFonts"
+    }
+   ]
+  },
+  "ResultSetConcurrency": {
+   "id": "61535",
+   "values": [
+    {
+     "name": "ReadOnly",
+     "value": "0",
+     "label": "ReadOnly"
+    },
+    {
+     "name": "Updatable",
+     "value": "1",
+     "label": "Updatable"
+    }
+   ]
+  },
+  "ResultSetType": {
+   "id": "61534",
+   "values": [
+    {
+     "name": "ForwardOnly",
+     "value": "0",
+     "label": "ForwardOnly"
+    },
+    {
+     "name": "KeysetDriven",
+     "value": "1",
+     "label": "KeysetDriven"
+    },
+    {
+     "name": "Dynamic",
+     "value": "2",
+     "label": "Dynamic"
+    },
+    {
+     "name": "Static",
+     "value": "3",
+     "label": "Static"
+    }
+   ]
+  },
+  "RoleAssignmentMode": {
+   "id": "61681",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "@SYS317126"
+    },
+    {
+     "name": "Manual",
+     "value": "1",
+     "label": "@SYS317127"
+    },
+    {
+     "name": "Automatic",
+     "value": "2",
+     "label": "@SYS317128"
+    }
+   ]
+  },
+  "RoleAssignmentStatus": {
+   "id": "61682",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "@SYS317129"
+    },
+    {
+     "name": "Enabled",
+     "value": "1",
+     "label": "@SYS317130"
+    },
+    {
+     "name": "Disabled",
+     "value": "2",
+     "label": "@SYS317131"
+    }
+   ]
+  },
+  "RotateType": {
+   "id": "61549",
+   "values": [
+    {
+     "name": "RotateNoneFlipNone",
+     "value": "0",
+     "label": "RotateNoneFlipNone"
+    },
+    {
+     "name": "Rotate90FlipNone",
+     "value": "1",
+     "label": "Rotate90FlipNone"
+    },
+    {
+     "name": "Rotate180FlipNone",
+     "value": "2",
+     "label": "Rotate180FlipNone"
+    },
+    {
+     "name": "Rotate270FlipNone",
+     "value": "3",
+     "label": "Rotate270FlipNone"
+    }
+   ]
+  },
+  "SecurableType": {
+   "id": "61627",
+   "values": [
+    {
+     "name": "MenuItemDisplay",
+     "value": "1",
+     "label": "@SYS62152"
+    },
+    {
+     "name": "MenuItemOutput",
+     "value": "2",
+     "label": "@SYS53029"
+    },
+    {
+     "name": "MenuItemAction",
+     "value": "3",
+     "label": "@SYS53030"
+    },
+    {
+     "name": "WebUrlItem",
+     "value": "55",
+     "label": "@SYS96934"
+    },
+    {
+     "name": "WebActionItem",
+     "value": "56",
+     "label": "@SYS96935"
+    },
+    {
+     "name": "WebDisplayContentItem",
+     "value": "57",
+     "label": "@SYS96936"
+    },
+    {
+     "name": "WebOutputContentItem",
+     "value": "58",
+     "label": "@SYS96937"
+    },
+    {
+     "name": "WebManagedContentItem",
+     "value": "75",
+     "label": "@SYS106605"
+    },
+    {
+     "name": "WebControl",
+     "value": "73",
+     "label": "@SYS327011"
+    },
+    {
+     "name": "WebletItem",
+     "value": "59",
+     "label": "@SYS91745"
+    },
+    {
+     "name": "TableField",
+     "value": "44",
+     "label": "@SYS308803"
+    },
+    {
+     "name": "ClassMethod",
+     "value": "45",
+     "label": "@SYS83944"
+    },
+    {
+     "name": "ServiceOperation",
+     "value": "76",
+     "label": "@SYS327008"
+    },
+    {
+     "name": "FormControl",
+     "value": "11",
+     "label": "@SYS308801"
+    },
+    {
+     "name": "FormPart",
+     "value": "82",
+     "label": "@SYS343476"
+    },
+    {
+     "name": "InfoPart",
+     "value": "81",
+     "label": "@SYS327009"
+    },
+    {
+     "name": "SSRSReport",
+     "value": "85",
+     "label": "@SYS326579"
+    },
+    {
+     "name": "Report",
+     "value": "18",
+     "label": "@SYS16399"
+    },
+    {
+     "name": "CodePermission",
+     "value": "115",
+     "label": "@SYS327010"
+    },
+    {
+     "name": "FormDatasource",
+     "value": "143",
+     "label": "@SYS56294"
+    },
+    {
+     "name": "DataEntity",
+     "value": "67",
+     "label": "DataEntity"
+    },
+    {
+     "name": "DataEntityMethod",
+     "value": "146",
+     "label": "DataEntityMethod"
+    }
+   ]
+  },
+  "SecurityObjectEventType": {
+   "id": "61719",
+   "values": [
+    {
+     "name": "Publish",
+     "value": "0",
+     "label": "@Kernel:SecurityObjectEventType_Publish"
+    },
+    {
+     "name": "New",
+     "value": "1",
+     "label": "@Kernel:SecurityObjectEventType_New"
+    },
+    {
+     "name": "Update",
+     "value": "2",
+     "label": "@Kernel:SecurityObjectEventType_Update"
+    },
+    {
+     "name": "DependencyUpdate",
+     "value": "3",
+     "label": "@Kernel:SecurityObjectEventType_DependencyUpdate"
+    },
+    {
+     "name": "Delete",
+     "value": "4",
+     "label": "@Kernel:SecurityObjectEventType_Delete"
+    },
+    {
+     "name": "Enable",
+     "value": "5",
+     "label": "@Kernel:SecurityObjectEventType_Enable"
+    },
+    {
+     "name": "Reset",
+     "value": "6",
+     "label": "@Kernel:SecurityObjectEventType_Reset"
+    }
+   ]
+  },
+  "SecurityObjectType": {
+   "id": "61718",
+   "values": [
+    {
+     "name": "Role",
+     "value": "0",
+     "label": "@SYS301892"
+    },
+    {
+     "name": "Duty",
+     "value": "1",
+     "label": "@SYS342601"
+    },
+    {
+     "name": "Privilege",
+     "value": "2",
+     "label": "@SYS342600"
+    }
+   ]
+  },
+  "SecurityPolicyAccessLevel": {
+   "id": "61690",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "@SYS324670"
+    },
+    {
+     "name": "AllOperations",
+     "value": "1",
+     "label": "@SYS324671"
+    },
+    {
+     "name": "EditCreateDelete",
+     "value": "2",
+     "label": "@SYS324672"
+    },
+    {
+     "name": "CreateDelete",
+     "value": "3",
+     "label": "@SYS324663"
+    },
+    {
+     "name": "DeleteOnly",
+     "value": "4",
+     "label": "@SYS324664"
+    }
+   ]
+  },
+  "SecurityTaskType": {
+   "id": "61678",
+   "values": [
+    {
+     "name": "Privilege",
+     "value": "0",
+     "label": "@SYS342600"
+    },
+    {
+     "name": "Duty",
+     "value": "1",
+     "label": "@SYS342601"
+    },
+    {
+     "name": "ProcessCycle",
+     "value": "2",
+     "label": "@SYS342602"
+    }
+   ]
+  },
+  "SegmentedEntryState": {
+   "id": "61615",
+   "values": [
+    {
+     "name": "Invalid",
+     "value": "0",
+     "label": "Invalid"
+    },
+    {
+     "name": "Valid",
+     "value": "1",
+     "label": "Valid"
+    }
+   ]
+  },
+  "SegregationOfDutiesResolution": {
+   "id": "61685",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "@SYS314630"
+    },
+    {
+     "name": "Exclude",
+     "value": "1",
+     "label": "@SYS314631"
+    },
+    {
+     "name": "Override",
+     "value": "2",
+     "label": "@SYS314632"
+    }
+   ]
+  },
+  "SegregationOfDutiesSeverity": {
+   "id": "61684",
+   "values": [
+    {
+     "name": "Low",
+     "value": "0",
+     "label": "@SYS314625"
+    },
+    {
+     "name": "Medium",
+     "value": "1",
+     "label": "@SYS314626"
+    },
+    {
+     "name": "High",
+     "value": "2",
+     "label": "@SYS314627"
+    }
+   ]
+  },
+  "SelectionField": {
+   "id": "61451",
+   "values": [
+    {
+     "name": "Avg",
+     "value": "0",
+     "label": "Avg"
+    },
+    {
+     "name": "Sum",
+     "value": "1",
+     "label": "Sum"
+    },
+    {
+     "name": "Min",
+     "value": "2",
+     "label": "Min"
+    },
+    {
+     "name": "Max",
+     "value": "3",
+     "label": "Max"
+    },
+    {
+     "name": "Count",
+     "value": "4",
+     "label": "Count"
+    },
+    {
+     "name": "Database",
+     "value": "5",
+     "label": "Database"
+    },
+    {
+     "name": "ComputedColumn",
+     "value": "6",
+     "label": "ComputedColumn"
+    }
+   ]
+  },
+  "SessionStatus": {
+   "id": "61606",
+   "values": [
+    {
+     "name": "Inactive",
+     "value": "0",
+     "label": "Inactive"
+    },
+    {
+     "name": "Running",
+     "value": "1",
+     "label": "Running"
+    },
+    {
+     "name": "MarkedAsKill",
+     "value": "2",
+     "label": "Ending - Waiting for AOS"
+    },
+    {
+     "name": "Killed",
+     "value": "3",
+     "label": "Ending - Blocked"
+    }
+   ]
+  },
+  "SessionType": {
+   "id": "61607",
+   "values": [
+    {
+     "name": "GUI",
+     "value": "0",
+     "label": "User"
+    },
+    {
+     "name": "BC",
+     "value": "1",
+     "label": "Business Connector"
+    },
+    {
+     "name": "Worker",
+     "value": "3",
+     "label": "Worker"
+    },
+    {
+     "name": "WebUser",
+     "value": "5",
+     "label": "Web User"
+    }
+   ]
+  },
+  "ShapeType": {
+   "id": "61496",
+   "values": [
+    {
+     "name": "Box",
+     "value": "0",
+     "label": "Box"
+    },
+    {
+     "name": "Ellipse",
+     "value": "1",
+     "label": "Ellipse"
+    },
+    {
+     "name": "Horizontal",
+     "value": "2",
+     "label": "Horizontal"
+    },
+    {
+     "name": "Vertical",
+     "value": "3",
+     "label": "Vertical"
+    },
+    {
+     "name": "Up",
+     "value": "4",
+     "label": "Up"
+    },
+    {
+     "name": "Down",
+     "value": "5",
+     "label": "Down"
+    }
+   ]
+  },
+  "SignDisplay": {
+   "id": "61595",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "1",
+     "label": "None"
+    },
+    {
+     "name": "Prefixed",
+     "value": "2",
+     "label": "Prefixed"
+    },
+    {
+     "name": "Suffixed",
+     "value": "3",
+     "label": "Suffixed"
+    },
+    {
+     "name": "Parentheses",
+     "value": "4",
+     "label": "Sign shown using parentheses"
+    }
+   ]
+  },
+  "Sizing": {
+   "id": "61642",
+   "values": [
+    {
+     "name": "SizeToHost",
+     "value": "0",
+     "label": "SizeToHost"
+    },
+    {
+     "name": "SizeToContent",
+     "value": "1",
+     "label": "SizeToContent"
+    }
+   ]
+  },
+  "SortOrder": {
+   "id": "61443",
+   "values": [
+    {
+     "name": "Ascending",
+     "value": "0",
+     "label": "Ascending"
+    },
+    {
+     "name": "Descending",
+     "value": "1",
+     "label": "Descending"
+    }
+   ]
+  },
+  "SqlStatType": {
+   "id": "61498",
+   "values": [
+    {
+     "name": "Totals",
+     "value": "0",
+     "label": "Totals"
+    },
+    {
+     "name": "Table",
+     "value": "1",
+     "label": "Table"
+    },
+    {
+     "name": "Index",
+     "value": "2",
+     "label": "Index"
+    }
+   ]
+  },
+  "SqlSyncLogType": {
+   "id": "61591",
+   "values": [
+    {
+     "name": "Message",
+     "value": "0",
+     "label": "Message"
+    },
+    {
+     "name": "DDL",
+     "value": "1",
+     "label": "DDL"
+    }
+   ]
+  },
+  "SqlSyncMessageType": {
+   "id": "61592",
+   "values": [
+    {
+     "name": "Info",
+     "value": "0",
+     "label": "Info"
+    },
+    {
+     "name": "Warning",
+     "value": "1",
+     "label": "Warning"
+    },
+    {
+     "name": "Error",
+     "value": "2",
+     "label": "Error"
+    }
+   ]
+  },
+  "SqlTraceCategory": {
+   "id": "61532",
+   "values": [
+    {
+     "name": "Statement",
+     "value": "0",
+     "label": "Statement"
+    },
+    {
+     "name": "QueryTime",
+     "value": "1",
+     "label": "QueryTime"
+    },
+    {
+     "name": "Error",
+     "value": "2",
+     "label": "Error"
+    },
+    {
+     "name": "Synchronize",
+     "value": "3",
+     "label": "Synchronize"
+    },
+    {
+     "name": "Deadlock",
+     "value": "4",
+     "label": "Deadlock"
+    },
+    {
+     "name": "Warning",
+     "value": "5",
+     "label": "Warning"
+    }
+   ]
+  },
+  "StatementType": {
+   "id": "61531",
+   "values": [
+    {
+     "name": "Update",
+     "value": "0",
+     "label": "Update"
+    },
+    {
+     "name": "Delete",
+     "value": "1",
+     "label": "Delete"
+    },
+    {
+     "name": "Insert",
+     "value": "2",
+     "label": "Insert"
+    },
+    {
+     "name": "Select",
+     "value": "3",
+     "label": "Select"
+    },
+    {
+     "name": "DDL",
+     "value": "4",
+     "label": "DDL"
+    },
+    {
+     "name": "Proc",
+     "value": "5",
+     "label": "Proc"
+    },
+    {
+     "name": "Other",
+     "value": "6",
+     "label": "Other"
+    }
+   ]
+  },
+  "StaticTextStyle": {
+   "id": "61692",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "MainInstruction",
+     "value": "1",
+     "label": "MainInstruction"
+    }
+   ]
+  },
+  "StatusBarStyle": {
+   "id": "61589",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "1",
+     "label": "None"
+    },
+    {
+     "name": "Simple",
+     "value": "2",
+     "label": "Simple"
+    },
+    {
+     "name": "Full",
+     "value": "3",
+     "label": "Full"
+    },
+    {
+     "name": "SimpleWithoutClose",
+     "value": "4",
+     "label": "SimpleWithoutClose"
+    }
+   ]
+  },
+  "SubscriberAccesslevel": {
+   "id": "61724",
+   "values": [
+    {
+     "name": "NotSpecified",
+     "label": "@Kernel:SubscriberAccessLevelNotSpecified"
+    },
+    {
+     "name": "NoAccess",
+     "value": "1",
+     "label": "@Kernel:SubscriberAccessLevelNoAccess"
+    },
+    {
+     "name": "Read",
+     "value": "2",
+     "label": "@Kernel:SubscriberAccessLevelRead"
+    },
+    {
+     "name": "Update",
+     "value": "3",
+     "label": "@Kernel:SubscriberAccessLevelUpdate"
+    },
+    {
+     "name": "CreateOnly",
+     "value": "4",
+     "label": "@Kernel:SubscriberAccessLevelCreateOnly"
+    },
+    {
+     "name": "Create",
+     "value": "5",
+     "label": "@Kernel:SubscriberAccessLevelCreate"
+    },
+    {
+     "name": "Correct",
+     "value": "6",
+     "label": "@Kernel:SubscriberAccessLevelCorrect"
+    },
+    {
+     "name": "Delete",
+     "value": "7",
+     "label": "@Kernel:SubscriberAccessLevelDelete"
+    },
+    {
+     "name": "Invoke",
+     "value": "8",
+     "label": "@Kernel:SubscriberAccessLevelInvoke"
+    }
+   ]
+  },
+  "SubscriptionRole": {
+   "id": "61723",
+   "values": [
+    {
+     "name": "Publisher",
+     "label": "@Kernel:SubscriberRolePublisher"
+    },
+    {
+     "name": "Subscriber",
+     "value": "1",
+     "label": "@Kernel:SubscriberRoleSubscriber"
+    }
+   ]
+  },
+  "SysDataSharingType": {
+   "id": "61725",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "@Kernel:SysDataSharingTypeNone"
+    },
+    {
+     "name": "Duplicate",
+     "value": "1",
+     "label": "@Kernel:SysDataSharingTypeDuplicate"
+    },
+    {
+     "name": "Single",
+     "value": "2",
+     "label": "@Kernel:SysDataSharingTypeSingle"
+    }
+   ]
+  },
+  "SysDataState": {
+   "id": "61731",
+   "values": [
+    {
+     "name": "Default",
+     "value": "0",
+     "label": "@Kernel:SysDataStateDefault"
+    },
+    {
+     "name": "Archive",
+     "value": "1",
+     "label": "@Kernel:SysDataStateArchive"
+    }
+   ]
+  },
+  "SysImageLocation": {
+   "id": "61637",
+   "values": [
+    {
+     "name": "File",
+     "value": "0",
+     "label": "File"
+    },
+    {
+     "name": "AOTResource",
+     "value": "1",
+     "label": "AOTResource"
+    },
+    {
+     "name": "EmbeddedResource",
+     "value": "2",
+     "label": "EmbeddedResource"
+    },
+    {
+     "name": "Symbol",
+     "value": "3",
+     "label": "Symbol"
+    },
+    {
+     "name": "URL",
+     "value": "4",
+     "label": "URL"
+    }
+   ]
+  },
+  "SysLicensePackageType": {
+   "id": "61582",
+   "values": [
+    {
+     "name": "AdditionalModules",
+     "value": "0",
+     "label": "@SYS343025"
+    },
+    {
+     "name": "AdvancedManagement",
+     "value": "1",
+     "label": "@SYS343026"
+    },
+    {
+     "name": "BusinessEssential",
+     "value": "2",
+     "label": "@SYS343027"
+    },
+    {
+     "name": "BusinessValue",
+     "value": "3",
+     "label": "@SYS345002"
+    }
+   ]
+  },
+  "SysSharingType": {
+   "id": "61730",
+   "values": [
+    {
+     "name": "Always",
+     "value": "0",
+     "label": "@Kernel:SysSharingTypeAlways"
+    },
+    {
+     "name": "Optional",
+     "value": "1",
+     "label": "@Kernel:SysSharingTypeOptional"
+    },
+    {
+     "name": "Never",
+     "value": "2",
+     "label": "@Kernel:SysSharingTypeNever"
+    }
+   ]
+  },
+  "SystemMonitorCounter": {
+   "id": "61525",
+   "values": [
+    {
+     "name": "SqlSelectCalls",
+     "value": "0",
+     "label": "SqlSelectCalls"
+    },
+    {
+     "name": "SqlSelectBytes",
+     "value": "1",
+     "label": "SqlSelectBytes"
+    },
+    {
+     "name": "SqlSelectRows",
+     "value": "2",
+     "label": "SqlSelectRows"
+    },
+    {
+     "name": "SqlInsertCalls",
+     "value": "3",
+     "label": "SqlInsertCalls"
+    },
+    {
+     "name": "SqlUpdateCalls",
+     "value": "4",
+     "label": "SqlUpdateCalls"
+    },
+    {
+     "name": "SqlDeleteCalls",
+     "value": "5",
+     "label": "SqlDeleteCalls"
+    },
+    {
+     "name": "SqlWaitTime",
+     "value": "6",
+     "label": "SqlWaitTime"
+    },
+    {
+     "name": "AOSInCalls",
+     "value": "7",
+     "label": "AOSInCalls"
+    },
+    {
+     "name": "AOSInBytes",
+     "value": "8",
+     "label": "AOSInBytes"
+    },
+    {
+     "name": "AOSOutCalls",
+     "value": "9",
+     "label": "AOSOutCalls"
+    },
+    {
+     "name": "AOSOutBytes",
+     "value": "10",
+     "label": "AOSOutBytes"
+    },
+    {
+     "name": "AOSWaitTime",
+     "value": "11",
+     "label": "AOSWaitTime"
+    },
+    {
+     "name": "SqlInsertBytes",
+     "value": "12",
+     "label": "SqlInsertBytes"
+    },
+    {
+     "name": "SqlInsertRows",
+     "value": "13",
+     "label": "SqlInsertRows"
+    },
+    {
+     "name": "SqlUpdateBytes",
+     "value": "14",
+     "label": "SqlUpdateBytes"
+    },
+    {
+     "name": "SqlUpdateRows",
+     "value": "15",
+     "label": "SqlUpdateRows"
+    },
+    {
+     "name": "SqlDeleteBytes",
+     "value": "16",
+     "label": "SqlDeleteBytes"
+    },
+    {
+     "name": "SqlDeleteRows",
+     "value": "17",
+     "label": "SqlDeleteRows"
+    }
+   ]
+  },
+  "SysTraceType": {
+   "id": "61526",
+   "values": [
+    {
+     "name": "CSTrace",
+     "value": "0",
+     "label": "CSTrace"
+    },
+    {
+     "name": "DBTrace",
+     "value": "1",
+     "label": "DBTrace"
+    },
+    {
+     "name": "SqlTrace",
+     "value": "2",
+     "label": "SqlTrace"
+    }
+   ]
+  },
+  "TableAccess": {
+   "id": "61622",
+   "values": [
+    {
+     "name": "NoAccess",
+     "value": "0",
+     "label": "NoAccess"
+    },
+    {
+     "name": "View",
+     "value": "1",
+     "label": "View"
+    },
+    {
+     "name": "Edit",
+     "value": "2",
+     "label": "Edit"
+    },
+    {
+     "name": "Add",
+     "value": "3",
+     "label": "Add"
+    },
+    {
+     "name": "Correction",
+     "value": "4",
+     "label": "Correction"
+    },
+    {
+     "name": "Delete",
+     "value": "5",
+     "label": "Delete"
+    }
+   ]
+  },
+  "TableGroup": {
+   "id": "61497",
+   "values": [
+    {
+     "name": "Miscellaneous",
+     "value": "0",
+     "label": "Miscellaneous"
+    },
+    {
+     "name": "Parameter",
+     "value": "1",
+     "label": "Parameter"
+    },
+    {
+     "name": "Group",
+     "value": "2",
+     "label": "Group"
+    },
+    {
+     "name": "Main",
+     "value": "3",
+     "label": "Main"
+    },
+    {
+     "name": "Transaction",
+     "value": "4",
+     "label": "Transaction"
+    },
+    {
+     "name": "WorksheetHeader",
+     "value": "5",
+     "label": "WorksheetHeader"
+    },
+    {
+     "name": "WorksheetLine",
+     "value": "6",
+     "label": "WorksheetLine"
+    },
+    {
+     "name": "Framework",
+     "value": "7",
+     "label": "Framework"
+    },
+    {
+     "name": "Reference",
+     "value": "8",
+     "label": "Reference"
+    },
+    {
+     "name": "Worksheet",
+     "value": "9",
+     "label": "Worksheet"
+    },
+    {
+     "name": "TransactionHeader",
+     "value": "10",
+     "label": "TransactionHeader"
+    },
+    {
+     "name": "TransactionLine",
+     "value": "11",
+     "label": "TransactionLine"
+    },
+    {
+     "name": "Staging",
+     "value": "12",
+     "label": "Staging"
+    }
+   ]
+  },
+  "TableRelation": {
+   "id": "61493",
+   "values": [
+    {
+     "name": "Field",
+     "value": "0",
+     "label": "Field"
+    },
+    {
+     "name": "ThisFixed",
+     "value": "1",
+     "label": "ThisFixed"
+    },
+    {
+     "name": "ExternFixed",
+     "value": "2",
+     "label": "ExternFixed"
+    },
+    {
+     "name": "Dataset",
+     "value": "3",
+     "label": "Dataset"
+    },
+    {
+     "name": "Relation",
+     "value": "4",
+     "label": "Relation"
+    },
+    {
+     "name": "Inheritance",
+     "value": "5",
+     "label": "Inheritance"
+    }
+   ]
+  },
+  "TableScope": {
+   "id": "61618",
+   "values": [
+    {
+     "name": "CurrentTableOnly",
+     "value": "1",
+     "label": "CurrentTableOnly"
+    },
+    {
+     "name": "IncludeBaseTables",
+     "value": "2",
+     "label": "IncludeBaseTables"
+    },
+    {
+     "name": "IncludeDerivedTables",
+     "value": "4",
+     "label": "IncludeDerivedTables"
+    }
+   ]
+  },
+  "TableType": {
+   "id": "61650",
+   "values": [
+    {
+     "name": "Regular",
+     "value": "0",
+     "label": "Regular"
+    },
+    {
+     "name": "InMemory",
+     "value": "1",
+     "label": "InMemory"
+    },
+    {
+     "name": "TempDB",
+     "value": "2",
+     "label": "TempDB"
+    }
+   ]
+  },
+  "TabPageStyle": {
+   "id": "61659",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "DetailsFormGrid",
+     "value": "1",
+     "label": "DetailsFormGrid"
+    },
+    {
+     "name": "DetailsFormDetails",
+     "value": "2",
+     "label": "DetailsFormDetails"
+    },
+    {
+     "name": "DetailsFormLinesPanel",
+     "value": "3",
+     "label": "DetailsFormLinesPanel"
+    }
+   ]
+  },
+  "TabStyle": {
+   "id": "61644",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "Tabs",
+     "value": "1",
+     "label": "Tabs"
+    },
+    {
+     "name": "FastTabs",
+     "value": "2",
+     "label": "FastTabs"
+    },
+    {
+     "name": "VerticalTabs",
+     "value": "3",
+     "label": "VerticalTabs"
+    },
+    {
+     "name": "IndexTabs",
+     "value": "4",
+     "label": "IndexTabs"
+    },
+    {
+     "name": "Panorama",
+     "value": "5",
+     "label": "Panorama"
+    },
+    {
+     "name": "DropList",
+     "value": "6",
+     "label": "DropList"
+    }
+   ]
+  },
+  "ThousandSeparator": {
+   "id": "61594",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Dot",
+     "value": "1",
+     "label": "Dot (.)"
+    },
+    {
+     "name": "Comma",
+     "value": "2",
+     "label": "Comma (,)"
+    },
+    {
+     "name": "Apostrophe",
+     "value": "3",
+     "label": "Apostrophe (')"
+    },
+    {
+     "name": "Space",
+     "value": "4",
+     "label": "Space ( )"
+    }
+   ]
+  },
+  "TimeFormat": {
+   "id": "61597",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "Hour24",
+     "value": "1",
+     "label": "24-hour"
+    },
+    {
+     "name": "AMPM",
+     "value": "2",
+     "label": "AM/PM"
+    }
+   ]
+  },
+  "TimeSeparator": {
+   "id": "61598",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "Colon",
+     "value": "1",
+     "label": "Colon"
+    },
+    {
+     "name": "Dot",
+     "value": "2",
+     "label": "Dot"
+    },
+    {
+     "name": "Space",
+     "value": "3",
+     "label": "Space"
+    },
+    {
+     "name": "Comma",
+     "value": "4",
+     "label": "Comma"
+    },
+    {
+     "name": "Slash",
+     "value": "5",
+     "label": "Slash"
+    }
+   ]
+  },
+  "Timezone": {
+   "id": "61571",
+   "values": [
+    {
+     "name": "GMTMINUS1200INTERNATIONALDATELINEWEST",
+     "value": "24",
+     "label": "(GMT-12:00) International Date Line West"
+    },
+    {
+     "name": "GMTMINUS1100COORDINATEDUNIVERSALTIME",
+     "value": "99",
+     "label": "(GMT-11:00) Coordinated Universal Time-11"
+    },
+    {
+     "name": "GMTMINUS1100MIDWAYISLAND_SAMOA",
+     "value": "65",
+     "label": "(GMT+13:00) Samoa"
+    },
+    {
+     "name": "GMTMINUS1000HAWAII",
+     "value": "39",
+     "label": "(GMT-10:00) Hawaii"
+    },
+    {
+     "name": "GMTMINUS0900ALASKA",
+     "value": "2",
+     "label": "(GMT-09:00) Alaska"
+    },
+    {
+     "name": "GMTMINUS0800PACIFICTIME",
+     "value": "58",
+     "label": "(GMT-08:00) Pacific Time (US &amp; Canada)"
+    },
+    {
+     "name": "GMTMINUS0800TIJUANA_BAJACALIFORNIA",
+     "value": "59",
+     "label": "(GMT-08:00) Tijuana, Baja California"
+    },
+    {
+     "name": "GMTMINUS0700ARIZONA",
+     "value": "75",
+     "label": "(GMT-07:00) Arizona"
+    },
+    {
+     "name": "GMTMINUS0700MOUNTAINTIME",
+     "value": "47",
+     "label": "(GMT-07:00) Mountain Time (US &amp; Canada)"
+    },
+    {
+     "name": "GMTMINUS0700CHIHUAHUA_LAPAZ_MAZATLAN",
+     "value": "48",
+     "label": "(GMT-07:00) Chihuahua, La Paz, Mazatlan"
+    },
+    {
+     "name": "GMTMINUS0600CENTRALAMERICA",
+     "value": "15",
+     "label": "(GMT-06:00) Central America"
+    },
+    {
+     "name": "GMTMINUS0600CENTRALTIME",
+     "value": "21",
+     "label": "(GMT-06:00) Central Time (US &amp; Canada)"
+    },
+    {
+     "name": "GMTMINUS0600GUADALAJARA_MEXICOCITY",
+     "value": "22",
+     "label": "(GMT-06:00) Guadalajara, Mexico City, Monterrey"
+    },
+    {
+     "name": "GMTMINUS0600SASKATCHEWAN",
+     "value": "11",
+     "label": "(GMT-06:00) Saskatchewan"
+    },
+    {
+     "name": "GMTMINUS0500BOGOTA_LIMA_QUITO_RIOBRANCO",
+     "value": "63",
+     "label": "(GMT-05:00) Bogota, Lima, Quito, Rio Branco"
+    },
+    {
+     "name": "GMTMINUS0500EASTERNTIME",
+     "value": "29",
+     "label": "(GMT-05:00) Eastern Time (US &amp; Canada)"
+    },
+    {
+     "name": "GMTMINUS0500INDIANA",
+     "value": "74",
+     "label": "(GMT-05:00) Indiana (East)"
+    },
+    {
+     "name": "GMTMINUS0500CHETUMAL",
+     "value": "105",
+     "label": "(GMT-05:00) Chetumal"
+    },
+    {
+     "name": "GMTMINUS0400ASUNCION",
+     "value": "95",
+     "label": "(GMT-04:00) Asuncion"
+    },
+    {
+     "name": "GMTMINUS0400ATLANTICTIME",
+     "value": "6",
+     "label": "(GMT-04:00) Atlantic Time (Canada)"
+    },
+    {
+     "name": "GMTMINUS0400LAPAZ",
+     "value": "64",
+     "label": "(GMT-04:00) La Paz"
+    },
+    {
+     "name": "GMTMINUS0400MANAUS",
+     "value": "17",
+     "label": "(GMT-04:00) Manaus"
+    },
+    {
+     "name": "GMTMINUS0300SANTIAGO",
+     "value": "57",
+     "label": "(GMT-04:00) Santiago"
+    },
+    {
+     "name": "GMTMINUS0430CARACAS",
+     "value": "85",
+     "label": "(GMT-04:30) Caracas"
+    },
+    {
+     "name": "GMTMINUS0330NEWFOUNDLAND",
+     "value": "54",
+     "label": "(GMT-03:30) Newfoundland"
+    },
+    {
+     "name": "GMTMINUS0300_SALVADOR",
+     "value": "87",
+     "label": "(GMT-03:00) Salvador"
+    },
+    {
+     "name": "GMTMINUS0300BRASILIA",
+     "value": "28",
+     "label": "(GMT-03:00) Brasilia"
+    },
+    {
+     "name": "GMTMINUS0300BUENOSAIRES",
+     "value": "86",
+     "label": "(GMT-03:00) Buenos Aires"
+    },
+    {
+     "name": "GMTMINUS0300BUENOSAIRES_GEORGETOWN",
+     "value": "62",
+     "label": "(GMT-03:00) Buenos Aires, Georgetown"
+    },
+    {
+     "name": "GMTMINUS0300GREENLAND",
+     "value": "36",
+     "label": "(GMT-02:00) Greenland"
+    },
+    {
+     "name": "GMTMINUS0300MONTEVIDEO",
+     "value": "83",
+     "label": "(GMT-03:00) Montevideo"
+    },
+    {
+     "name": "GMTMINUS0200MIDATLANTIC",
+     "value": "45",
+     "label": "(GMT-02:00) Mid-Atlantic"
+    },
+    {
+     "name": "GMTMINUS0100AZORES",
+     "value": "10",
+     "label": "(GMT-01:00) Azores"
+    },
+    {
+     "name": "GMTMINUS0100CAPEVERDIS",
+     "value": "12",
+     "label": "(GMT-01:00) Cabo Verde Is."
+    },
+    {
+     "name": "GMT_CASABLANCA",
+     "value": "93",
+     "label": "(GMT) Casablanca"
+    },
+    {
+     "name": "GMT_CASABLANCA_MONTROVIA_REYKJAVIK",
+     "value": "37",
+     "label": "(GMT) Casablanca, Monrovia, Reykjavik"
+    },
+    {
+     "name": "GMT_COORDINATEDUNIVERSALTIME",
+     "value": "89",
+     "label": "(GMT) Coordinated Universal Time"
+    },
+    {
+     "name": "GMT_DUBLIN_EDINBURGH_LISBON_LONDON",
+     "value": "35",
+     "label": "(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+    },
+    {
+     "name": "GMT_PLUS0300KALININGRAD_MINSK",
+     "value": "90",
+     "label": "(GMT+02:00) Kaliningrad (RTZ 1)"
+    },
+    {
+     "name": "GMTPLUS0100_AMSTERDAM_BERLIN_BERN_ROME",
+     "value": "79",
+     "label": "(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna"
+    },
+    {
+     "name": "GMTPLUS0100BELGRADE_BRATISLAVA_BUDAPEST",
+     "value": "18",
+     "label": "(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+    },
+    {
+     "name": "GMTPLUS0100BRUSSELS_COPENHAGEN_MADRID",
+     "value": "60",
+     "label": "(GMT+01:00) Brussels, Copenhagen, Madrid, Paris"
+    },
+    {
+     "name": "GMTPLUS0100SARAJEVO_SKOPJE_WARSAW_ZAGREB",
+     "value": "19",
+     "label": "(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+    },
+    {
+     "name": "GMTPLUS0100TRIPOLI",
+     "value": "101",
+     "label": "(GMT+01:00) Tripoli"
+    },
+    {
+     "name": "GMTPLUS0100WESTCENTRALAFRICA",
+     "value": "78",
+     "label": "(GMT+01:00) West Central Africa"
+    },
+    {
+     "name": "GMTPLUS0200_DAMASCUS",
+     "value": "96",
+     "label": "(GMT+01:00) Damascus"
+    },
+    {
+     "name": "GMTPLUS0200AMMAN",
+     "value": "43",
+     "label": "(GMT+02:00) Amman"
+    },
+    {
+     "name": "GMTPLUS0200ATHENS_BUCHAREST_ISTANBUL",
+     "value": "38",
+     "label": "(GMT+02:00) Athens, Bucharest, Istanbul"
+    },
+    {
+     "name": "GMTPLUS0200BEIRUT",
+     "value": "46",
+     "label": "(GMT+02:00) Beirut"
+    },
+    {
+     "name": "GMTPLUS0200MINSK",
+     "value": "27",
+     "label": "(GMT+02:00) Minsk"
+    },
+    {
+     "name": "GMTPLUS0200CAIRO",
+     "value": "30",
+     "label": "(GMT+02:00) Cairo"
+    },
+    {
+     "name": "GMTPLUS0200HARARE_PRETORIA",
+     "value": "68",
+     "label": "(GMT+02:00) Harare, Pretoria"
+    },
+    {
+     "name": "GMTPLUS0200HELSINKI_KYIV_RIGA_VILNIUS",
+     "value": "33",
+     "label": "(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius"
+    },
+    {
+     "name": "GMTPLUS0300ISTANBUL",
+     "value": "98",
+     "label": "(GMT+03:00) Istanbul"
+    },
+    {
+     "name": "GMTPLUS0200JERUSALEM",
+     "value": "42",
+     "label": "(GMT+02:00) Jerusalem"
+    },
+    {
+     "name": "GMTPLUS0200WINDHOEK",
+     "value": "51",
+     "label": "(GMT+02:00) Windhoek"
+    },
+    {
+     "name": "GMTPLUS0300BAGHDAD",
+     "value": "5",
+     "label": "(GMT+03:00) Baghdad"
+    },
+    {
+     "name": "GMTPLUS0300KUWAIT_RIYADH",
+     "value": "3",
+     "label": "(GMT+03:00) Kuwait, Riyadh"
+    },
+    {
+     "name": "GMTPLUS0300MOSCOW_STPETERSBURG_VOLGOGRAD",
+     "value": "61",
+     "label": "(GMT+03:00) Moscow, St. Petersburg, Volgograd (RTZ 2)"
+    },
+    {
+     "name": "GMTPLUS0300NAIROBI",
+     "value": "25",
+     "label": "(GMT+03:00) Nairobi"
+    },
+    {
+     "name": "GMTPLUS0300TBILISI",
+     "value": "34",
+     "label": "(GMT+03:00) Tbilisi"
+    },
+    {
+     "name": "GMTPLUS0330TEHRAN",
+     "value": "41",
+     "label": "(GMT+03:30) Tehran"
+    },
+    {
+     "name": "GMTPLUS0400ABUDHABI_MUSCAT",
+     "value": "4",
+     "label": "(GMT+04:00) Abu Dhabi, Muscat"
+    },
+    {
+     "name": "GMTPLUS0400BAKU",
+     "value": "9",
+     "label": "(GMT+04:00) Baku"
+    },
+    {
+     "name": "GMTPLUS0400IZHEVSK_SAMARA",
+     "value": "104",
+     "label": "(GMT+04:00) Izhevsk, Samara (RTZ 3)"
+    },
+    {
+     "name": "GMTPLUS0400CAUCASUSSTANDARDTIME",
+     "value": "84",
+     "label": "(GMT+04:00) Yerevan"
+    },
+    {
+     "name": "GMTPLUS0400PORTLOUIS",
+     "value": "92",
+     "label": "(GMT+04:00) Port Louis"
+    },
+    {
+     "name": "GMTPLUS0400YEREVAN",
+     "value": "13",
+     "label": "(GMT+04:00) Yerevan (Do not use)"
+    },
+    {
+     "name": "GMTPLUS0430KABUL",
+     "value": "1",
+     "label": "(GMT+04:30) Kabul"
+    },
+    {
+     "name": "GMTPLUS0500EKATERINBURG",
+     "value": "31",
+     "label": "(GMT+05:00) Ekaterinburg (RTZ 4)"
+    },
+    {
+     "name": "GMTPLUS0500ISLAMABAD_KARACHI",
+     "value": "94",
+     "label": "(GMT+05:00) Islamabad, Karachi"
+    },
+    {
+     "name": "GMTPLUS0500ISLAMABAD_KARACHI_TASHKENT",
+     "value": "80",
+     "label": "(GMT+05:00) Islamabad, Karachi, Toshkent"
+    },
+    {
+     "name": "GMTPLUS0530CHENNAI_KOLKATA_MUMBAI",
+     "value": "40",
+     "label": "(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi"
+    },
+    {
+     "name": "GMTPLUS0530SRIJAYAWARDENEPURA",
+     "value": "69",
+     "label": "(GMT+05:30) Sri Jayawardenepura"
+    },
+    {
+     "name": "GMTPLUS0545KATHMANDU",
+     "value": "52",
+     "label": "(GMT+05:45) Kathmandu"
+    },
+    {
+     "name": "GMTPLUS0600ALMATY_NOVOSIBIRSK",
+     "value": "50",
+     "label": "(GMT+06:00) Novosibirsk (RTZ 5)"
+    },
+    {
+     "name": "GMTPLUS0600ASTANA_DHAKA",
+     "value": "16",
+     "label": "(GMT+06:00) Astana, Dhaka"
+    },
+    {
+     "name": "GMTPLUS0600DHAKA",
+     "value": "88",
+     "label": "(GMT+06:00) Dhaka"
+    },
+    {
+     "name": "GMTPLUS0600MAGADAN",
+     "value": "91",
+     "label": "(GMT+12:00) Magadan (Do not use)"
+    },
+    {
+     "name": "GMTPLUS0630_YANGON",
+     "value": "49",
+     "label": "(GMT+06:30) Yangon (Rangoon)"
+    },
+    {
+     "name": "GMTPLUS0700_BANGKOK_HANOI_JAKARTA",
+     "value": "66",
+     "label": "(GMT+07:00) Bangkok, Hanoi, Jakarta"
+    },
+    {
+     "name": "GMTPLUS0700KRASNOYARSK",
+     "value": "56",
+     "label": "(GMT+07:00) Krasnoyarsk (RTZ 6)"
+    },
+    {
+     "name": "GMTPLUS0800_ULAANBAATAR",
+     "value": "97",
+     "label": "(GMT+08:00) Ulaanbaatar"
+    },
+    {
+     "name": "GMTPLUS0800BEIJING_CHONGQING_HONGKONG",
+     "value": "23",
+     "label": "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi"
+    },
+    {
+     "name": "GMTPLUS0800IRKUTSK_ULAANBATAAR",
+     "value": "55",
+     "label": "(GMT+08:00) Irkutsk (RTZ 7)"
+    },
+    {
+     "name": "GMTPLUS0800KUALALUMPUR_SINGAPORE",
+     "value": "67",
+     "label": "(GMT+08:00) Kuala Lumpur, Singapore"
+    },
+    {
+     "name": "GMTPLUS0800PERTH",
+     "value": "77",
+     "label": "(GMT+08:00) Perth"
+    },
+    {
+     "name": "GMTPLUS0800TAIPEI",
+     "value": "70",
+     "label": "(GMT+08:00) Taipei"
+    },
+    {
+     "name": "GMTPLUS0900OSAKA_SAPPORO_TOKYO",
+     "value": "72",
+     "label": "(GMT+09:00) Osaka, Sapporo, Tokyo"
+    },
+    {
+     "name": "GMTPLUS0900SEOUL",
+     "value": "44",
+     "label": "(GMT+09:00) Seoul"
+    },
+    {
+     "name": "GMTPLUS0900YAKUTSK",
+     "value": "82",
+     "label": "(GMT+09:00) Yakutsk (RTZ 8)"
+    },
+    {
+     "name": "GMTPLUS0930ADELAIDE",
+     "value": "14",
+     "label": "(GMT+09:30) Adelaide"
+    },
+    {
+     "name": "GMTPLUS0930DARWIN",
+     "value": "7",
+     "label": "(GMT+09:30) Darwin"
+    },
+    {
+     "name": "GMTPLUS1000BRISBANE",
+     "value": "26",
+     "label": "(GMT+10:00) Brisbane"
+    },
+    {
+     "name": "GMTPLUS1000CANBERRA_MELBOURNE_SYDNEY",
+     "value": "8",
+     "label": "(GMT+10:00) Canberra, Melbourne, Sydney"
+    },
+    {
+     "name": "GMTPLUS1000GUAM_PORTMORESBY",
+     "value": "81",
+     "label": "(GMT+10:00) Guam, Port Moresby"
+    },
+    {
+     "name": "GMTPLUS1000HOBART",
+     "value": "71",
+     "label": "(GMT+10:00) Hobart"
+    },
+    {
+     "name": "GMTPLUS1000VLADIVOSTOK",
+     "value": "76",
+     "label": "(GMT+10:00) Vladivostok, Magadan (RTZ 9)"
+    },
+    {
+     "name": "GMTPLUS1100CHOKURDAKH",
+     "value": "102",
+     "label": "(GMT+11:00) Chokurdakh (RTZ 10)"
+    },
+    {
+     "name": "GMTPLUS1100MAGADAN_SOLOMONIS",
+     "value": "20",
+     "label": "(GMT+11:00) Magadan, Solomon Is., New Caledonia"
+    },
+    {
+     "name": "GMTPLUS1200ANADYR_PETRO_KAMCHATSKY",
+     "value": "103",
+     "label": "(GMT+12:00) Anadyr, Petropavlovsk-Kamchatsky (RTZ 11)"
+    },
+    {
+     "name": "GMTPLUS1200AUCKLAND_WELLINGTON",
+     "value": "53",
+     "label": "(GMT+12:00) Auckland, Wellington"
+    },
+    {
+     "name": "GMTPLUS1200COORDINATEDUNIVERSALTIME",
+     "value": "100",
+     "label": "(GMT+12:00) Coordinated Universal Time+12"
+    },
+    {
+     "name": "GMTPLUS1200FIJI_KAMCHATKA_MARSHALLIS",
+     "value": "32",
+     "label": "(GMT+12:00) Fiji, Kamchatka, Marshall Is."
+    },
+    {
+     "name": "GMTPLUS1300NUKU_ALOFA",
+     "value": "73",
+     "label": "(GMT+13:00) Nuku'alofa"
+    }
+   ]
+  },
+  "TimeZonePreference": {
+   "id": "61599",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "99",
+     "label": "Auto"
+    },
+    {
+     "name": "User",
+     "value": "1",
+     "label": "User"
+    },
+    {
+     "name": "NoConversion",
+     "value": "2",
+     "label": "No Conversion"
+    }
+   ]
+  },
+  "ToggleButtonStyle": {
+   "id": "61698",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "3",
+     "label": "Auto"
+    },
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Check",
+     "value": "1",
+     "label": "Check"
+    },
+    {
+     "name": "Radio",
+     "value": "2",
+     "label": "Radio"
+    }
+   ]
+  },
+  "TotalType": {
+   "id": "61731",
+   "values": [
+    {
+     "name": "Sum",
+     "value": "0",
+     "label": "Sum"
+    },
+    {
+     "name": "Avg",
+     "value": "1",
+     "label": "Average"
+    },
+    {
+     "name": "Max",
+     "value": "2",
+     "label": "Maximum"
+    },
+    {
+     "name": "Min",
+     "value": "3",
+     "label": "Minimum"
+    }
+   ]
+  },
+  "Types": {
+   "id": "61450",
+   "values": [
+    {
+     "name": "String",
+     "value": "0",
+     "label": "String"
+    },
+    {
+     "name": "Integer",
+     "value": "1",
+     "label": "Integer"
+    },
+    {
+     "name": "Real",
+     "value": "2",
+     "label": "Real"
+    },
+    {
+     "name": "Date",
+     "value": "3",
+     "label": "Date"
+    },
+    {
+     "name": "Enum",
+     "value": "4",
+     "label": "Enum"
+    },
+    {
+     "name": "RString",
+     "value": "5",
+     "label": "RString"
+    },
+    {
+     "name": "UtcDateTime",
+     "value": "6",
+     "label": "UtcDateTime"
+    },
+    {
+     "name": "Container",
+     "value": "7",
+     "label": "Container"
+    },
+    {
+     "name": "VarString",
+     "value": "8",
+     "label": "VarString"
+    },
+    {
+     "name": "Record",
+     "value": "9",
+     "label": "Record"
+    },
+    {
+     "name": "Class",
+     "value": "10",
+     "label": "Class"
+    },
+    {
+     "name": "UserType",
+     "value": "11",
+     "label": "UserType"
+    },
+    {
+     "name": "AnyType",
+     "value": "12",
+     "label": "AnyType"
+    },
+    {
+     "name": "BLOB",
+     "value": "13",
+     "label": "BLOB"
+    },
+    {
+     "name": "void",
+     "value": "14",
+     "label": "void"
+    },
+    {
+     "name": "Guid",
+     "value": "15",
+     "label": "Guid"
+    },
+    {
+     "name": "Int64",
+     "value": "16",
+     "label": "Int64"
+    },
+    {
+     "name": "Time",
+     "value": "17",
+     "label": "Time"
+    },
+    {
+     "name": "VarArg",
+     "value": "18",
+     "label": "VarArg"
+    }
+   ]
+  },
+  "Uncheck": {
+   "id": "61608",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "TableSecurityPermission",
+     "value": "1",
+     "label": "TableSecurityPermission"
+    },
+    {
+     "name": "XDS",
+     "value": "8",
+     "label": "XDS"
+    }
+   ]
+  },
+  "UnionType": {
+   "id": "61577",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Union",
+     "value": "1",
+     "label": "Union"
+    },
+    {
+     "name": "UnionAll",
+     "value": "2",
+     "label": "UnionAll"
+    }
+   ]
+  },
+  "Units": {
+   "id": "61460",
+   "values": [
+    {
+     "name": "mm",
+     "value": "0",
+     "label": "mm"
+    },
+    {
+     "name": "cm",
+     "value": "1",
+     "label": "cm"
+    },
+    {
+     "name": "pt",
+     "value": "2",
+     "label": "pt"
+    },
+    {
+     "name": "char",
+     "value": "3",
+     "label": "char"
+    },
+    {
+     "name": "Inch",
+     "value": "4",
+     "label": "Inch"
+    }
+   ]
+  },
+  "UserAccountType": {
+   "id": "61677",
+   "values": [
+    {
+     "name": "ADUser",
+     "value": "0",
+     "label": "@SYS329692"
+    },
+    {
+     "name": "ADGroup",
+     "value": "1",
+     "label": "@SYS329693"
+    },
+    {
+     "name": "ClaimsUser",
+     "value": "2",
+     "label": "@SYS329694"
+    },
+    {
+     "name": "ClaimsGroup",
+     "value": "3",
+     "label": "@Kernel:UserAccountType_ClaimsGroup"
+    }
+   ]
+  },
+  "UserLicenseType": {
+   "id": "61705",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "@Kernel:UserLicenseType_None"
+    },
+    {
+     "name": "SelfServe",
+     "value": "1",
+     "label": "@Kernel:UserLicenseType_SelfServe"
+    },
+    {
+     "name": "Task",
+     "value": "2",
+     "label": "@Kernel:UserLicenseType_Task"
+    },
+    {
+     "name": "Functional",
+     "value": "3",
+     "label": "@SYS344997"
+    },
+    {
+     "name": "Enterprise",
+     "value": "4",
+     "label": "@Kernel:UserLicenseType_Enterprise"
+    },
+    {
+     "name": "Server",
+     "value": "5",
+     "label": "@Kernel:UserLicenseType_Server"
+    },
+    {
+     "name": "Universal",
+     "value": "6",
+     "label": "@Kernel:UserLicenseType_Universal"
+    },
+    {
+     "name": "Activity",
+     "value": "7",
+     "label": "@Kernel:UserLicenseType_Activity"
+    },
+    {
+     "name": "Finance",
+     "value": "8",
+     "label": "@Kernel:UserLicenseType_Finance"
+    },
+    {
+     "name": "SCM",
+     "value": "9",
+     "label": "@Kernel:UserLicenseType_SCM"
+    },
+    {
+     "name": "Commerce",
+     "value": "10",
+     "label": "@Kernel:UserLicenseType_Commerce"
+    },
+    {
+     "name": "Project",
+     "value": "11",
+     "label": "@Kernel:UserLicenseType_Project"
+    },
+    {
+     "name": "HR",
+     "value": "12",
+     "label": "@Kernel:UserLicenseType_HR"
+    }
+   ]
+  },
+  "UtilElementType": {
+   "id": "61475",
+   "values": [
+    {
+     "name": "DisplayTool",
+     "value": "1",
+     "label": "DisplayTool"
+    },
+    {
+     "name": "OutputTool",
+     "value": "2",
+     "label": "OutputTool"
+    },
+    {
+     "name": "ActionTool",
+     "value": "3",
+     "label": "ActionTool"
+    },
+    {
+     "name": "Macro",
+     "value": "4",
+     "label": "Macro"
+    },
+    {
+     "name": "Job",
+     "value": "5",
+     "label": "Job"
+    },
+    {
+     "name": "AdminUserSetup",
+     "value": "7",
+     "label": "AdminUserSetup"
+    },
+    {
+     "name": "UserSetupQuery",
+     "value": "9",
+     "label": "UserSetupQuery"
+    },
+    {
+     "name": "Form",
+     "value": "11",
+     "label": "Form"
+    },
+    {
+     "name": "TableInstanceMethod",
+     "value": "12",
+     "label": "TableInstanceMethod"
+    },
+    {
+     "name": "ClassStaticMethod",
+     "value": "13",
+     "label": "ClassStaticMethod"
+    },
+    {
+     "name": "ClassInstanceMethod",
+     "value": "14",
+     "label": "ClassInstanceMethod"
+    },
+    {
+     "name": "LicenseCode",
+     "value": "15",
+     "label": "LicenseCode"
+    },
+    {
+     "name": "Menu",
+     "value": "16",
+     "label": "Menu"
+    },
+    {
+     "name": "UserMenu",
+     "value": "17",
+     "label": "UserMenu"
+    },
+    {
+     "name": "Report",
+     "value": "18",
+     "label": "Report"
+    },
+    {
+     "name": "ReportTemplate",
+     "value": "19",
+     "label": "ReportTemplate"
+    },
+    {
+     "name": "Query",
+     "value": "20",
+     "label": "Query"
+    },
+    {
+     "name": "Resource",
+     "value": "21",
+     "label": "Resource"
+    },
+    {
+     "name": "TableStaticMethod",
+     "value": "22",
+     "label": "TableStaticMethod"
+    },
+    {
+     "name": "ClassInternalHeader",
+     "value": "23",
+     "label": "ClassInternalHeader"
+    },
+    {
+     "name": "TableInternalHeader",
+     "value": "24",
+     "label": "TableInternalHeader"
+    },
+    {
+     "name": "TableRelation",
+     "value": "25",
+     "label": "TableRelation"
+    },
+    {
+     "name": "TableMap",
+     "value": "26",
+     "label": "TableMap"
+    },
+    {
+     "name": "ReportSectionTemplate",
+     "value": "27",
+     "label": "ReportSectionTemplate"
+    },
+    {
+     "name": "ViewQuery",
+     "value": "28",
+     "label": "ViewQuery"
+    },
+    {
+     "name": "Usersetup",
+     "value": "29",
+     "label": "Usersetup"
+    },
+    {
+     "name": "WebMenu",
+     "value": "30",
+     "label": "WebMenu"
+    },
+    {
+     "name": "RESERVED33",
+     "value": "33",
+     "label": "RESERVED33"
+    },
+    {
+     "name": "WebForm",
+     "value": "34",
+     "label": "WebForm"
+    },
+    {
+     "name": "ConfigurationKey",
+     "value": "35",
+     "label": "ConfigurationKey"
+    },
+    {
+     "name": "SecurityKey",
+     "value": "36",
+     "label": "SecurityKey"
+    },
+    {
+     "name": "SharedProject",
+     "value": "37",
+     "label": "SharedProject"
+    },
+    {
+     "name": "PrivateProject",
+     "value": "38",
+     "label": "PrivateProject"
+    },
+    {
+     "name": "Enum",
+     "value": "40",
+     "label": "Enum"
+    },
+    {
+     "name": "ExtendedType",
+     "value": "41",
+     "label": "ExtendedType"
+    },
+    {
+     "name": "TableField",
+     "value": "42",
+     "label": "TableField"
+    },
+    {
+     "name": "TableIndex",
+     "value": "43",
+     "label": "TableIndex"
+    },
+    {
+     "name": "Table",
+     "value": "44",
+     "label": "Table"
+    },
+    {
+     "name": "Class",
+     "value": "45",
+     "label": "Class"
+    },
+    {
+     "name": "TableFieldGroup",
+     "value": "46",
+     "label": "TableFieldGroup"
+    },
+    {
+     "name": "ReportUser",
+     "value": "47",
+     "label": "ReportUser"
+    },
+    {
+     "name": "TableCollection",
+     "value": "48",
+     "label": "TableCollection"
+    },
+    {
+     "name": "Reference",
+     "value": "53",
+     "label": "Reference"
+    },
+    {
+     "name": "WebUrlItem",
+     "value": "55",
+     "label": "WebUrlItem"
+    },
+    {
+     "name": "WebActionItem",
+     "value": "56",
+     "label": "WebActionItem"
+    },
+    {
+     "name": "WebDisplayContentItem",
+     "value": "57",
+     "label": "WebDisplayContentItem"
+    },
+    {
+     "name": "WebOutputContentItem",
+     "value": "58",
+     "label": "WebOutputContentItem"
+    },
+    {
+     "name": "WebletItem",
+     "value": "59",
+     "label": "WebletItem"
+    },
+    {
+     "name": "WebWebPart",
+     "value": "60",
+     "label": "WebWebPart"
+    },
+    {
+     "name": "WebSiteDef",
+     "value": "61",
+     "label": "WebSiteDef"
+    },
+    {
+     "name": "WebSiteTemp",
+     "value": "62",
+     "label": "WebSiteTemp"
+    },
+    {
+     "name": "WebPageDef",
+     "value": "63",
+     "label": "WebPageDef"
+    },
+    {
+     "name": "WebStaticFile",
+     "value": "64",
+     "label": "WebStaticFile"
+    },
+    {
+     "name": "Perspective",
+     "value": "66",
+     "label": "Perspective"
+    },
+    {
+     "name": "WebModule",
+     "value": "67",
+     "label": "WebModule"
+    },
+    {
+     "name": "WorkflowType",
+     "value": "68",
+     "label": "WorkflowType"
+    },
+    {
+     "name": "WorkflowTask",
+     "value": "69",
+     "label": "WorkflowTask"
+    },
+    {
+     "name": "WorkflowApproval",
+     "value": "70",
+     "label": "WorkflowApproval"
+    },
+    {
+     "name": "WorkflowCategory",
+     "value": "71",
+     "label": "WorkflowCategory"
+    },
+    {
+     "name": "DataSet",
+     "value": "72",
+     "label": "DataSet"
+    },
+    {
+     "name": "WebControl",
+     "value": "73",
+     "label": "WebControl"
+    },
+    {
+     "name": "WebSourceFile",
+     "value": "74",
+     "label": "WebSourceFile"
+    },
+    {
+     "name": "WebManagedContentItem",
+     "value": "75",
+     "label": "WebManagedContentItem"
+    },
+    {
+     "name": "Service",
+     "value": "76",
+     "label": "Service"
+    },
+    {
+     "name": "WebListDef",
+     "value": "78",
+     "label": "WebListDef"
+    },
+    {
+     "name": "ReportLibrary",
+     "value": "79",
+     "label": "ReportLibrary"
+    },
+    {
+     "name": "SecCodePermission",
+     "value": "115",
+     "label": "SecCodePermission"
+    },
+    {
+     "name": "SecDuty",
+     "value": "135",
+     "label": "SecDuty"
+    },
+    {
+     "name": "SecPolicy",
+     "value": "119",
+     "label": "SecPolicy"
+    },
+    {
+     "name": "SecPrivilege",
+     "value": "134",
+     "label": "SecPrivilege"
+    },
+    {
+     "name": "SecProcessCycle",
+     "value": "136",
+     "label": "SecProcessCycle"
+    },
+    {
+     "name": "SecRole",
+     "value": "133",
+     "label": "SecRole"
+    },
+    {
+     "name": "SSRSReport",
+     "value": "85",
+     "label": "SSRSReport"
+    },
+    {
+     "name": "SSRSReportLayoutTemplate",
+     "value": "87",
+     "label": "SSRSReportLayoutTemplate"
+    },
+    {
+     "name": "SSRSReportListStyleTemplate",
+     "value": "88",
+     "label": "SSRSReportListStyleTemplate"
+    },
+    {
+     "name": "SSRSReportMatrixStyleTemplate",
+     "value": "89",
+     "label": "SSRSReportMatrixStyleTemplate"
+    },
+    {
+     "name": "SSRSReportPieChartStyleTemplate",
+     "value": "90",
+     "label": "SSRSReportPieChartStyleTemplate"
+    },
+    {
+     "name": "SSRSReportTableStyleTemplate",
+     "value": "91",
+     "label": "SSRSReportTableStyleTemplate"
+    },
+    {
+     "name": "SSRSReportXYChartStyleTemplate",
+     "value": "92",
+     "label": "SSRSReportXYChartStyleTemplate"
+    },
+    {
+     "name": "SSRSReportDataSource",
+     "value": "93",
+     "label": "SSRSReportDataSource"
+    },
+    {
+     "name": "SSRSReportImage",
+     "value": "94",
+     "label": "SSRSReportImage"
+    },
+    {
+     "name": "InfoPart",
+     "value": "81",
+     "label": "InfoPart"
+    },
+    {
+     "name": "FormPart",
+     "value": "82",
+     "label": "FormPart"
+    },
+    {
+     "name": "Cue",
+     "value": "98",
+     "label": "Cue"
+    },
+    {
+     "name": "CueGroup",
+     "value": "99",
+     "label": "CueGroup"
+    },
+    {
+     "name": "DocSet",
+     "value": "101",
+     "label": "DocSet"
+    },
+    {
+     "name": "VSProject_AXModel",
+     "value": "127",
+     "label": "VSProject_AXModel"
+    },
+    {
+     "name": "VSProject_CSharp",
+     "value": "128",
+     "label": "VSProject_CSharp"
+    },
+    {
+     "name": "VSProject_VB",
+     "value": "129",
+     "label": "VSProject_VB"
+    },
+    {
+     "name": "VSProject_Web",
+     "value": "130",
+     "label": "VSProject_Web"
+    },
+    {
+     "name": "VSProject_Analysis",
+     "value": "131",
+     "label": "VSProject_Analysis"
+    },
+    {
+     "name": "ServiceGroup",
+     "value": "137",
+     "label": "ServiceGroup"
+    },
+    {
+     "name": "ServiceNodeReference",
+     "value": "138",
+     "label": "ServiceNodeReference"
+    },
+    {
+     "name": "WorkflowAutomatedTask",
+     "value": "95",
+     "label": "WorkflowAutomatedTask"
+    },
+    {
+     "name": "LabelFile",
+     "value": "117",
+     "label": "LabelFile"
+    },
+    {
+     "name": "LabelFileLanguage",
+     "value": "118",
+     "label": "LabelFileLanguage"
+    },
+    {
+     "name": "WorkflowHierarchyProvider",
+     "value": "139",
+     "label": "WorkflowHierarchyProvider"
+    },
+    {
+     "name": "WorkflowParticipantProvider",
+     "value": "140",
+     "label": "WorkflowParticipantProvider"
+    },
+    {
+     "name": "WorkflowQueueProvider",
+     "value": "141",
+     "label": "WorkflowQueueProvider"
+    },
+    {
+     "name": "WorkflowDueDateProvider",
+     "value": "142",
+     "label": "WorkflowDueDateProvider"
+    },
+    {
+     "name": "TableFullTextIndex",
+     "value": "113",
+     "label": "TableFullTextIndex"
+    }
+   ]
+  },
+  "UtilEntryLevel": {
+   "id": "61474",
+   "values": [
+    {
+     "name": "sys",
+     "value": "0",
+     "label": "sys"
+    },
+    {
+     "name": "syp",
+     "value": "1",
+     "label": "syp"
+    },
+    {
+     "name": "gls",
+     "value": "2",
+     "label": "gls"
+    },
+    {
+     "name": "glp",
+     "value": "3",
+     "label": "glp"
+    },
+    {
+     "name": "fpk",
+     "value": "4",
+     "label": "fpk"
+    },
+    {
+     "name": "fpp",
+     "value": "5",
+     "label": "fpp"
+    },
+    {
+     "name": "sln",
+     "value": "6",
+     "label": "sln"
+    },
+    {
+     "name": "slp",
+     "value": "7",
+     "label": "slp"
+    },
+    {
+     "name": "isv",
+     "value": "8",
+     "label": "isv"
+    },
+    {
+     "name": "isp",
+     "value": "9",
+     "label": "isp"
+    },
+    {
+     "name": "var",
+     "value": "10",
+     "label": "var"
+    },
+    {
+     "name": "vap",
+     "value": "11",
+     "label": "vap"
+    },
+    {
+     "name": "cus",
+     "value": "12",
+     "label": "cus"
+    },
+    {
+     "name": "cup",
+     "value": "13",
+     "label": "cup"
+    },
+    {
+     "name": "usr",
+     "value": "14",
+     "label": "usr"
+    },
+    {
+     "name": "usp",
+     "value": "15",
+     "label": "usp"
+    }
+   ]
+  },
+  "UtilFileType": {
+   "id": "61510",
+   "values": [
+    {
+     "name": "Application",
+     "value": "0",
+     "label": "Application"
+    },
+    {
+     "name": "KernelHelp",
+     "value": "1",
+     "label": "KernelHelp"
+    }
+   ]
+  },
+  "ValidTimeStateAutoQuery": {
+   "id": "61629",
+   "values": [
+    {
+     "name": "AsOfDate",
+     "value": "0",
+     "label": "AsOfDate"
+    },
+    {
+     "name": "DateRange",
+     "value": "1",
+     "label": "DateRange"
+    }
+   ]
+  },
+  "ValidTimeStateFieldType": {
+   "id": "61620",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Date",
+     "value": "1",
+     "label": "Date"
+    },
+    {
+     "name": "UtcDateTime",
+     "value": "2",
+     "label": "UtcDateTime"
+    }
+   ]
+  },
+  "ValidTimeStateMode": {
+   "id": "61619",
+   "values": [
+    {
+     "name": "NoGap",
+     "value": "0",
+     "label": "NoGap"
+    },
+    {
+     "name": "Gap",
+     "value": "1",
+     "label": "Gap"
+    }
+   ]
+  },
+  "ValidTimeStateQueryType": {
+   "id": "61653",
+   "values": [
+    {
+     "name": "Current",
+     "value": "0",
+     "label": "@SYS301710"
+    },
+    {
+     "name": "AsOf",
+     "value": "1",
+     "label": "@SYS301711"
+    },
+    {
+     "name": "Range",
+     "value": "2",
+     "label": "@SYS301712"
+    }
+   ]
+  },
+  "ValidTimeStateUpdate": {
+   "id": "61630",
+   "values": [
+    {
+     "name": "CreateNewTimePeriod",
+     "value": "1",
+     "label": "CreateNewTimePeriod"
+    },
+    {
+     "name": "Correction",
+     "value": "2",
+     "label": "Correction"
+    },
+    {
+     "name": "EffectiveBased",
+     "value": "3",
+     "label": "EffectiveBased"
+    }
+   ]
+  },
+  "ViewDataSourceMethod": {
+   "id": "61708",
+   "values": [
+    {
+     "name": "DefaultRow",
+     "value": "0",
+     "label": "DefaultRow"
+    },
+    {
+     "name": "InitValue",
+     "value": "1",
+     "label": "InitValue"
+    },
+    {
+     "name": "ValidateDelete",
+     "value": "2",
+     "label": "ValidateDelete"
+    },
+    {
+     "name": "ValidateWrite",
+     "value": "3",
+     "label": "ValidateWrite"
+    }
+   ]
+  },
+  "ViewEditMode": {
+   "id": "61631",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "View",
+     "value": "1",
+     "label": "View"
+    },
+    {
+     "name": "Edit",
+     "value": "2",
+     "label": "Edit"
+    }
+   ]
+  },
+  "WaitStatus": {
+   "id": "61551",
+   "values": [
+    {
+     "name": "WAIT_OBJECT_0",
+     "value": "0",
+     "label": "WAIT_OBJECT_0"
+    },
+    {
+     "name": "WAIT_ABANDONED",
+     "value": "1",
+     "label": "WAIT_ABANDONED"
+    },
+    {
+     "name": "WAIT_TIMEOUT",
+     "value": "2",
+     "label": "WAIT_TIMEOUT"
+    },
+    {
+     "name": "WAIT_FAILED",
+     "value": "3",
+     "label": "WAIT_FAILED"
+    }
+   ]
+  },
+  "WebAccess": {
+   "id": "61521",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Admin",
+     "value": "1",
+     "label": "Admin"
+    },
+    {
+     "name": "IntranetAdmin",
+     "value": "2",
+     "label": "IntranetAdmin"
+    },
+    {
+     "name": "IntranetUser",
+     "value": "3",
+     "label": "IntranetUser"
+    },
+    {
+     "name": "ExtranetAdmin",
+     "value": "4",
+     "label": "ExtranetAdmin"
+    },
+    {
+     "name": "ExtranetUser",
+     "value": "5",
+     "label": "ExtranetUser"
+    },
+    {
+     "name": "InternetAdmin",
+     "value": "6",
+     "label": "InternetAdmin"
+    },
+    {
+     "name": "InternetUser",
+     "value": "7",
+     "label": "InternetUser"
+    },
+    {
+     "name": "Guest",
+     "value": "8",
+     "label": "Guest"
+    },
+    {
+     "name": "All",
+     "value": "9",
+     "label": "All"
+    }
+   ]
+  },
+  "WebCloseDialogBehavior": {
+   "id": "61676",
+   "values": [
+    {
+     "name": "Auto",
+     "value": "0",
+     "label": "Auto"
+    },
+    {
+     "name": "RefreshDataSource",
+     "value": "1",
+     "label": "RefreshDataSource"
+    },
+    {
+     "name": "RefreshPage",
+     "value": "2",
+     "label": "RefreshPage"
+    },
+    {
+     "name": "Submit",
+     "value": "3",
+     "label": "Submit"
+    },
+    {
+     "name": "None",
+     "value": "4",
+     "label": "None"
+    }
+   ]
+  },
+  "WebContentType": {
+   "id": "61623",
+   "values": [
+    {
+     "name": "Display",
+     "value": "0",
+     "label": "Display"
+    },
+    {
+     "name": "Output",
+     "value": "1",
+     "label": "Output"
+    },
+    {
+     "name": "Managed",
+     "value": "2",
+     "label": "Managed"
+    }
+   ]
+  },
+  "WebMenuItemType": {
+   "id": "61547",
+   "values": [
+    {
+     "name": "Url",
+     "value": "0",
+     "label": "Url"
+    },
+    {
+     "name": "Action",
+     "value": "1",
+     "label": "Action"
+    }
+   ]
+  },
+  "WebWindowMode": {
+   "id": "61674",
+   "values": [
+    {
+     "name": "Inline",
+     "value": "0",
+     "label": "Inline"
+    },
+    {
+     "name": "Modal",
+     "value": "1",
+     "label": "Modal"
+    },
+    {
+     "name": "NewModal",
+     "value": "2",
+     "label": "NewModal"
+    },
+    {
+     "name": "NewWindow",
+     "value": "3",
+     "label": "NewWindow"
+    }
+   ]
+  },
+  "WebWindowSize": {
+   "id": "61675",
+   "values": [
+    {
+     "name": "Large",
+     "value": "0",
+     "label": "Large"
+    },
+    {
+     "name": "Medium",
+     "value": "1",
+     "label": "Medium"
+    },
+    {
+     "name": "Small",
+     "value": "2",
+     "label": "Small"
+    },
+    {
+     "name": "Smallest",
+     "value": "3",
+     "label": "Smallest"
+    },
+    {
+     "name": "Maximum",
+     "value": "4",
+     "label": "Maximum"
+    }
+   ]
+  },
+  "WorkerSessionType": {
+   "id": "61566",
+   "values": [
+    {
+     "name": "None",
+     "value": "0",
+     "label": "None"
+    },
+    {
+     "name": "Thread",
+     "value": "1",
+     "label": "Thread"
+    },
+    {
+     "name": "BCMain",
+     "value": "2",
+     "label": "BCMain"
+    },
+    {
+     "name": "RunAs",
+     "value": "3",
+     "label": "RunAs"
+    },
+    {
+     "name": "Temp",
+     "value": "4",
+     "label": "Temp"
+    }
+   ]
+  },
+  "WorkflowAssociationType": {
+   "id": "61647",
+   "values": [
+    {
+     "name": "Company",
+     "value": "0",
+     "label": "Company"
+    },
+    {
+     "name": "Global",
+     "value": "1",
+     "label": "Global"
+    },
+    {
+     "name": "Other",
+     "value": "2",
+     "label": "Other"
+    }
+   ]
+  },
+  "WorkflowElementOutcomeType": {
+   "id": "61579",
+   "values": [
+    {
+     "name": "Complete",
+     "value": "0",
+     "label": "Complete"
+    },
+    {
+     "name": "Return",
+     "value": "1",
+     "label": "Return"
+    },
+    {
+     "name": "RequestChange",
+     "value": "2",
+     "label": "RequestChange"
+    },
+    {
+     "name": "Deny",
+     "value": "3",
+     "label": "Deny"
+    }
+   ]
+  },
+  "WorkflowElementType": {
+   "id": "61580",
+   "values": [
+    {
+     "name": "Approval",
+     "value": "0",
+     "label": "Approval"
+    },
+    {
+     "name": "Task",
+     "value": "1",
+     "label": "Task"
+    },
+    {
+     "name": "Subworkflow",
+     "value": "2",
+     "label": "Subworkflow"
+    },
+    {
+     "name": "AutomatedTask",
+     "value": "3",
+     "label": "AutomatedTask"
+    },
+    {
+     "name": "ConditionalGateway",
+     "value": "4",
+     "label": "ConditionalGateway"
+    },
+    {
+     "name": "Start",
+     "value": "5",
+     "label": "Start"
+    },
+    {
+     "name": "End",
+     "value": "6",
+     "label": "End"
+    },
+    {
+     "name": "ManualGateway",
+     "value": "7",
+     "label": "ManualGateway"
+    },
+    {
+     "name": "Parallel",
+     "value": "8",
+     "label": "Parallel"
+    },
+    {
+     "name": "ParallelBranch",
+     "value": "9",
+     "label": "ParallelBranch"
+    },
+    {
+     "name": "LineItemWorkflow",
+     "value": "10",
+     "label": "LineItemWorkflow"
+    }
+   ]
+  },
+  "WorkLoadType": {
+   "id": "61732",
+   "values": [
+    {
+     "name": "Other",
+     "value": "0",
+     "label": "Other"
+    },
+    {
+     "name": "Online",
+     "value": "1",
+     "label": "Online"
+    },
+    {
+     "name": "System",
+     "value": "2",
+     "label": "System"
+    },
+    {
+     "name": "Async",
+     "value": "3",
+     "label": "Async"
+    },
+    {
+     "name": "Batch",
+     "value": "4",
+     "label": "Batch"
+    },
+    {
+     "name": "Services",
+     "value": "5",
+     "label": "Services"
+    },
+    {
+     "name": "SystemJob",
+     "value": "6",
+     "label": "SystemJob"
+    },
+    {
+     "name": "OData",
+     "value": "7",
+     "label": "OData"
+    },
+    {
+     "name": "Grpc",
+     "value": "8",
+     "label": "Grpc"
+    }
+   ]
+  },
+  "XppEventHandlerCalledWhen": {
+   "id": "61679",
+   "values": [
+    {
+     "name": "Pre",
+     "value": "0",
+     "label": "Pre"
+    },
+    {
+     "name": "Post",
+     "value": "1",
+     "label": "Post"
+    }
+   ]
+  },
+  "xRefKind": {
+   "id": "61457",
+   "values": [
+    {
+     "name": "Nil",
+     "value": "0",
+     "label": "Nil"
+    },
+    {
+     "name": "Table",
+     "value": "1",
+     "label": "Table"
+    },
+    {
+     "name": "TableField",
+     "value": "2",
+     "label": "TableField"
+    },
+    {
+     "name": "TableInstanceMethod",
+     "value": "3",
+     "label": "TableInstanceMethod"
+    },
+    {
+     "name": "TableStaticMethod",
+     "value": "4",
+     "label": "TableStaticMethod"
+    },
+    {
+     "name": "Map",
+     "value": "5",
+     "label": "Map"
+    },
+    {
+     "name": "MapField",
+     "value": "6",
+     "label": "MapField"
+    },
+    {
+     "name": "MapInstanceMethod",
+     "value": "7",
+     "label": "MapInstanceMethod"
+    },
+    {
+     "name": "MapStaticMethod",
+     "value": "8",
+     "label": "MapStaticMethod"
+    },
+    {
+     "name": "TableIndex",
+     "value": "9",
+     "label": "TableIndex"
+    },
+    {
+     "name": "Class",
+     "value": "10",
+     "label": "Class"
+    },
+    {
+     "name": "ClassInstanceMethod",
+     "value": "11",
+     "label": "ClassInstanceMethod"
+    },
+    {
+     "name": "ClassStaticMethod",
+     "value": "12",
+     "label": "ClassStaticMethod"
+    },
+    {
+     "name": "LocalMethod",
+     "value": "13",
+     "label": "LocalMethod"
+    },
+    {
+     "name": "ExtendedType",
+     "value": "14",
+     "label": "ExtendedType"
+    },
+    {
+     "name": "Enum",
+     "value": "15",
+     "label": "Enum"
+    },
+    {
+     "name": "Enumerator",
+     "value": "16",
+     "label": "Enumerator"
+    },
+    {
+     "name": "BasicType",
+     "value": "17",
+     "label": "BasicType"
+    },
+    {
+     "name": "Label",
+     "value": "19",
+     "label": "Label"
+    },
+    {
+     "name": "Predefined",
+     "value": "20",
+     "label": "Predefined"
+    },
+    {
+     "name": "SecurityKey",
+     "value": "21",
+     "label": "SecurityKey"
+    },
+    {
+     "name": "ConfigurationKey",
+     "value": "22",
+     "label": "ConfigurationKey"
+    },
+    {
+     "name": "LicenseCode",
+     "value": "23",
+     "label": "LicenseCode"
+    },
+    {
+     "name": "MenuItemDisplay",
+     "value": "24",
+     "label": "MenuItemDisplay"
+    },
+    {
+     "name": "MenuItemOutput",
+     "value": "25",
+     "label": "MenuItemOutput"
+    },
+    {
+     "name": "MenuItemAction",
+     "value": "26",
+     "label": "MenuItemAction"
+    },
+    {
+     "name": "WebUrlItem",
+     "value": "27",
+     "label": "WebUrlItem"
+    },
+    {
+     "name": "WebActionItem",
+     "value": "28",
+     "label": "WebActionItem"
+    },
+    {
+     "name": "WebDisplayContentItem",
+     "value": "29",
+     "label": "WebDisplayContentItem"
+    },
+    {
+     "name": "WebOutputContentItem",
+     "value": "30",
+     "label": "WebOutputContentItem"
+    },
+    {
+     "name": "ClrType",
+     "value": "31",
+     "label": "ClrType"
+    },
+    {
+     "name": "ClrTypeMethod",
+     "value": "32",
+     "label": "ClrTypeMethod"
+    },
+    {
+     "name": "Form",
+     "value": "35",
+     "label": "Form"
+    },
+    {
+     "name": "WebForm",
+     "value": "36",
+     "label": "WebForm"
+    },
+    {
+     "name": "Report",
+     "value": "37",
+     "label": "Report"
+    },
+    {
+     "name": "Query",
+     "value": "39",
+     "label": "Query"
+    },
+    {
+     "name": "Job",
+     "value": "40",
+     "label": "Job"
+    },
+    {
+     "name": "Menu",
+     "value": "41",
+     "label": "Menu"
+    },
+    {
+     "name": "WebMenu",
+     "value": "42",
+     "label": "WebMenu"
+    },
+    {
+     "name": "WebModule",
+     "value": "43",
+     "label": "WebModule"
+    },
+    {
+     "name": "DataSet",
+     "value": "44",
+     "label": "DataSet"
+    },
+    {
+     "name": "WebManagedContentItem",
+     "value": "45",
+     "label": "WebManagedContentItem"
+    },
+    {
+     "name": "WebControl",
+     "value": "46",
+     "label": "WebControl"
+    },
+    {
+     "name": "WebPageDef",
+     "value": "47",
+     "label": "WebPageDef"
+    },
+    {
+     "name": "WebStaticFile",
+     "value": "48",
+     "label": "WebStaticFile"
+    },
+    {
+     "name": "Service",
+     "value": "49",
+     "label": "Service"
+    },
+    {
+     "name": "Cue",
+     "value": "50",
+     "label": "Cue"
+    },
+    {
+     "name": "CueGroup",
+     "value": "51",
+     "label": "CueGroup"
+    },
+    {
+     "name": "FormMethod",
+     "value": "52",
+     "label": "FormMethod"
+    },
+    {
+     "name": "DataSetMethod",
+     "value": "53",
+     "label": "DataSetMethod"
+    },
+    {
+     "name": "InfoPart",
+     "value": "54",
+     "label": "InfoPart"
+    },
+    {
+     "name": "FormPart",
+     "value": "55",
+     "label": "FormPart"
+    },
+    {
+     "name": "VisualStudioProject",
+     "value": "56",
+     "label": "VisualStudioProject"
+    },
+    {
+     "name": "VsProjectAxModeling",
+     "value": "66",
+     "label": "VsProjectAxModeling"
+    },
+    {
+     "name": "VsProjectCsharp",
+     "value": "67",
+     "label": "VsProjectCsharp"
+    },
+    {
+     "name": "VsProjectVisualBasic",
+     "value": "68",
+     "label": "VsProjectVisualBasic"
+    },
+    {
+     "name": "VsProjectWebApplication",
+     "value": "69",
+     "label": "VsProjectWebApplication"
+    },
+    {
+     "name": "VsProjectAnalysisServices",
+     "value": "70",
+     "label": "VsProjectAnalysisServices"
+    },
+    {
+     "name": "SSRSReport",
+     "value": "57",
+     "label": "SSRSReport"
+    },
+    {
+     "name": "SSRSReportLayoutTemplate",
+     "value": "58",
+     "label": "SSRSReportLayoutTemplate"
+    },
+    {
+     "name": "SSRSReportTableStyleTemplate",
+     "value": "59",
+     "label": "SSRSReportTableStyleTemplate"
+    },
+    {
+     "name": "SSRSReportListStyleTemplate",
+     "value": "60",
+     "label": "SSRSReportListStyleTemplate"
+    },
+    {
+     "name": "SSRSReportMatrixStyleTemplate",
+     "value": "61",
+     "label": "SSRSReportMatrixStyleTemplate"
+    },
+    {
+     "name": "SSRSReportPieChartStyleTemplate",
+     "value": "62",
+     "label": "SSRSReportPieChartStyleTemplate"
+    },
+    {
+     "name": "SSRSReportXYChartStyleTemplate",
+     "value": "63",
+     "label": "SSRSReportXYChartStyleTemplate"
+    },
+    {
+     "name": "SSRSReportDataSource",
+     "value": "64",
+     "label": "SSRSReportDataSource"
+    },
+    {
+     "name": "ServiceGroup",
+     "value": "65",
+     "label": "ServiceGroup"
+    },
+    {
+     "name": "CodePermission",
+     "value": "72",
+     "label": "CodePermission"
+    },
+    {
+     "name": "Privilege",
+     "value": "73",
+     "label": "Privilege"
+    },
+    {
+     "name": "Duty",
+     "value": "74",
+     "label": "Duty"
+    },
+    {
+     "name": "Role",
+     "value": "75",
+     "label": "Role"
+    },
+    {
+     "name": "ProcessCycle",
+     "value": "76",
+     "label": "ProcessCycle"
+    },
+    {
+     "name": "Policy",
+     "value": "77",
+     "label": "Policy"
+    },
+    {
+     "name": "TableFullTextIndex",
+     "value": "78",
+     "label": "TableFullTextIndex"
+    }
+   ]
+  },
+  "XRefMode": {
+   "id": "61478",
+   "values": [
+    {
+     "name": "COMPILE",
+     "value": "0",
+     "label": "COMPILE"
+    },
+    {
+     "name": "PROPERTY",
+     "value": "1",
+     "label": "PROPERTY"
+    }
+   ]
+  },
+  "XRefReference": {
+   "id": "61458",
+   "values": [
+    {
+     "name": "Definition",
+     "value": "0",
+     "label": "Definition"
+    },
+    {
+     "name": "Declaration",
+     "value": "1",
+     "label": "Declaration"
+    },
+    {
+     "name": "Read",
+     "value": "2",
+     "label": "Read"
+    },
+    {
+     "name": "Write",
+     "value": "3",
+     "label": "Write"
+    },
+    {
+     "name": "Call",
+     "value": "4",
+     "label": "Call"
+    },
+    {
+     "name": "EventHandlerCall",
+     "value": "5",
+     "label": "Event handler call"
+    }
+   ]
+  }
+ }
+}

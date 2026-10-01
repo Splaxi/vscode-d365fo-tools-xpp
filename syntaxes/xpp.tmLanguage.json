@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "X++",
+  "scopeName": "source.xpp",
+  "fileTypes": ["xpp"],
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#attributes" },
+    { "include": "#strings" },
+    { "include": "#select-statement" },
+    { "include": "#keywords" },
+    { "include": "#intrinsics" },
+    { "include": "#types" },
+    { "include": "#constants" },
+    { "include": "#numbers" },
+    { "include": "#declarations" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.documentation.xpp",
+          "begin": "///",
+          "end": "$",
+          "patterns": [
+            {
+              "name": "entity.name.tag.xpp",
+              "match": "</?(summary|param|returns|remarks|exception|value|example)\\b"
+            }
+          ]
+        },
+        { "name": "comment.line.double-slash.xpp", "match": "//.*$" },
+        { "name": "comment.block.xpp", "begin": "/\\*", "end": "\\*/" }
+      ]
+    },
+    "attributes": {
+      "patterns": [
+        {
+          "name": "meta.attribute.xpp",
+          "begin": "^\\s*\\[(?=[A-Z])",
+          "end": "\\]",
+          "beginCaptures": { "0": { "name": "punctuation.definition.attribute.xpp" } },
+          "endCaptures": { "0": { "name": "punctuation.definition.attribute.xpp" } },
+          "patterns": [
+            { "include": "#strings" },
+            { "include": "#intrinsics" },
+            { "name": "entity.name.function.attribute.xpp", "match": "\\b[A-Za-z_]\\w*\\b" }
+          ]
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.xpp",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [{ "name": "constant.character.escape.xpp", "match": "\\\\." }]
+        },
+        {
+          "name": "string.quoted.single.xpp",
+          "begin": "'",
+          "end": "'",
+          "patterns": [{ "name": "constant.character.escape.xpp", "match": "\\\\." }]
+        },
+        { "name": "string.other.label.xpp", "match": "@[A-Za-z0-9_]+:?[A-Za-z0-9_]*" }
+      ]
+    },
+    "select-statement": {
+      "name": "meta.select.xpp",
+      "match": "\\b(select|from|where|join|outer|exists|notexists|order|group|by|asc|desc|firstonly|firstonly10|firstonly100|firstonly1000|forupdate|forceliterals|forceplaceholders|forcenestedloop|forceselectorder|crosscompany|optimisticlock|pessimisticlock|repeatableread|validtimestate|sum|avg|minof|maxof|count)\\b",
+      "captures": { "1": { "name": "keyword.other.select.xpp" } }
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.xpp",
+          "match": "\\b(if|else|while|do|for|switch|case|default|break|breakpoint|continue|return|throw|try|catch|finally|retry|changecompany|ttsbegin|ttscommit|ttsabort|using)\\b"
+        },
+        {
+          "name": "keyword.other.modifier.xpp",
+          "match": "\\b(public|private|protected|internal|static|final|abstract|const|display|edit|client|server|delegate|event)\\b"
+        },
+        {
+          "name": "keyword.other.declaration.xpp",
+          "match": "\\b(class|interface|extends|implements|new|this|super|null|void|namespace)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.xpp",
+          "match": "\\b(and|or|not|like|as|is)\\b"
+        },
+        {
+          "name": "keyword.operator.xpp",
+          "match": "(\\+\\+|--|\\+=|-=|\\*=|/=|\\|\\||&&|==|!=|<=|>=|[-+*/%<>!=&|^~?:])"
+        }
+      ]
+    },
+    "intrinsics": {
+      "name": "support.function.intrinsic.xpp",
+      "match": "\\b(classStr|methodStr|staticMethodStr|tableStr|tableFieldStr|fieldStr|fieldNum|extendedTypeStr|extendedTypeNum|enumStr|enumNum|enumCnt|enumLiteralStr|formStr|formControlStr|formDataSourceStr|formMethodStr|queryStr|queryDataSourceStr|reportStr|menuItemDisplayStr|menuItemActionStr|menuItemOutputStr|menuStr|configurationKeyNum|configurationKeyStr|licenseCodeStr|delegateStr|identifierStr|literalStr|dataEntityDataSourceStr|resourceStr|tableMethodStr|tableStaticMethodStr|varStr|webStr|webActionItemStr|webDisplayContentItemStr|webFormStr|webletItemStr|webMenuStr|webOutputContentItemStr|webPageDefStr|webReportStr|webSiteTempStr|webStaticFileStr|webUrlItemStr|webWebPartStr|ssrsReportStr|ssrsReportDesignStr|ssrsReportDataSetStr|ssrsReportDataContractStr|ssrsReportStrFmt)\\b"
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "storage.type.primitive.xpp",
+          "match": "\\b(anytype|boolean|container|date|enum|guid|int|int64|real|str|utcdatetime|timeOfDay|str15|str20|str30|str40|str50|str60)\\b"
+        },
+        {
+          "name": "storage.type.common.xpp",
+          "match": "\\b(Common|Query|QueryRun|QueryBuildDataSource|QueryBuildRange|FormRun|FormDataSource|FormControl|FormReferenceControl|Args|Set|SetEnumerator|Map|MapEnumerator|List|ListEnumerator|ListIterator|Struct|Array|RecordSortedList|RecordInsertList|RecordLinkList|Dialog|DialogField|DialogGroup|RunBase|RunBaseBatch|SysOperationServiceController|Exception|XppCompiler|TextBuffer|System\\.\\w+)\\b"
+        },
+        {
+          "name": "entity.name.type.xpp",
+          "match": "\\b([A-Z][A-Za-z0-9_]*)\\b(?=\\s+[a-z_]\\w*\\s*[;,=)])"
+        }
+      ]
+    },
+    "constants": {
+      "name": "constant.language.xpp",
+      "match": "\\b(true|false|NoYes::\\w+|null)\\b"
+    },
+    "numbers": {
+      "patterns": [
+        { "name": "constant.numeric.hex.xpp", "match": "\\b0[xX][0-9a-fA-F]+\\b" },
+        { "name": "constant.numeric.xpp", "match": "\\b\\d+(\\.\\d+)?\\b" }
+      ]
+    },
+    "declarations": {
+      "patterns": [
+        {
+          "name": "meta.class.xpp",
+          "match": "\\b(class)\\s+([A-Za-z_]\\w*)",
+          "captures": {
+            "1": { "name": "keyword.other.declaration.xpp" },
+            "2": { "name": "entity.name.type.class.xpp" }
+          }
+        },
+        {
+          "name": "meta.function.xpp",
+          "match": "\\b([A-Za-z_]\\w*)\\s*(?=\\()",
+          "captures": { "1": { "name": "entity.name.function.xpp" } }
+        },
+        {
+          "name": "meta.static-call.xpp",
+          "match": "\\b([A-Za-z_]\\w*)\\s*(::)",
+          "captures": {
+            "1": { "name": "entity.name.type.xpp" },
+            "2": { "name": "punctuation.accessor.xpp" }
+          }
+        }
+      ]
+    }
+  }
+}
