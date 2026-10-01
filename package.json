@@ -2,12 +2,16 @@
   "name": "vscode-d365fo-tools-xpp",
   "displayName": "D365FO AOT Browser",
   "description": "Application Explorer / AOT browser for Dynamics 365 Finance and Operations (local metadata).",
-  "version": "0.35.0",
-  "publisher": "d365fo",
+  "version": "1.0.0",
+  "publisher": "d365collaborative",
   "license": "MIT",
+  "homepage": "https://github.com/d365collaborative/vscode-d365fo-tools-xpp#readme",
+  "bugs": {
+    "url": "https://github.com/d365collaborative/vscode-d365fo-tools-xpp/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anomalyco/vscode.d365fo.tools.xpp.git"
+    "url": "https://github.com/d365collaborative/vscode-d365fo-tools-xpp.git"
   },
   "engines": {
     "vscode": "^1.85.0"
