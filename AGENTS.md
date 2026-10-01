@@ -117,8 +117,8 @@ node ./scripts/release.mjs --bump patch|minor|major|none [--keep] [--no-package]
 - [ ] If the running behavior doesn't match the new build (stale install —
       old version dirs pile up under `~/.vscode/extensions` when installing
       while VS Code runs): `code --uninstall-extension
-      d365fo.vscode-d365fo-tools-xpp`, delete leftover
-      `d365fo.vscode-d365fo-tools-xpp-*` dirs, reinstall, then fully
+      d365collaborative.vscode-d365fo-tools-xpp`, delete leftover
+      `d365collaborative.vscode-d365fo-tools-xpp-*` dirs, reinstall, then fully
       restart VS Code (not just Reload Window)
 - [ ] Commit `package.json`, `package-lock.json`, and source changes —
       never commit `*.vsix`, `node_modules/`, or `out/` (gitignored build artifacts)

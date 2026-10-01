@@ -1,0 +1,45 @@
+name: release
+
+# Release from the upstream repo (d365collaborative/vscode-d365fo-tools-xpp).
+#
+# Flow:
+#   1. Bump locally with the canonical script, e.g.
+#        npm run release:major   # or release / release:minor
+#      which compiles, bumps package.json + package-lock.json and builds the VSIX.
+#   2. Commit, push, merge via PR (CI must be green), then tag the merge:
+#        git tag v1.0.0 && git push origin v1.0.0
+#   3. This workflow packages the VSIX again from the tag and attaches it to
+#      a GitHub Release for sideload installs.
+#
+# Marketplace publishing (extension id d365collaborative.vscode-d365fo-tools-xpp)
+# is intentionally NOT automated here yet: it needs the `d365collaborative`
+# publisher plus Entra workload-identity-federation auth (PATs retire Dec 2026).
+# Once that exists, add a publish job using AzureCLI@2 + `vsce publish
+# --azure-credential` (see https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run compile
+      - run: npm run package
+
+      - name: Attach VSIX to GitHub Release
+        run: gh release create "$GITHUB_REF_NAME" --generate-notes ./*.vsix
+        env:
+          GH_TOKEN: ${{ github.token }}
