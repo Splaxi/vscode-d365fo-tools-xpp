@@ -7,7 +7,7 @@ name: release
 #        npm run release:major   # or release / release:minor
 #      which compiles, bumps package.json + package-lock.json and builds the VSIX.
 #   2. Commit, push, merge via PR (CI must be green), then tag the merge:
-#        git tag v1.0.0 && git push origin v1.0.0
+#        git tag v1.0.0 && git push upstream v1.0.0
 #   3. This workflow packages the VSIX again from the tag and attaches it to
 #      a GitHub Release for sideload installs.
 #
@@ -32,7 +32,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - run: npm ci
